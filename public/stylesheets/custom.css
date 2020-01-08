@@ -1,0 +1,243 @@
+.download-button {
+  margin: 1rem;
+}
+
+.download-button button {
+  border-radius: 40px;
+}
+
+/* Extending the orginal class from Bootstrap */
+.jumbotron {
+  background-color: var(--silver);
+  margin-bottom: 0;
+}
+
+.linkedin-icon:hover {
+  color: var(--linkedin-color);
+}
+
+.github-icon:hover {
+  color: var(--github-color);
+}
+
+.facebook-icon:hover {
+  color: var(--facebook-color);
+}
+
+.whatsapp-icon:hover {
+  color: var(--whatsapp-color);
+  cursor: pointer;
+}
+
+.whatsapp-icon:focus {
+  /* border-color: #ccc; */
+  outline: 0;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+/* INDEX */
+
+.carousel-item {
+  height: 92vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-text {
+  background: url(../images/computer-1.jpg);
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+}
+
+.picture-of-me {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.title-index {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+}
+
+#discover {
+  text-align: center;
+  color: white;
+}
+
+#discover img {
+  border-radius: 10px;
+}
+
+#discover-divider {
+  margin: 3rem 0;
+  background-color: white;
+}
+
+.btn-more {
+  margin-bottom: 2rem;
+}
+
+/* END INDEX */
+
+/* ABOUT ME */
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--midnight-blue);
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: " ";
+  background: var(--light);
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid var(--light);
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: " ";
+  background: var(--peter-river);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid var(--light);
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* END ABOUT ME */
+
+/* CONTACT */
+#contact-form {
+  color: white;
+}
+
+/* END CONTACT */
+
+/* PORTFOLIO */
+
+.icon-portfolio {
+  margin: 5px;
+  font-size: 0.75rem;
+}
+
+.icon-portfolio img {
+  width: 25px;
+  height: 25px;
+}
+
+.card-deck {
+  justify-content: space-between;
+}
+
+.card-deck .card {
+  margin: 0 0 1rem;
+}
+
+.card-body {
+  margin: 1rem 0.5rem;
+  padding: 0;
+}
+
+/* END PORTFOLIO */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .btn-more {
+    margin-bottom: autp;
+  }
+
+  .icon-portfolio {
+    font-size: 1rem;
+  }
+}
+
+/* Column management */
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Column management */
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #discover-heading {
+    margin-top: 7rem;
+  }
+
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
+
+  .download-button {
+    margin: 0;
+  }
+}
+
+/* Column management */
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
