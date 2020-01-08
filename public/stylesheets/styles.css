@@ -4,6 +4,7 @@
   --wet-asphalt: #34495e;
   --emerald: #2ecc71;
   --dracula-orchid: #2d3436;
+  --black-pearl: #1e272e;
   --silver: #bdc3c7;
   --clouds: #ecf0f1;
   --belize-hole: #2980b9;
@@ -20,6 +21,7 @@
   --github-color: #24292e;
   --facebook-color: #4267b2;
   --whatsapp-color: #00e676;
+  --not-black: #121212;
 }
 
 html {
@@ -27,14 +29,14 @@ html {
 }
 
 body {
-  background-color: var(--dracula-orchid);
+  background-color: var(--black-pearl);
   font-family: "Quicksand", cursive;
-  margin-top: 56px;
+  padding-top: 56px;
 }
 
 /* Extending the orginal class from Bootstrap */
 .navbar {
-  background-color: var(--dracula-orchid);
+  background-color: var(--black-pearl);
 }
 
 /* Extending the orginal class from Bootstrap */

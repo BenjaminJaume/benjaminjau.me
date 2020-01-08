@@ -178,6 +178,10 @@ li.timeline-item::before {
   padding: 0;
 }
 
+.loading-text {
+  color: white;
+}
+
 /* END PORTFOLIO */
 
 /* Extra small devices (portrait phones, less than 576px) */

@@ -3,26 +3,6 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    // <nav>
-    //   <ul>
-    //     <li>
-    //       <Link to="/">Home</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/about-me">About me</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/portfolio">Portfolio</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/resume">Resume</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/contact">Contact</Link>
-    //     </li>
-    //   </ul>
-    // </nav>
-
     <nav className="navbar navbar-expand-lg fixed-top navbar-dark">
       <a className="navbar-brand mx-auto pr-3" href="/">
         Benjamin Jaume

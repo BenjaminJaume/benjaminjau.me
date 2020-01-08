@@ -49,18 +49,6 @@ class Footer extends Component {
         <span className="ml-2">☝</span></a> */}
           </div>
         </footer>
-
-        {/* <!-- SCRIPTS -->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS --> */}
-        {/* <script src="../javascripts/librairies/jquery-3.4.1.js"></script> */}
-        <script src="../../public/scripts/librairies/jquery-3.4.1.js"></script>
-        <script src="../../public/scripts/librairies/popper.min.js"></script>
-        <script src="../../public/scripts/librairies/bootstrap.min.js"></script>
-
-        {/* <!-- Custom Javascript --> */}
-        <script src="../../public/scripts/custom.js"></script>
       </>
     );
   }

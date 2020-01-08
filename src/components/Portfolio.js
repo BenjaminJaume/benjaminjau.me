@@ -1,20 +1,37 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { BreedingRhombusSpinner } from "react-epic-spinners";
 
 class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      isLoading: false,
+      error: null
     };
   }
   componentDidMount() {
+    this.setState({ isLoading: true });
+
     fetch("https://benjaminjaume-api.herokuapp.com/api.json")
-      .then(res => res.json())
-      .then(res => this.setState({ data: res }));
-    // .catch(err => console.log(err));
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Something went wrong ...");
+        }
+      })
+      .then(response =>
+        this.setState({
+          data: response,
+          isLoading: false
+        })
+      )
+      .catch(error => this.setState({ error, isLoading: false }));
   }
   render() {
-    const { data } = this.state;
+    const { data, isLoading, error } = this.state;
 
     return (
       <>
@@ -28,22 +45,31 @@ class Portfolio extends Component {
               You can find in this section all the projects I have been doing in
               Computer Science since I started programming
             </p>
-            <p>
-              It all started in 2010, do you
-              <a href="about-me#first-event"> remember</a> ?
-            </p>
+            <p>It all started in 2010.</p>
           </div>
-        </div>
-
-        <div className="text-center text-white mt-3">
-          <h1>Total projects:</h1>
-          <h3>17</h3>
         </div>
 
         {/* START CARD-DECK */}
         <div className="card-deck my-5 mx-3">
           {/* NEW CARD */}
-          {data ? (
+          {error ? (
+            <div className="mx-auto text-center">
+              <p style={{ color: "white" }}>
+                <p>Sorry for the inconvenience, but an error has occured.</p>
+                <p>
+                  Please <Link to="/contact">contact me</Link>.
+                </p>
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
+          {isLoading ? (
+            <div className="mx-auto mb-5">
+              <h2 className="loading-text text-center pb-5">Loading ...</h2>
+              <BreedingRhombusSpinner size={200} color="white" />
+            </div>
+          ) : (
             data.map((item, i) => {
               return (
                 <div key={i} className="card">
@@ -63,13 +89,24 @@ class Portfolio extends Component {
                     <h5 className="card-title text-center">{item.name}</h5>
                     <p className="card-text text-center">{item.description}</p>
                     <div className="d-flex justify-content-around flex-wrap">
-                      <div className="icon-portfolio font-weight-bold">
-                        <img
-                          src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png"
-                          alt="Logo Javascript"
-                        />
-                        <span className="align-text-top">Javascript</span>
-                      </div>
+                      {item.languages.map((language, i) => {
+                        return (
+                          <div
+                            key={i}
+                            className="icon-portfolio font-weight-bold"
+                          >
+                            <img
+                              src={`./images/languages/${language
+                                .replace(" ", "-")
+                                .toLowerCase()}.png`}
+                              alt={`Logo ${language}`}
+                            />
+                            <span className="align-text-top pl-1">
+                              {language}
+                            </span>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="card-footer">
@@ -83,27 +120,40 @@ class Portfolio extends Component {
                         >
                           More
                         </a>
-                        <a
-                          href={item.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn btn-sm btn-outline-success"
-                        >
-                          <i className="fab fa-github"></i>
-                        </a>
-                        <a
-                          className="btn btn-sm btn-outline-success"
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="fas fa-external-link-alt"></i>
-                        </a>
+                        {item.github !== "" ? (
+                          <a
+                            href={item.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-sm btn-outline-success"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                        ) : (
+                          <a className="btn btn-sm btn-outline-success disabled">
+                            <i className="fab fa-github"></i>
+                          </a>
+                        )}
+
+                        {item.link !== "" ? (
+                          <a
+                            className="btn btn-sm btn-outline-success"
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fas fa-external-link-alt"></i>
+                          </a>
+                        ) : (
+                          <a className="btn btn-sm btn-outline-success disabled">
+                            <i className="fas fa-external-link-alt"></i>
+                          </a>
+                        )}
                       </div>
 
                       <small className="text-muted">
                         <i className="far fa-clock mr-1"></i>
-                        {item.date}
+                        {item.date.substring(0, 4)}
                       </small>
                     </div>
                   </div>
@@ -111,10 +161,6 @@ class Portfolio extends Component {
                 </div>
               );
             })
-          ) : (
-            <div style={{ color: "white" }}>
-              Loading. Data= <h1>{data}</h1>
-            </div>
           )}
         </div>
       </>

@@ -43,9 +43,6 @@ const Index = () => {
                 <i className="fas fa-plus pr-2"></i>
                 More
               </a>
-              <div id="result" style={{ fontSize: "xx-large" }}>
-                ZERO
-              </div>
             </div>
             <div className="col-md-5">
               <a href="./about-me.html">
