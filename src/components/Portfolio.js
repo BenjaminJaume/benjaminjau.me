@@ -112,14 +112,21 @@ class Portfolio extends Component {
                   <div className="card-footer">
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
-                        <a
-                          href={`${item.github}/blob/master/README.md`}
-                          className="btn btn-sm btn-outline-success"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          More
-                        </a>
+                        {item.github !== "" ? (
+                          <a
+                            href={`${item.github}/blob/master/README.md`}
+                            className="btn btn-sm btn-outline-success"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            More
+                          </a>
+                        ) : (
+                          <a className="btn btn-sm btn-outline-success disabled text-disabled">
+                            More
+                          </a>
+                        )}
+
                         {item.github !== "" ? (
                           <a
                             href={item.github}
@@ -134,7 +141,6 @@ class Portfolio extends Component {
                             <i className="fab fa-github"></i>
                           </a>
                         )}
-
                         {item.link !== "" ? (
                           <a
                             className="btn btn-sm btn-outline-success"

@@ -5,10 +5,13 @@
   --emerald: #2ecc71;
   --dracula-orchid: #2d3436;
   --black-pearl: #1e272e;
+  --good-night: #485460;
   --silver: #bdc3c7;
   --clouds: #ecf0f1;
   --belize-hole: #2980b9;
+  --blue-marina: #12cbc4;
   --alizarin: #e74c3c;
+  --red-pigment: #ea2027;
   --carrot: #e67e22;
   --sun-flower: #f1c40f;
   --peter-river: #3498db;
@@ -42,6 +45,38 @@ body {
 /* Extending the orginal class from Bootstrap */
 .navbar-nav .nav-link {
   text-align: center;
+}
+
+/* Extending the orginal classes from Bootstrap */
+.btn-outline-success {
+  color: var(--emerald);
+  border-color: var(--emerald);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--emerald);
+  border-color: var(--emerald);
+}
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+  color: var(--emerald);
+}
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show > .btn-outline-success.dropdown-toggle {
+  background-color: var(--emerald);
+  border-color: var(--emerald);
+}
+
+.btn-success {
+  background-color: var(--emerald);
+  border-color: var(--emerald);
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+  background-color: var(--emerald);
+  border-color: var(--emerald);
 }
 
 a.btn {
@@ -80,7 +115,7 @@ footer a:hover {
 /* I can't select the body of the popover for
 the WhatsApp number, so I am making a general rule */
 .popover {
-  color: var(--dracula-orchid);
+  color: var(--good-night);
   text-align: center;
 }
 

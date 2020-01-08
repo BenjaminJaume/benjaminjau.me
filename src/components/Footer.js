@@ -6,7 +6,13 @@ class Footer extends Component {
       <>
         <footer id="footer" className="bg-light p-5">
           <div id="message-bottom" className="message-bottom">
-            <span>Created with ❤ by Benjamin Jaume</span>
+            <span>
+              Created with{" "}
+              <span role="img" aria-label="Love">
+                ❤
+              </span>{" "}
+              by Benjamin Jaume
+            </span>
           </div>
 
           <div className="brand-icons py-3">
@@ -37,16 +43,37 @@ class Footer extends Component {
               <i className="fab fa-facebook-square"></i>
             </a>
 
-            {/* <a tabindex="0" className="whatsapp-icon px-1" role="button" data-trigger="focus" data-toggle="popover"
-        data-placement="top" title="✉ Message me"
-        data-content="<a href='https://api.whatsapp.com/send?phone=61432586316'>+61 4 32 586 316</a>"
-        data-html="true"><i className="fab fa-whatsapp-square"></i></a> */}
+            {/* eslint-disable */}
+            <a
+              tabIndex="0"
+              className="whatsapp-icon px-1"
+              role="button"
+              data-trigger="focus"
+              data-toggle="popover"
+              data-placement="top"
+              title="✉ Message me"
+              data-content="<a href='https://api.whatsapp.com/send?phone=61432586316' target='_blank'>+61 4 32 586 316</a>"
+              data-html="true"
+            >
+              <i className="fab fa-whatsapp-square"></i>
+            </a>
+            {/* eslint-enable */}
           </div>
 
           <div>
-            {/* <a id="back-top-button" className="btn btn-outline-success" href="#" role="button">
-        Back to top
-        <span className="ml-2">☝</span></a> */}
+            {/* eslint-disable */}
+            <a
+              id="back-top-button"
+              className="btn btn-outline-success"
+              href="#"
+              role="button"
+            >
+              TOP
+              <span className="ml-2" role="img" aria-label="Top">
+                ☝
+              </span>
+            </a>
+            {/* eslint-enable */}
           </div>
         </footer>
       </>

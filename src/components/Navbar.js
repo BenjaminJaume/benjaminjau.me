@@ -23,10 +23,9 @@ const Navbar = () => {
         <ul className="navbar-nav mx-auto">
           <li className="nav-item active">
             <NavLink to="/" activeClassName="active" className="nav-link">
-              <i className="material-icons align-bottom">home</i>
+              <i className="material-icons align-bottom mr-1">home</i>
               Home
             </NavLink>
-            {/* <span className="sr-only">(current)</span> */}
           </li>
           <li className="nav-item">
             <NavLink
@@ -34,33 +33,33 @@ const Navbar = () => {
               activeClassName="active"
               className="nav-link"
             >
-              <i className="material-icons align-bottom">info</i>
+              <i className="material-icons align-bottom mr-1">info</i>
               About me
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
-              to="/Portfolio"
+              to="/portfolio"
               activeClassName="active"
               className="nav-link"
             >
-              <i className="material-icons align-bottom">folder</i>
+              <i className="material-icons align-bottom mr-1">folder</i>
               Portfolio
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/resume" activeClassName="active" className="nav-link">
-              <i className="material-icons align-bottom">list_alt</i>
+              <i className="material-icons align-bottom mr-1">list_alt</i>
               Resume
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
-              to="/Contact"
+              to="/contact"
               activeClassName="active"
               className="nav-link"
             >
-              <i className="material-icons align-bottom">person</i>
+              <i className="material-icons align-bottom mr-1">person</i>
               Contact
             </NavLink>
           </li>
@@ -72,7 +71,7 @@ const Navbar = () => {
             type="button"
             // onClick="clickCounter()"
           >
-            <i className="material-icons align-bottom">save_alt</i>
+            <i className="material-icons align-bottom mr-1">save_alt</i>
             Resume
           </button>
         </div>

@@ -26,7 +26,9 @@ const AboutMe = () => {
 
           <a href="#first-event" className="btn btn-warning btn-lg mt-4">
             Show me the beginning
-            <span className="ml-1">👇</span>
+            <span className="ml-1" role="img" aria-label="Below">
+              👇
+            </span>
           </a>
         </div>
       </div>

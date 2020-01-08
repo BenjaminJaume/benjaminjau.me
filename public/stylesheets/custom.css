@@ -40,36 +40,19 @@
 
 /* INDEX */
 
-.carousel-item {
-  height: 92vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .main-text {
-  background: url(../images/computer-1.jpg);
-  background-size: cover;
-  height: 90vh;
   text-align: center;
   color: white;
-  padding: 40px 0;
-}
-
-.picture-of-me {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  max-width: 200px;
 }
 
 .title-index {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
+}
+
+.discover-heading {
+  color: var(--emerald);
+  font-weight: 1000;
 }
 
 #discover {
@@ -84,6 +67,7 @@
 #discover-divider {
   margin: 3rem 0;
   background-color: white;
+  width: 50vw;
 }
 
 .btn-more {
@@ -166,7 +150,7 @@ li.timeline-item::before {
 }
 
 .card-deck {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card-deck .card {
@@ -191,7 +175,7 @@ li.timeline-item::before {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .btn-more {
-    margin-bottom: autp;
+    margin-bottom: auto;
   }
 
   .icon-portfolio {
@@ -223,10 +207,6 @@ li.timeline-item::before {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #discover-heading {
-    margin-top: 7rem;
-  }
-
   .card-deck .card {
     -ms-flex: 0 0 24%;
     flex: 0 0 24%;
