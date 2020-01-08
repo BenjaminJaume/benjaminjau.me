@@ -122,9 +122,11 @@ class Portfolio extends Component {
                             More
                           </a>
                         ) : (
+                          /* eslint-disable */
                           <a className="btn btn-sm btn-outline-success disabled text-disabled">
                             More
                           </a>
+                          /* eslint-enable */
                         )}
 
                         {item.github !== "" ? (
@@ -137,9 +139,11 @@ class Portfolio extends Component {
                             <i className="fab fa-github"></i>
                           </a>
                         ) : (
+                          /* eslint-disable */
                           <a className="btn btn-sm btn-outline-success disabled">
                             <i className="fab fa-github"></i>
                           </a>
+                          /* eslint-enable */
                         )}
                         {item.link !== "" ? (
                           <a
@@ -151,9 +155,11 @@ class Portfolio extends Component {
                             <i className="fas fa-external-link-alt"></i>
                           </a>
                         ) : (
+                          /* eslint-disable */
                           <a className="btn btn-sm btn-outline-success disabled">
                             <i className="fas fa-external-link-alt"></i>
                           </a>
+                          /* eslint-enable */
                         )}
                       </div>
 

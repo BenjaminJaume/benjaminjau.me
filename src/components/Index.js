@@ -35,8 +35,7 @@ const Index = () => {
                 random person lost on the internet, this is for you. If you are
                 actually interested in me, let me tell you my story
               </p>
-              <a href="./about-me" className="btn btn-outline-success btn-more">
-                {/* <i className="fas fa-plus pr-2"></i> */}
+              <a href="./about-me" className="btn btn-success btn-more">
                 More
                 <i className="fas fa-arrow-right ml-1"></i>
               </a>
@@ -58,10 +57,7 @@ const Index = () => {
                 of different websites, applications and projects. There is a
                 list of all of them you can find on this page
               </p>
-              <a
-                href="./portfolio"
-                className="btn btn-outline-success btn-more"
-              >
+              <a href="./portfolio" className="btn btn-success btn-more">
                 More
                 <i className="fas fa-arrow-right ml-1"></i>
               </a>
@@ -82,7 +78,7 @@ const Index = () => {
                 You have the choice to download a PDF version of my resume, or
                 just having a quick look at it on my website by clicking here
               </p>
-              <a href="./resume" className="btn btn-outline-success btn-more">
+              <a href="./resume" className="btn btn-success btn-more">
                 More
                 <i className="fas fa-arrow-right ml-1"></i>
               </a>
@@ -102,7 +98,7 @@ const Index = () => {
               <p className="lead">
                 Fell free to send me a message if you want to contact me
               </p>
-              <a href="./contact" className="btn btn-outline-success btn-more">
+              <a href="./contact" className="btn btn-success btn-more">
                 More
                 <i className="fas fa-arrow-right ml-1"></i>
               </a>

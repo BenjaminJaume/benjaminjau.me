@@ -5,6 +5,13 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top navbar-dark">
       <a className="navbar-brand mx-auto pr-3" href="/">
+        <img
+          src="./images/benjaminjaume-logo.png"
+          alt="Benjamin Jaume"
+          className="d-inline-block align-top mr-2"
+          width="30"
+          height="30"
+        />
         Benjamin Jaume
       </a>
       <button
