@@ -1,55 +1,47 @@
 import React, { Component } from "react";
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import "./App.css";
 
-import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Index from "../components/Index";
+import AboutMe from "../components/AboutMe";
+import Portfolio from "../components/Portfolio";
+import Resume from "../components/Resume";
+import Contact from "../components/Contact";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      data: []
-    };
-  }
-  componentDidMount() {
-    fetch("https://benjaminjaume-api.herokuapp.com/api.json")
-      .then(res => res.json())
-      .then(res => this.setState({ data: res }))
-      .catch(err => console.log(err));
   }
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <div>
-          {this.state.data.map((item, i) => {
-            return (
-              <div key={i}>
-                <ul>
-                  <li>ID: {item.id}</li>
-                  <li>Name: {item.name}</li>
-                  <li>Description: {item.description}</li>
-                  <li>Languages: {item.languages}</li>
-                  <li>Github: {item.name}</li>
-                  <li>
-                    Link:{" "}
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {item.link}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            );
-          })}
-        </div>
-        INDEX PAGE
+      <Router>
+        <Navbar />
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about-me">
+            <AboutMe />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Index />
+          </Route>
+        </Switch>
+
         <Footer />
-      </div>
+      </Router>
     );
   }
 }
