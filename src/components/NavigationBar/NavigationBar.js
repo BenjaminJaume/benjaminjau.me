@@ -9,6 +9,7 @@ import {
   Person,
   SaveAlt
 } from "@material-ui/icons";
+import "./NavigationBar.css";
 
 const NavigationBar = () => {
   return (
@@ -17,7 +18,7 @@ const NavigationBar = () => {
       expand="lg"
       variant="dark"
       fixed="top"
-      style={{ borderBottom: "1px solid var(--emerald)" }}
+      className="navbar"
     >
       <Navbar.Brand as={NavLink} to="/" href="/">
         <img

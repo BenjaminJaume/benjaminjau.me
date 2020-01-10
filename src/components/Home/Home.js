@@ -20,11 +20,12 @@ const Index = () => {
             <section className="top-index">
               <h3 className="title-index animated fadeInDown">Hi!</h3>
 
-              <h1 className="pb-3 text-reset">
-                <span className="chevron">{`<`}</span>I am Benjamin Jaume
-                <span className="chevron">{` />`}</span>
-              </h1>
-
+              <div className="pb-3">
+                <h1>
+                  <span className="chevron">{`<`}</span>I am Benjamin Jaume
+                  <span className="chevron">{` />`}</span>
+                </h1>
+              </div>
               <div className="pb-4">
                 <div>
                   <h3 className="title-description">Front-End Developer</h3>
