@@ -17,8 +17,13 @@
 }
 
 .card-body {
-  margin: 1rem 0.5rem;
-  padding: 0;
+  padding: 1rem 0.5rem;
+  background-image: url("./computer-1.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.card-title {
 }
 
 .loading-text {

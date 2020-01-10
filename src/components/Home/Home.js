@@ -20,7 +20,7 @@ const Index = () => {
             <section className="top-index">
               <h3 className="title-index animated fadeInDown">Hi!</h3>
 
-              <h1 className="pb-3">
+              <h1 className="pb-3 text-reset">
                 <span className="chevron">{`<`}</span>I am Benjamin Jaume
                 <span className="chevron">{` />`}</span>
               </h1>
@@ -66,7 +66,7 @@ const Index = () => {
                 <span role="img" aria-label="Seek">
                   <FontAwesomeIcon
                     icon={faSearch}
-                    className="align-text-middle ml-1"
+                    className="align-text-middle ml-2"
                     size="2x"
                   />
                 </span>
@@ -85,7 +85,7 @@ const Index = () => {
                 <span role="img" aria-label="Books">
                   <FontAwesomeIcon
                     icon={faList}
-                    className="align-text-middle ml-1"
+                    className="align-text-middle ml-2"
                     size="2x"
                   />
                 </span>
@@ -104,7 +104,7 @@ const Index = () => {
                 <span role="img" aria-label="Parchment">
                   <FontAwesomeIcon
                     icon={faFile}
-                    className="align-text-middle ml-1"
+                    className="align-text-middle ml-2"
                     size="2x"
                   />
                 </span>
@@ -123,7 +123,7 @@ const Index = () => {
                 <span role="img" aria-label="Thumbs Up">
                   <FontAwesomeIcon
                     icon={faThumbsUp}
-                    className="align-text-middle ml-1"
+                    className="align-text-middle ml-2"
                     size="2x"
                   />
                 </span>

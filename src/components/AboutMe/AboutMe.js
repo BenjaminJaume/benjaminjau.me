@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -43,7 +45,8 @@ const AboutMe = () => {
                 <div className="timeline-arrow"></div>
                 <h5>Australia</h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2018-2019
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2018-2019
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   Let&apos;s discover the world!
@@ -53,7 +56,8 @@ const AboutMe = () => {
                 <div className="timeline-arrow"></div>
                 <h5>Let&apos;s travel</h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2017
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2017
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   The project came to an end so I had to find something else to
@@ -71,7 +75,8 @@ const AboutMe = () => {
                 <div className="timeline-arrow"></div>
                 <h5>My first job</h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2016
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2016
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   At the end of my studies, the company I did my apprenticeship
@@ -90,7 +95,8 @@ const AboutMe = () => {
                   Industrial Network
                 </h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2015 - 2016
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2015 - 2016
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   I continued my studies with an apprenticeship. This year was
@@ -114,7 +120,8 @@ const AboutMe = () => {
                   Advanced Technician Degree in Computer Science & Networks
                 </h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2013 - 2015
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2013 - 2015
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   Beginning of my studies at Uni. It is getting more technical
@@ -136,7 +143,8 @@ const AboutMe = () => {
                 <div className="timeline-arrow"></div>
                 <h5>Bachelor Degree in Digital & Information Systems</h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2011 - 2013
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2011 - 2013
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   I started a 2-years program in Computer Science, where I leart
@@ -160,7 +168,8 @@ const AboutMe = () => {
                 <div className="timeline-arrow"></div>
                 <h5>Where everything started</h5>
                 <span>
-                  <i className="far fa-clock mr-1"></i>2010
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2010
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   It all started when I was 15: my father gave me his Casio

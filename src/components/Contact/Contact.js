@@ -55,7 +55,7 @@ const Contact = () => {
               role="button"
               data-trigger="focus"
               data-toggle="popover"
-              data-placement="right"
+              data-placement="top"
               title="✉ Message me"
               data-content="<a href='https://api.whatsapp.com/send?phone=61432586316' target='_blank'>+61 4 32 586 316</a>"
               data-html="true"

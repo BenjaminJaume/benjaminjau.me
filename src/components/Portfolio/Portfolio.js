@@ -4,6 +4,7 @@ import { BreedingRhombusSpinner } from "react-epic-spinners";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 
 import "./Portfolio.css";
 
@@ -60,7 +61,6 @@ class Portfolio extends Component {
 
         {/* START CARD-DECK */}
         <div className="card-deck my-5 mx-3">
-          {/* NEW CARD */}
           {error ? (
             <div className="mx-auto text-center" style={{ color: "white" }}>
               <h3>Sorry for the inconvenience, but an error has occured.</h3>
@@ -84,28 +84,16 @@ class Portfolio extends Component {
             data.map((item, i) => {
               return (
                 <div key={i} className="card">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                  >
-                    <rect width="100%" height="100%" fill="#55595c"></rect>
-                  </svg>
-                  <div className="card-body">
-                    <h5 className="card-title text-center">{item.name}</h5>
+                  {/* NEW CARD */}
+                  <div className="card-body text-white bg-dark">
+                    <h5 className="card-title text-center text-white font-weight-bold">
+                      {item.name}
+                    </h5>
                     <p className="card-text text-center">{item.description}</p>
-                    <div className="d-flex justify-content-around flex-wrap">
+                    <div className="d-flex justify-content-around align-items-center flex-wrap">
                       {item.languages.map((language, i) => {
                         return (
-                          <div
-                            key={i}
-                            className="icon-portfolio font-weight-bold"
-                          >
+                          <div key={i} className="icon-portfolio">
                             <img
                               src={`./images/languages/${language
                                 .replace(" ", "-")
@@ -120,7 +108,7 @@ class Portfolio extends Component {
                       })}
                     </div>
                   </div>
-                  <div className="card-footer">
+                  <div className="card-footer bg-light">
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
                         {item.github !== "" ? (
@@ -175,7 +163,7 @@ class Portfolio extends Component {
                       </div>
 
                       <small className="text-muted">
-                        <i className="far fa-clock mr-1"></i>
+                        <FontAwesomeIcon icon={faClock} className="mr-1" />
                         {item.date.substring(0, 4)}
                       </small>
                     </div>
