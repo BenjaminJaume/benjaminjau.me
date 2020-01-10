@@ -1,0 +1,100 @@
+2020-01-10T02:38:14.324440+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=benjaminjaume.herokuapp.com request_id=d62278f3-a5f6-4407-810a-99b479755968 fwd="201.192.183.118" dyno=web.1 connect=1ms service=17ms status=200 bytes=1119 protocol=http
+2020-01-10T02:38:55.457796+00:00 heroku[router]: at=info method=GET path="/" host=benjaminjaume.herokuapp.com request_id=d5e6836f-8dcb-4946-ab5a-5631acabb44e fwd="201.192.183.118" dyno=web.1 connect=1ms service=13ms status=200 bytes=1119 protocol=http
+2020-01-10T02:38:55.699779+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/animate.min.css" host=benjaminjaume.herokuapp.com request_id=025dd525-ec3e-482d-bdd7-2a280d7b7f81 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=238 protocol=http
+2020-01-10T02:38:55.707464+00:00 heroku[router]: at=info method=GET path="/stylesheets/styles.css" host=benjaminjaume.herokuapp.com request_id=0e2741f8-246f-44d8-844e-bac4d29210cb fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=http
+2020-01-10T02:38:55.696377+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/all.min.css" host=benjaminjaume.herokuapp.com request_id=fd8598b8-8ed1-45ec-89e6-f7220826fd29 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=238 protocol=http
+2020-01-10T02:38:55.626536+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css" host=benjaminjaume.herokuapp.com request_id=b584ed38-406e-4b93-b1a3-0b1e714e9729 fwd="201.192.183.118" dyno=web.1 connect=1ms service=6ms status=304 bytes=239 protocol=http
+2020-01-10T02:38:55.691230+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/material-icons.css" host=benjaminjaume.herokuapp.com request_id=76253114-b75d-4b6f-a626-5a2671c0bb7c fwd="201.192.183.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=237 protocol=http
+2020-01-10T02:38:55.732165+00:00 heroku[router]: at=info method=GET path="/stylesheets/custom.css" host=benjaminjaume.herokuapp.com request_id=ce7c1f2e-a2de-4596-9779-6d8b89f55ec5 fwd="201.192.183.118" dyno=web.1 connect=1ms service=9ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:55.694291+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/google-fonts.css" host=benjaminjaume.herokuapp.com request_id=3511b99f-bb64-4215-b5c3-1b30017f1a6e fwd="201.192.183.118" dyno=web.1 connect=1ms service=5ms status=304 bytes=237 protocol=http
+2020-01-10T02:38:55.788651+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js" host=benjaminjaume.herokuapp.com request_id=97f3d87c-0a5a-41a2-b676-61c72412bb9f fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=238 protocol=http
+2020-01-10T02:38:55.781511+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js" host=benjaminjaume.herokuapp.com request_id=4e91e415-4e08-4d11-ba99-f6ec5b7dca15 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=238 protocol=http
+2020-01-10T02:38:55.792246+00:00 heroku[router]: at=info method=GET path="/scripts/custom.js" host=benjaminjaume.herokuapp.com request_id=1f840314-06c7-40a2-b254-f48898b0d995 fwd="201.192.183.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236 protocol=http
+2020-01-10T02:38:55.776050+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/jquery-3.4.1.js" host=benjaminjaume.herokuapp.com request_id=a65ee0c1-8865-4e4f-9e3f-f8ad8af55a53 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=239 protocol=http
+2020-01-10T02:38:55.972966+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js.map" host=benjaminjaume.herokuapp.com request_id=38ff9973-19e6-44bf-9593-6b4d5da89a69 fwd="201.192.183.118" dyno=web.1 connect=1ms service=7ms status=404 bytes=442 protocol=http
+2020-01-10T02:38:55.981134+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js.map" host=benjaminjaume.herokuapp.com request_id=64c23536-0c03-4752-958e-0eed307273d0 fwd="201.192.183.118" dyno=web.1 connect=1ms service=3ms status=404 bytes=445 protocol=http
+2020-01-10T02:38:55.838049+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=benjaminjaume.herokuapp.com request_id=51cb8ccf-2fe4-40a9-82ab-817f115b9a81 fwd="201.192.183.118" dyno=web.1 connect=1ms service=7ms status=304 bytes=176 protocol=http
+2020-01-10T02:38:55.859804+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=benjaminjaume.herokuapp.com request_id=9564b8ec-57f7-4ccc-a89d-f17f1bb04073 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=175 protocol=http
+2020-01-10T02:38:56.131563+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css.map" host=benjaminjaume.herokuapp.com request_id=cc4ad4fb-23f3-462b-aa27-cb2d8ef73612 fwd="201.192.183.118" dyno=web.1 connect=2ms service=8ms status=404 bytes=450 protocol=http
+2020-01-10T02:38:55.977046+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=benjaminjaume.herokuapp.com request_id=6ffcf10f-748f-4a39-9f9d-c4af6f972e46 fwd="201.192.183.118" dyno=web.1 connect=1ms service=6ms status=200 bytes=6729 protocol=http
+2020-01-10T02:38:56.203349+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=995f3174-7320-4e17-b120-480421da1977 fwd="201.192.183.118" dyno=web.1 connect=1ms service=19ms status=200 bytes=11856 protocol=http
+2020-01-10T02:38:56.309677+00:00 heroku[router]: at=info method=GET path="/images/benjaminjaume-logo.png" host=benjaminjaume.herokuapp.com request_id=003c3d72-e1a9-449e-8287-ab733c0ead5d fwd="201.192.183.118" dyno=web.1 connect=1ms service=4ms status=304 bytes=237 protocol=http
+2020-01-10T02:38:55.798133+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=benjaminjaume.herokuapp.com request_id=38223e99-6961-4166-9040-925b0087a405 fwd="201.192.183.118" dyno=web.1 connect=1ms service=1ms status=304 bytes=174 protocol=http
+2020-01-10T02:38:56.420976+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=33343ac9-1589-4b7d-8a52-3864b83e29a6 fwd="201.192.183.118" dyno=web.1 connect=1ms service=236ms status=200 bytes=553099 protocol=http
+2020-01-10T02:38:56.443785+00:00 heroku[router]: at=info method=GET path="/stylesheets/webfonts/fa-brands-400.woff2" host=benjaminjaume.herokuapp.com request_id=a3d7740f-dd68-4d84-b279-5a9472ae1da3 fwd="201.192.183.118" dyno=web.1 connect=14ms service=6ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:56.586333+00:00 heroku[router]: at=info method=GET path="/stylesheets/webfonts/fa-solid-900.woff" host=benjaminjaume.herokuapp.com request_id=058289a0-fa03-4d7d-9c10-a7b10b634f20 fwd="201.192.183.118" dyno=web.1 connect=1ms service=9ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:56.708808+00:00 heroku[router]: at=info method=GET path="/stylesheets/webfonts/fa-solid-900.ttf" host=benjaminjaume.herokuapp.com request_id=1c4aade0-bece-468f-8c55-103d2961496e fwd="201.192.183.118" dyno=web.1 connect=1ms service=5ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:56.360590+00:00 heroku[router]: at=info method=GET path="/stylesheets/webfonts/fa-solid-900.woff2" host=benjaminjaume.herokuapp.com request_id=ac4d62e2-6c03-4e8e-aeac-345558f39e7f fwd="201.192.183.118" dyno=web.1 connect=1ms service=9ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:56.920096+00:00 heroku[router]: at=info method=GET path="/stylesheets/webfonts/fa-brands-400.woff" host=benjaminjaume.herokuapp.com request_id=8caa6ceb-9716-46f9-b5bf-d5a0173e06d1 fwd="201.192.183.118" dyno=web.1 connect=14ms service=13ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:57.050706+00:00 heroku[router]: at=info method=GET path="/stylesheets/webfonts/fa-brands-400.ttf" host=benjaminjaume.herokuapp.com request_id=1a17ac3e-07b1-4aef-959b-9c318865eb11 fwd="201.192.183.118" dyno=web.1 connect=1ms service=10ms status=304 bytes=173 protocol=http
+2020-01-10T02:38:57.201096+00:00 heroku[router]: at=info method=GET path="/images/favicon/favicon-32x32.png" host=benjaminjaume.herokuapp.com request_id=ace72bbd-b9c3-4cc8-a484-cdc0c31e77d1 fwd="201.192.183.118" dyno=web.1 connect=1ms service=5ms status=200 bytes=2744 protocol=http
+2020-01-10T02:39:39.000000+00:00 app[api]: Build started by user benjamin.jaume@gmail.com
+2020-01-10T02:39:51.307492+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=benjaminjaume.herokuapp.com request_id=ea5497fe-edf8-4a01-b994-60093d01aac9 fwd="201.192.183.118" dyno=web.1 connect=1ms service=55010ms status=503 bytes= protocol=http
+2020-01-10T02:41:44.645126+00:00 app[api]: Deploy 43f7b8bc by user benjamin.jaume@gmail.com
+2020-01-10T02:41:44.645126+00:00 app[api]: Release v12 created by user benjamin.jaume@gmail.com
+2020-01-10T02:41:45.143890+00:00 heroku[web.1]: Restarting
+2020-01-10T02:41:45.147295+00:00 heroku[web.1]: State changed from up to starting
+2020-01-10T02:41:46.243766+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-01-10T02:41:46.352122+00:00 heroku[web.1]: Process exited with status 143
+2020-01-10T02:41:55.000000+00:00 app[api]: Build succeeded
+2020-01-10T02:42:07.814177+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-01-10T02:42:10.954395+00:00 app[web.1]: 
+2020-01-10T02:42:10.954411+00:00 app[web.1]: > benjaminjaume@0.1.0 start /app
+2020-01-10T02:42:10.954414+00:00 app[web.1]: > react-scripts start
+2020-01-10T02:42:10.954417+00:00 app[web.1]: 
+2020-01-10T02:42:14.709509+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Project is running at http://172.17.6.30/
+2020-01-10T02:42:14.710392+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: webpack output is served from /
+2020-01-10T02:42:14.710669+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /app/public
+2020-01-10T02:42:14.710867+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /index.html
+2020-01-10T02:42:14.711295+00:00 app[web.1]: Starting the development server...
+2020-01-10T02:42:14.711298+00:00 app[web.1]: 
+2020-01-10T02:42:15.126042+00:00 heroku[web.1]: State changed from starting to up
+2020-01-10T02:42:47.634749+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=289dfecf-78df-40b1-a4c0-4570f5228949 fwd="201.192.183.118" dyno=web.1 connect=0ms service=31491ms status=503 bytes=0 protocol=http
+2020-01-10T02:43:18.629652+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/favicon.ico" host=benjaminjaume.herokuapp.com request_id=41a04a73-8ef0-4468-9f9d-341cf28e9eec fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
+2020-01-10T02:44:44.866758+00:00 heroku[web.1]: Process exited with status 1
+2020-01-10T02:44:44.713929+00:00 app[web.1]: 
+2020-01-10T02:44:44.713946+00:00 app[web.1]: <--- Last few GCs --->
+2020-01-10T02:44:44.713948+00:00 app[web.1]: 
+2020-01-10T02:44:44.713952+00:00 app[web.1]: [30:0x4060950]   152668 ms: Mark-sweep 238.5 (258.0) -> 238.0 (258.3) MB, 263.2 / 0.1 ms  (average mu = 0.141, current mu = 0.059) allocation failure scavenge might not succeed
+2020-01-10T02:44:44.713955+00:00 app[web.1]: [30:0x4060950]   153031 ms: Mark-sweep 238.7 (258.3) -> 238.3 (258.5) MB, 347.2 / 0.1 ms  (average mu = 0.095, current mu = 0.045) allocation failure scavenge might not succeed
+2020-01-10T02:44:44.713956+00:00 app[web.1]: 
+2020-01-10T02:44:44.713958+00:00 app[web.1]: 
+2020-01-10T02:44:44.713960+00:00 app[web.1]: <--- JS stacktrace --->
+2020-01-10T02:44:44.713962+00:00 app[web.1]: 
+2020-01-10T02:44:44.713966+00:00 app[web.1]: ==== JS stack trace =========================================
+2020-01-10T02:44:44.713968+00:00 app[web.1]: 
+2020-01-10T02:44:44.713971+00:00 app[web.1]: 0: ExitFrame [pc: 0x1376259]
+2020-01-10T02:44:44.713973+00:00 app[web.1]: Security context: 0x04a5c70c08a1 <JSObject>
+2020-01-10T02:44:44.713976+00:00 app[web.1]: 1: new Map(aka Map) [0x4a5c70c5e51](this=0x023821880589 <the_hole>)
+2020-01-10T02:44:44.713978+00:00 app[web.1]: 2: ConstructFrame [pc: 0x12f223a]
+2020-01-10T02:44:44.713980+00:00 app[web.1]: 3: StubFrame [pc: 0x13d6a00]
+2020-01-10T02:44:44.713983+00:00 app[web.1]: 4: getImportVar [0x25da03f6e671] [/app/node_modules/webpack/lib/dependencies/HarmonyImportDependency.js:36] [bytecode=0x2f24499e9f19 offset=26](this=0x39ab216a2361 <Dependency map = 0xe45468d2951>)
+2020-01-10T02:44:44.713985+00:00 app[web.1]: 5: apply [0x25da...
+2020-01-10T02:44:44.713987+00:00 app[web.1]: 
+2020-01-10T02:44:44.713998+00:00 app[web.1]: FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+2020-01-10T02:44:44.714049+00:00 app[web.1]: 
+2020-01-10T02:44:44.726579+00:00 app[web.1]: Writing Node.js report to file: report.20200110.024444.30.0.001.json
+2020-01-10T02:44:44.726584+00:00 app[web.1]: Node.js report completed
+2020-01-10T02:44:44.727190+00:00 app[web.1]: 1: 0x9dab70 node::Abort() [node]
+2020-01-10T02:44:44.727769+00:00 app[web.1]: 2: 0x9dbd26 node::OnFatalError(char const*, char const*) [node]
+2020-01-10T02:44:44.728323+00:00 app[web.1]: 3: 0xb3b18e v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+2020-01-10T02:44:44.728899+00:00 app[web.1]: 4: 0xb3b509 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+2020-01-10T02:44:44.729581+00:00 app[web.1]: 5: 0xce68a5  [node]
+2020-01-10T02:44:44.730229+00:00 app[web.1]: 6: 0xce6f36 v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]
+2020-01-10T02:44:44.730887+00:00 app[web.1]: 7: 0xcf2dca v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]
+2020-01-10T02:44:44.731536+00:00 app[web.1]: 8: 0xcf3cd5 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+2020-01-10T02:44:44.732192+00:00 app[web.1]: 9: 0xcf66e8 v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]
+2020-01-10T02:44:44.732835+00:00 app[web.1]: 10: 0xcbd017 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [node]
+2020-01-10T02:44:44.733562+00:00 app[web.1]: 11: 0xff307b v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]
+2020-01-10T02:44:44.734355+00:00 app[web.1]: 12: 0x1376259  [node]
+2020-01-10T02:44:44.787123+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-01-10T02:44:44.787575+00:00 app[web.1]: npm ERR! errno 1
+2020-01-10T02:44:44.789200+00:00 app[web.1]: npm ERR! benjaminjaume@0.1.0 start: `react-scripts start`
+2020-01-10T02:44:44.789416+00:00 app[web.1]: npm ERR! Exit status 1
+2020-01-10T02:44:44.789665+00:00 app[web.1]: npm ERR!
+2020-01-10T02:44:44.789896+00:00 app[web.1]: npm ERR! Failed at the benjaminjaume@0.1.0 start script.
+2020-01-10T02:44:44.790162+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-01-10T02:44:44.801504+00:00 app[web.1]: 
+2020-01-10T02:44:44.801812+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-01-10T02:44:44.802098+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-01-10T02_44_44_791Z-debug.log
+2020-01-10T02:44:44.879718+00:00 heroku[web.1]: State changed from up to crashed
