@@ -1,100 +1,100 @@
-2020-01-10T03:41:09.642250+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
-2020-01-10T03:41:14.458945+00:00 heroku[web.1]: Idling
-2020-01-10T03:41:14.462311+00:00 heroku[web.1]: State changed from up to down
-2020-01-10T03:41:15.618030+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2020-01-10T03:41:16.132892+00:00 heroku[web.1]: Process exited with status 0
-2020-01-10T04:10:49.000000+00:00 app[api]: Build started by user benjamin.jaume@gmail.com
-2020-01-10T04:10:50.169879+00:00 heroku[web.1]: Unidling
-2020-01-10T04:10:50.183390+00:00 heroku[web.1]: State changed from down to starting
-2020-01-10T04:11:05.366891+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-01-10T04:11:07.565731+00:00 app[web.1]: 
-2020-01-10T04:11:07.565747+00:00 app[web.1]: > benjaminjaume@0.1.0 start /app
-2020-01-10T04:11:07.565750+00:00 app[web.1]: > react-scripts --max_old_space_size=4096 start
-2020-01-10T04:11:07.565752+00:00 app[web.1]: 
-2020-01-10T04:11:09.759654+00:00 heroku[web.1]: State changed from starting to up
-2020-01-10T04:11:09.715909+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Project is running at http://172.16.31.226/
-2020-01-10T04:11:09.716325+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: webpack output is served from /
-2020-01-10T04:11:09.716414+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /app/public
-2020-01-10T04:11:09.716493+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /index.html
-2020-01-10T04:11:09.716666+00:00 app[web.1]: Starting the development server...
-2020-01-10T04:11:09.716669+00:00 app[web.1]: 
-2020-01-10T04:11:42.252228+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=63253c3e-e90f-4110-91f9-b2d44b50ae26 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:11:58.372418+00:00 heroku[web.1]: Process running mem=600M(117.3%)
-2020-01-10T04:11:58.372418+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
-2020-01-10T04:12:13.267610+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/favicon.ico" host=benjaminjaume.herokuapp.com request_id=5fea3570-dbd2-4827-877e-82e1b5640be8 fwd="201.192.183.118" dyno=web.1 connect=0ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:12:19.519456+00:00 app[web.1]: Compiled successfully!
-2020-01-10T04:12:19.521176+00:00 app[web.1]: 
-2020-01-10T04:12:19.521639+00:00 app[web.1]: You can now view benjaminjaume in the browser.
-2020-01-10T04:12:19.521678+00:00 app[web.1]: 
-2020-01-10T04:12:19.521927+00:00 app[web.1]: Local:            http://localhost:54680/
-2020-01-10T04:12:19.522030+00:00 app[web.1]: On Your Network:  http://172.16.31.226:54680/
-2020-01-10T04:12:19.522081+00:00 app[web.1]: 
-2020-01-10T04:12:19.522133+00:00 app[web.1]: Note that the development build is not optimized.
-2020-01-10T04:12:19.522218+00:00 app[web.1]: To create a production build, use npm run build.
-2020-01-10T04:12:19.522301+00:00 app[web.1]: 
-2020-01-10T04:12:20.348426+00:00 heroku[web.1]: Process running mem=703M(137.5%)
-2020-01-10T04:12:20.348426+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
-2020-01-10T04:12:42.771140+00:00 heroku[web.1]: Process running mem=717M(140.0%)
-2020-01-10T04:12:42.771140+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
-2020-01-10T04:13:04.338987+00:00 heroku[web.1]: Process running mem=540M(105.5%)
-2020-01-10T04:13:04.338987+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
-2020-01-10T04:13:07.836965+00:00 heroku[router]: at=info method=GET path="/" host=benjaminjaume.herokuapp.com request_id=8d6917a5-5382-48ac-9fc3-2f6a9282c86c fwd="201.192.183.118" dyno=web.1 connect=0ms service=14ms status=200 bytes=944 protocol=http
-2020-01-10T04:13:08.042472+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/animate.min.css" host=benjaminjaume.herokuapp.com request_id=4ebdc006-2763-405d-b9de-d4b5c4db99b7 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=238 protocol=http
-2020-01-10T04:13:08.068970+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/jquery-3.4.1.js" host=benjaminjaume.herokuapp.com request_id=9ac69923-f8c2-4f23-9deb-efd20c53c8e8 fwd="201.192.183.118" dyno=web.1 connect=1ms service=5ms status=304 bytes=239 protocol=http
-2020-01-10T04:13:07.963558+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css" host=benjaminjaume.herokuapp.com request_id=1425fd1b-b7d5-40c3-b2fe-e8b1509d45b2 fwd="201.192.183.118" dyno=web.1 connect=0ms service=4ms status=304 bytes=239 protocol=http
-2020-01-10T04:13:08.066238+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=benjaminjaume.herokuapp.com request_id=dafd1711-8375-42b1-b203-e60884c4088d fwd="201.192.183.118" dyno=web.1 connect=0ms service=4ms status=304 bytes=174 protocol=http
-2020-01-10T04:13:08.057409+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/google-fonts.css" host=benjaminjaume.herokuapp.com request_id=2197458c-3b43-4eb7-aef6-473d37c94ddd fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=http
-2020-01-10T04:13:08.148381+00:00 heroku[router]: at=info method=GET path="/scripts/custom.js" host=benjaminjaume.herokuapp.com request_id=0e982391-d395-4f2c-aca7-c409043ef1fd fwd="201.192.183.118" dyno=web.1 connect=0ms service=1ms status=304 bytes=236 protocol=http
-2020-01-10T04:13:08.060230+00:00 heroku[router]: at=info method=GET path="/stylesheets/styles.css" host=benjaminjaume.herokuapp.com request_id=98621576-4f55-4fca-b809-529098f81b69 fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=237 protocol=http
-2020-01-10T04:13:08.135631+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js" host=benjaminjaume.herokuapp.com request_id=ed82e8c9-73f8-482f-a434-0ab972897526 fwd="201.192.183.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=238 protocol=http
-2020-01-10T04:13:08.064032+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js" host=benjaminjaume.herokuapp.com request_id=0a31f74f-efed-4862-bc06-d3b37765b7e7 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=238 protocol=http
-2020-01-10T04:13:08.331442+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=benjaminjaume.herokuapp.com request_id=bf3872e9-b72a-4406-895b-31c9776ca118 fwd="201.192.183.118" dyno=web.1 connect=0ms service=180ms status=304 bytes=176 protocol=http
-2020-01-10T04:13:08.335951+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=benjaminjaume.herokuapp.com request_id=27f60354-9fe4-4f77-8635-850b84b9cd61 fwd="201.192.183.118" dyno=web.1 connect=0ms service=179ms status=304 bytes=175 protocol=http
-2020-01-10T04:13:09.326475+00:00 heroku[router]: at=info method=GET path="/images/benjaminjaume-logo.png" host=benjaminjaume.herokuapp.com request_id=db77d782-aea5-42b5-a127-8b0d05276d9e fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=http
-2020-01-10T04:13:09.481938+00:00 heroku[router]: at=info method=GET path="/fonts/great-vibes-latin.woff2" host=benjaminjaume.herokuapp.com request_id=344f12ee-4504-40b2-8a88-adfcdbfb955c fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=238 protocol=http
-2020-01-10T04:13:09.479057+00:00 heroku[router]: at=info method=GET path="/fonts/quicksand.woff2" host=benjaminjaume.herokuapp.com request_id=0a259955-43f5-4c12-b7ee-830350df9eb8 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=238 protocol=http
-2020-01-10T04:13:09.630463+00:00 heroku[router]: at=info method=GET path="/images/favicon/favicon-32x32.png" host=benjaminjaume.herokuapp.com request_id=45d17db0-8d46-4023-8ddd-8132f794875e fwd="201.192.183.118" dyno=web.1 connect=0ms service=5ms status=200 bytes=2744 protocol=http
-2020-01-10T04:13:10.763588+00:00 heroku[web.1]: Restarting
-2020-01-10T04:13:10.767692+00:00 heroku[web.1]: State changed from up to starting
-2020-01-10T04:13:10.570845+00:00 app[api]: Release v14 created by user benjamin.jaume@gmail.com
-2020-01-10T04:13:10.570845+00:00 app[api]: Deploy afb613ba by user benjamin.jaume@gmail.com
-2020-01-10T04:13:11.500425+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2020-01-10T04:13:11.512235+00:00 heroku[router]: at=info method=GET path="/sockjs-node" host=benjaminjaume.herokuapp.com request_id=346fffb5-4229-4e82-9847-e08fba0e530e fwd="201.192.183.118" dyno=web.1 connect=0ms service=2559ms status=101 bytes=129 protocol=http
-2020-01-10T04:13:11.733944+00:00 heroku[web.1]: Process exited with status 0
-2020-01-10T04:13:21.000000+00:00 app[api]: Build succeeded
-2020-01-10T04:13:30.018849+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-01-10T04:13:32.658630+00:00 app[web.1]: 
-2020-01-10T04:13:32.658653+00:00 app[web.1]: > benjaminjaume@0.1.0 start /app
-2020-01-10T04:13:32.658655+00:00 app[web.1]: > react-scripts --max_old_space_size=4096 start
-2020-01-10T04:13:32.658657+00:00 app[web.1]: 
-2020-01-10T04:13:36.443573+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Project is running at http://172.18.136.178/
-2020-01-10T04:13:36.444195+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: webpack output is served from /
-2020-01-10T04:13:36.444287+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /app/public
-2020-01-10T04:13:36.444375+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /index.html
-2020-01-10T04:13:36.444610+00:00 app[web.1]: Starting the development server...
-2020-01-10T04:13:36.444613+00:00 app[web.1]: 
-2020-01-10T04:13:36.788419+00:00 heroku[web.1]: State changed from starting to up
-2020-01-10T04:14:07.907871+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/javascript.png" host=benjaminjaume.herokuapp.com request_id=66530d21-38f4-4bb8-b55a-e1cf7fc8ed90 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:07.915641+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/c++.png" host=benjaminjaume.herokuapp.com request_id=6e8b982a-6673-432b-89a6-f999925bebfd fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:07.914139+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/arduino.png" host=benjaminjaume.herokuapp.com request_id=dcf7f7fb-3861-4b43-821f-6af8bbef1a39 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:07.911361+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/visual-studio.png" host=benjaminjaume.herokuapp.com request_id=2898fd27-39c7-484e-8bdf-d58c6b3b74b7 fwd="201.192.183.118" dyno=web.1 connect=0ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:07.915282+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/css.png" host=benjaminjaume.herokuapp.com request_id=a93e1fdf-019b-46f7-89e9-cbb38f6c871c fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:08.235620+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/html.png" host=benjaminjaume.herokuapp.com request_id=4f646ff7-fa0d-4e0d-a205-6d42921b723a fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:38.137572+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/qgis.png" host=benjaminjaume.herokuapp.com request_id=4df0bdcf-4215-4fac-890e-97913c038f12 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:38.149309+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/android.png" host=benjaminjaume.herokuapp.com request_id=d99593a3-c7a2-48c1-86b0-57fd89a6905b fwd="201.192.183.118" dyno=web.1 connect=3ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:38.146628+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/eclipse.png" host=benjaminjaume.herokuapp.com request_id=152870a4-3c48-471f-a159-088fe09e391b fwd="201.192.183.118" dyno=web.1 connect=3ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:38.138168+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/autocad.png" host=benjaminjaume.herokuapp.com request_id=8aa73f12-7b55-4e04-bb6a-7e2c7c6d3dd5 fwd="201.192.183.118" dyno=web.1 connect=2ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:38.136904+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/portfolio" host=benjaminjaume.herokuapp.com request_id=3212dd41-5b12-433d-b577-861e4e183332 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:14:38.424261+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/java.png" host=benjaminjaume.herokuapp.com request_id=b1edd253-ed1f-49e7-bee4-13656f46b5fc fwd="201.192.183.118" dyno=web.1 connect=3ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:02.609264+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=1ee1ebff-53a6-4179-a936-d93b77f58b0a fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:08.328931+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/bash.png" host=benjaminjaume.herokuapp.com request_id=66ba1777-1081-498c-9f47-109a41668183 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:08.341293+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/batch.png" host=benjaminjaume.herokuapp.com request_id=e8cf87b4-8f50-43ec-9878-40c9ef547fc8 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:08.328277+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/c.png" host=benjaminjaume.herokuapp.com request_id=f081ab9f-5b46-4495-8b1e-747581240a87 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:08.335028+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/linux.png" host=benjaminjaume.herokuapp.com request_id=768e9a63-fc17-4649-a2f3-74e4e139e54d fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:08.618209+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/images/languages/windows7.png" host=benjaminjaume.herokuapp.com request_id=da1785e6-472c-4564-a701-cea9246c4422 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:13.210090+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=2627e77b-2ab6-4b5b-9f9e-1eb65774f598 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0 protocol=https
-2020-01-10T04:15:22.332488+00:00 heroku[web.1]: Process running mem=623M(121.8%)
-2020-01-10T04:15:22.332602+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
-2020-01-10T04:15:28.689754+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=a99a626b-f5b7-462f-bde1-5946a58fd96e fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:32.788210+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=4785d2e1-2541-4e4c-99aa-3a3f9962a153 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30005ms status=503 bytes=0 protocol=http
-2020-01-10T04:15:33.377031+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/favicon.ico" host=benjaminjaume.herokuapp.com request_id=98806894-a3ed-45e4-949c-3cdaff2d8879 fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
+2020-01-10T04:21:50.370939+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:22:11.583167+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:22:11.583167+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:22:32.805025+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:22:32.805122+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:22:53.937743+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:22:53.937837+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:23:15.190920+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:23:15.191033+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:23:35.927297+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:23:35.927369+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:23:56.865984+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:23:56.865984+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:24:17.642461+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:24:17.642530+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:24:38.342419+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:24:38.342491+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:24:59.972935+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:24:59.972935+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:25:20.912645+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:25:20.912742+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:25:41.960310+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:25:41.960409+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:26:03.223767+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:26:03.223767+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:26:24.220082+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:26:24.220131+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:26:45.412214+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:26:45.412214+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:27:06.228111+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:27:06.228194+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:27:27.414694+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:27:27.414758+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:27:48.705440+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:27:48.705572+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:28:08.812978+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:28:08.813083+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:28:29.340880+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:28:29.340880+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:28:50.311077+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:28:50.311077+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:29:11.429648+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:29:11.429772+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:29:32.398432+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:29:32.398501+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:29:53.579826+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:29:53.579911+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:30:14.413042+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:30:14.413042+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:30:19.000000+00:00 app[api]: Build started by user benjamin.jaume@gmail.com
+2020-01-10T04:30:35.380038+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:30:35.380038+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:30:56.903469+00:00 heroku[web.1]: Process running mem=541M(105.8%)
+2020-01-10T04:30:56.903555+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:31:11.263914+00:00 heroku[router]: at=info method=GET path="/" host=benjaminjaume.herokuapp.com request_id=cd2376c5-bc1f-452f-9b44-4a47fac06aef fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=173 protocol=http
+2020-01-10T04:31:11.426183+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css" host=benjaminjaume.herokuapp.com request_id=34a15aa7-aba4-4f49-ab11-ed2434b3e8ba fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=239 protocol=http
+2020-01-10T04:31:11.516064+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js" host=benjaminjaume.herokuapp.com request_id=d0657e82-9878-47de-ae46-7b180cdc88c3 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=238 protocol=http
+2020-01-10T04:31:11.497303+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/google-fonts.css" host=benjaminjaume.herokuapp.com request_id=a08f95cc-fea4-44cc-84fd-a9a354be6459 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=http
+2020-01-10T04:31:11.510904+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/animate.min.css" host=benjaminjaume.herokuapp.com request_id=f47d85c7-bd42-471b-960f-544cf33bdef7 fwd="201.192.183.118" dyno=web.1 connect=0ms service=1ms status=304 bytes=238 protocol=http
+2020-01-10T04:31:11.516397+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js" host=benjaminjaume.herokuapp.com request_id=7254171f-e2a8-4ba4-9aab-b0122a08d93a fwd="201.192.183.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=238 protocol=http
+2020-01-10T04:31:11.514271+00:00 heroku[router]: at=info method=GET path="/stylesheets/styles.css" host=benjaminjaume.herokuapp.com request_id=2853b8a5-7cbe-4a8b-a018-54550c692a00 fwd="201.192.183.118" dyno=web.1 connect=0ms service=1ms status=304 bytes=237 protocol=http
+2020-01-10T04:31:11.515227+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/jquery-3.4.1.js" host=benjaminjaume.herokuapp.com request_id=b5514088-c2e1-47ca-938a-70f1c933ea02 fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=239 protocol=http
+2020-01-10T04:31:11.581840+00:00 heroku[router]: at=info method=GET path="/scripts/custom.js" host=benjaminjaume.herokuapp.com request_id=39bb520d-5f5a-4c63-b056-89ea29f63638 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=236 protocol=http
+2020-01-10T04:31:11.781214+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=benjaminjaume.herokuapp.com request_id=ddb0a2da-069d-4cd3-bdb4-d4f25cdf99c2 fwd="201.192.183.118" dyno=web.1 connect=1ms service=177ms status=304 bytes=174 protocol=http
+2020-01-10T04:31:11.779165+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=benjaminjaume.herokuapp.com request_id=7e717392-2288-4797-8c1f-e9037e417270 fwd="201.192.183.118" dyno=web.1 connect=0ms service=174ms status=304 bytes=176 protocol=http
+2020-01-10T04:31:11.780514+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=benjaminjaume.herokuapp.com request_id=5e3d5ff4-f511-4f1f-b0d7-5ee72ecf33a4 fwd="201.192.183.118" dyno=web.1 connect=0ms service=175ms status=304 bytes=175 protocol=http
+2020-01-10T04:31:12.753350+00:00 heroku[router]: at=info method=GET path="/images/benjaminjaume-logo.png" host=benjaminjaume.herokuapp.com request_id=bdf1898d-5ed5-4d4c-a984-da80c9e93ea8 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=http
+2020-01-10T04:31:12.912941+00:00 heroku[router]: at=info method=GET path="/fonts/great-vibes-latin.woff2" host=benjaminjaume.herokuapp.com request_id=96684720-fe14-4b5e-b9c3-f836c36691c4 fwd="201.192.183.118" dyno=web.1 connect=1ms service=4ms status=304 bytes=238 protocol=http
+2020-01-10T04:31:12.911081+00:00 heroku[router]: at=info method=GET path="/fonts/quicksand.woff2" host=benjaminjaume.herokuapp.com request_id=91a7bd19-31e8-443b-b279-b41d77b534a5 fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=238 protocol=http
+2020-01-10T04:31:17.507064+00:00 heroku[web.1]: Process running mem=542M(106.0%)
+2020-01-10T04:31:17.507064+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:31:38.520647+00:00 heroku[web.1]: Process running mem=542M(106.0%)
+2020-01-10T04:31:38.520770+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:31:59.600873+00:00 heroku[web.1]: Process running mem=542M(106.0%)
+2020-01-10T04:31:59.601000+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:32:07.400793+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=benjaminjaume.herokuapp.com request_id=ca0b5558-2490-4d15-a43a-965edd738afd fwd="201.192.183.118" dyno=web.1 connect=0ms service=55003ms status=503 bytes= protocol=http
+2020-01-10T04:32:20.424580+00:00 heroku[web.1]: Process running mem=542M(106.0%)
+2020-01-10T04:32:20.424580+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2020-01-10T04:32:37.642263+00:00 heroku[web.1]: Restarting
+2020-01-10T04:32:37.649349+00:00 heroku[web.1]: State changed from up to starting
+2020-01-10T04:32:37.384679+00:00 app[api]: Deploy 3bb6c9f9 by user benjamin.jaume@gmail.com
+2020-01-10T04:32:37.384679+00:00 app[api]: Release v16 created by user benjamin.jaume@gmail.com
+2020-01-10T04:32:38.499453+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-01-10T04:32:38.705104+00:00 heroku[web.1]: Process exited with status 143
+2020-01-10T04:32:48.000000+00:00 app[api]: Build succeeded
+2020-01-10T04:33:01.453097+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-01-10T04:33:04.938789+00:00 app[web.1]: 
+2020-01-10T04:33:04.938861+00:00 app[web.1]: > benjaminjaume@0.1.0 start /app
+2020-01-10T04:33:04.938864+00:00 app[web.1]: > react-scripts --max_old_space_size=4096 start
+2020-01-10T04:33:04.938866+00:00 app[web.1]: 
+2020-01-10T04:33:09.675201+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Project is running at http://172.19.107.18/
+2020-01-10T04:33:09.676014+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: webpack output is served from /
+2020-01-10T04:33:09.676174+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /app/public
+2020-01-10T04:33:09.676336+00:00 app[web.1]: [34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /index.html
+2020-01-10T04:33:09.676689+00:00 app[web.1]: Starting the development server...
+2020-01-10T04:33:09.676694+00:00 app[web.1]: 
+2020-01-10T04:33:09.954205+00:00 heroku[web.1]: State changed from starting to up
+2020-01-10T04:33:41.182711+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=756a7657-c34f-4508-9d98-6863eb5bd36c fwd="201.192.183.118" dyno=web.1 connect=1ms service=30001ms status=503 bytes=0 protocol=http
+2020-01-10T04:34:11.952230+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/favicon.ico" host=benjaminjaume.herokuapp.com request_id=a416d75d-ecaf-47f6-944c-ae35b13976ba fwd="201.192.183.118" dyno=web.1 connect=0ms service=30000ms status=503 bytes=0 protocol=http
+2020-01-10T04:34:21.349682+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/" host=benjaminjaume.herokuapp.com request_id=edb25197-56ae-42e5-8138-cf37ddbd1dd4 fwd="201.192.183.118" dyno=web.1 connect=0ms service=30001ms status=503 bytes=0 protocol=http
