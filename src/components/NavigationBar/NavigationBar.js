@@ -1,6 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button } from "react-bootstrap";
+import {
+  Home,
+  Info,
+  Folder,
+  ListAlt,
+  Person,
+  SaveAlt
+} from "@material-ui/icons";
 
 const NavigationBar = () => {
   return (
@@ -25,29 +33,29 @@ const NavigationBar = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">
           <Nav.Link as={NavLink} to="/" href="/">
-            <i className="material-icons align-bottom mr-1">home</i>
+            <Home className="align-bottom mr-1" />
             Home
           </Nav.Link>
           <Nav.Link as={NavLink} to="/about-me" href="/about-me">
-            <i className="material-icons align-bottom mr-1">info</i>
+            <Info className="align-bottom mr-1" />
             About me
           </Nav.Link>
           <Nav.Link as={NavLink} to="/portfolio" href="/portfolio">
-            <i className="material-icons align-bottom mr-1">folder</i>
+            <Folder className="align-bottom mr-1" />
             Portfolio
           </Nav.Link>
           <Nav.Link as={NavLink} to="/resume" href="/resume">
-            <i className="material-icons align-bottom mr-1">list_alt</i>
+            <ListAlt className="align-bottom mr-1" />
             Resume
           </Nav.Link>
           <Nav.Link as={NavLink} to="/contact" href="/contact">
-            <i className="material-icons align-bottom mr-1">person</i>
+            <Person className="align-bottom mr-1" />
             Contact
           </Nav.Link>
         </Nav>
         <div className="download-button d-flex justify-content-center">
           <Button variant="success">
-            <i className="material-icons align-bottom mr-1">save_alt</i>
+            <SaveAlt className="align-bottom mr-1" />
             Resume
           </Button>
         </div>

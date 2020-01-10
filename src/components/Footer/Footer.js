@@ -1,4 +1,14 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithubSquare,
+  faFacebookSquare,
+  faWhatsappSquare
+} from "@fortawesome/free-brands-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleUp } from "@fortawesome/free-regular-svg-icons";
+
 import "./Footer.css";
 
 class Footer extends Component {
@@ -8,9 +18,10 @@ class Footer extends Component {
         <footer id="footer" className="bg-light p-5">
           <p id="message-bottom">
             Created with{" "}
-            <span role="img" aria-label="Love">
-              ❤
-            </span>{" "}
+            <FontAwesomeIcon
+              icon={faHeart}
+              style={{ color: "var(--red-pigment)" }}
+            />{" "}
             by Benjamin Jaume
           </p>
 
@@ -21,7 +32,7 @@ class Footer extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
             <a
@@ -30,7 +41,7 @@ class Footer extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github-square"></i>
+              <FontAwesomeIcon icon={faGithubSquare} />
             </a>
 
             <a
@@ -39,7 +50,7 @@ class Footer extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-facebook-square"></i>
+              <FontAwesomeIcon icon={faFacebookSquare} />
             </a>
 
             {/* eslint-disable */}
@@ -54,7 +65,7 @@ class Footer extends Component {
               data-content="<a href='https://api.whatsapp.com/send?phone=61432586316' target='_blank'>+61 4 32 586 316</a>"
               data-html="true"
             >
-              <i className="fab fa-whatsapp-square"></i>
+              <FontAwesomeIcon icon={faWhatsappSquare} />
             </a>
             {/* eslint-enable */}
           </div>
@@ -63,14 +74,12 @@ class Footer extends Component {
             {/* eslint-disable */}
             <a
               id="back-top-button"
-              className="btn btn-outline-success"
+              className="btn btn-warning"
               href="#"
               role="button"
             >
               TOP
-              <span className="ml-2" role="img" aria-label="Top">
-                ☝
-              </span>
+              <FontAwesomeIcon icon={faArrowAltCircleUp} className="ml-2" />
             </a>
             {/* eslint-enable */}
           </div>

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { BreedingRhombusSpinner } from "react-epic-spinners";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 import "./Portfolio.css";
 
@@ -144,12 +147,12 @@ class Portfolio extends Component {
                             rel="noopener noreferrer"
                             className="btn btn-sm btn-outline-success"
                           >
-                            <i className="fab fa-github"></i>
+                            <FontAwesomeIcon icon={faGithub} />
                           </a>
                         ) : (
                           /* eslint-disable */
                           <a className="btn btn-sm btn-outline-success disabled">
-                            <i className="fab fa-github"></i>
+                            <FontAwesomeIcon icon={faGithub} />
                           </a>
                           /* eslint-enable */
                         )}
@@ -160,12 +163,12 @@ class Portfolio extends Component {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <i className="fas fa-external-link-alt"></i>
+                            <FontAwesomeIcon icon={faExternalLinkAlt} />
                           </a>
                         ) : (
                           /* eslint-disable */
                           <a className="btn btn-sm btn-outline-success disabled">
-                            <i className="fas fa-external-link-alt"></i>
+                            <FontAwesomeIcon icon={faExternalLinkAlt} />
                           </a>
                           /* eslint-enable */
                         )}

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "../components/NavigationBar/NavigationBar";
 import Footer from "../components/Footer/Footer";
-import Index from "../components/Index/Index";
+import Home from "../components/Home/Home";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Resume from "../components/Resume/Resume";
@@ -30,7 +30,7 @@ const App = () => {
           <Contact />
         </Route>
         <Route path="/">
-          <Index />
+          <Home />
         </Route>
       </Switch>
 

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Resume.css";
+
 const Resume = () => {
   return (
     <>
@@ -15,14 +17,8 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="container py-5 text-center">
-        <img
-          src="https://clipground.com/images/traffic-cone-clipart-20.jpg"
-          alt="Under construction"
-          width="30%"
-          className="img-fluid"
-        />
-        <h3 style={{ color: "white" }}>This page is under construction</h3>
+      <div className="container py-5 text-center" style={{ color: "white" }}>
+        Under construction
       </div>
     </>
   );

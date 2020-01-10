@@ -1,4 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithubSquare,
+  faFacebookSquare,
+  faWhatsappSquare
+} from "@fortawesome/free-brands-svg-icons";
 import "./Contact.css";
 
 const Contact = () => {
@@ -20,7 +27,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
             <a
@@ -29,7 +36,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github-square"></i>
+              <FontAwesomeIcon icon={faGithubSquare} />
             </a>
 
             <a
@@ -38,7 +45,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-facebook-square"></i>
+              <FontAwesomeIcon icon={faFacebookSquare} />
             </a>
 
             {/* eslint-disable */}
@@ -53,7 +60,7 @@ const Contact = () => {
               data-content="<a href='https://api.whatsapp.com/send?phone=61432586316' target='_blank'>+61 4 32 586 316</a>"
               data-html="true"
             >
-              <i className="fab fa-whatsapp-square"></i>
+              <FontAwesomeIcon icon={faWhatsappSquare} />
             </a>
             {/* eslint-enable */}
           </div>
@@ -95,7 +102,7 @@ const Contact = () => {
                     <textarea
                       id="form_message"
                       name="message"
-                      className="form-control"
+                      className="form-control textarea-contact"
                       placeholder="Message for me *"
                       data-error="Please, leave us a message."
                       required
