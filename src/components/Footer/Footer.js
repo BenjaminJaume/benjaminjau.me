@@ -1,21 +1,20 @@
 import React, { Component } from "react";
+import "./Footer.css";
 
 class Footer extends Component {
   render() {
     return (
       <>
         <footer id="footer" className="bg-light p-5">
-          <div id="message-bottom" className="message-bottom">
-            <span>
-              Created with{" "}
-              <span role="img" aria-label="Love">
-                ❤
-              </span>{" "}
-              by Benjamin Jaume
-            </span>
-          </div>
+          <p id="message-bottom">
+            Created with{" "}
+            <span role="img" aria-label="Love">
+              ❤
+            </span>{" "}
+            by Benjamin Jaume
+          </p>
 
-          <div className="brand-icons py-3">
+          <div className="pb-3">
             <a
               href="https://www.linkedin.com/in/benjamin-jaume/"
               className="linkedin-icon px-1"

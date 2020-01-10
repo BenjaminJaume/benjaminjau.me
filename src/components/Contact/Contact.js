@@ -1,0 +1,122 @@
+import React from "react";
+import "./Contact.css";
+
+const Contact = () => {
+  return (
+    <div>
+      <div className="row">
+        <div className="column-contact col-lg-6 p-5 text-center border">
+          <h1 className="contact-message">Get in touch with me</h1>
+
+          <h3>I am currently available for hire.</h3>
+          <p>
+            So feel free to send me a message on social medias or via the
+            contact form
+          </p>
+          <div className="brand-icons-contact">
+            <a
+              href="https://www.linkedin.com/in/benjamin-jaume/"
+              className="linkedin-icon px-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://github.com/BenjaminJaume"
+              className="github-icon px-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github-square"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/ben.jaume"
+              className="facebook-icon px-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook-square"></i>
+            </a>
+
+            {/* eslint-disable */}
+            <a
+              tabIndex="0"
+              className="whatsapp-icon px-1"
+              role="button"
+              data-trigger="focus"
+              data-toggle="popover"
+              data-placement="right"
+              title="✉ Message me"
+              data-content="<a href='https://api.whatsapp.com/send?phone=61432586316' target='_blank'>+61 4 32 586 316</a>"
+              data-html="true"
+            >
+              <i className="fab fa-whatsapp-square"></i>
+            </a>
+            {/* eslint-enable */}
+          </div>
+        </div>
+
+        <div className="col-lg-6">
+          <div className="container py-5">
+            <h1 className="contact-form-title text-center pb-4">
+              Contact Form
+            </h1>
+            <div className="row mx-auto">
+              <div className="col-lg-12">
+                <form id="contact-form" method="post" action="contact.php">
+                  <div className="form-group">
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Full Name *"
+                      data-error="Full name is required."
+                      required
+                    />
+                    <div className="help-block with-errors"></div>
+                  </div>
+                  <div className="form-group">
+                    <input
+                      id="form_email"
+                      type="email"
+                      name="email"
+                      className="form-control"
+                      placeholder="Email *"
+                      data-error="Valid email is required."
+                      required
+                    />
+                    <div className="help-block with-errors"></div>
+                  </div>
+                  <div className="form-group">
+                    <textarea
+                      id="form_message"
+                      name="message"
+                      className="form-control"
+                      placeholder="Message for me *"
+                      data-error="Please, leave us a message."
+                      required
+                    ></textarea>
+                    <div className="help-block with-errors"></div>
+                  </div>
+                  <div className="text-center">
+                    <input
+                      type="submit"
+                      className="btn btn-success btn-send"
+                      value="Send message"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

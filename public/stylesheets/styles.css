@@ -2,24 +2,23 @@
   /* Flat UI Palette v1 */
   --midnight-blue: #2c3e50;
   --wet-asphalt: #34495e;
-  --emerald: #2ecc71;
   --dracula-orchid: #2d3436;
   --black-pearl: #1e272e;
   --good-night: #485460;
   --silver: #bdc3c7;
   --clouds: #ecf0f1;
+  --concrete: #95a5a6;
   --belize-hole: #2980b9;
   --blue-marina: #12cbc4;
+  --indigo: #3f00ff;
+  --peter-river: #3498db;
+  --emerald: #2ecc71;
   --alizarin: #e74c3c;
   --red-pigment: #ea2027;
   --carrot: #e67e22;
   --sun-flower: #f1c40f;
-  --peter-river: #3498db;
   --amethyst: #9b59b6;
-  --concrete: #95a5a6;
 
-  /* Colors */
-  --indigo: #3f00ff;
   --linkedin-color: #0077b5;
   --github-color: #24292e;
   --facebook-color: #4267b2;
@@ -33,8 +32,11 @@ html {
 
 body {
   background-color: var(--black-pearl);
-  font-family: "Quicksand", cursive;
+  font-family: "Quicksand", Calibri, "Trebuchet MS", sans-serif, cursive;
   padding-top: 56px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Extending the orginal class from Bootstrap */
@@ -83,33 +85,38 @@ a.btn {
   border-radius: 40px;
 }
 
-footer {
-  color: var(--silver);
-  text-align: center;
-  /* padding: 50px 0; */
+.download-button {
+  margin: 1rem;
 }
 
-footer a {
-  font-size: 3em;
-  text-decoration: none;
-  color: var(--silver);
+.download-button button {
+  border-radius: 40px;
 }
 
-footer a:hover {
-  text-decoration: none;
+.linkedin-icon:hover {
+  color: var(--linkedin-color);
 }
 
-/* Reset the default font for the message at the bottom */
-#message-bottom {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.github-icon:hover {
+  color: var(--github-color);
 }
 
-#message-bottom:hover {
-  -webkit-animation: heartBeat 1s;
-  animation: heartBeat 1s;
-  cursor: default;
+.facebook-icon:hover {
+  color: var(--facebook-color);
+}
+
+.whatsapp-icon:hover {
+  color: var(--whatsapp-color);
+  cursor: pointer;
+}
+
+.whatsapp-icon:focus {
+  /* border-color: #ccc; */
+  outline: 0;
+}
+
+.br-50 {
+  border-radius: 50%;
 }
 
 /* I can't select the body of the popover for
@@ -143,6 +150,9 @@ the WhatsApp number, so I am making a general rule */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .download-button {
+    margin: 0;
+  }
 }
 
 /* Column management */

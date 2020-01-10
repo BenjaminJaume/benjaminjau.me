@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { BreedingRhombusSpinner } from "react-epic-spinners";
 
+import "./Portfolio.css";
+
 class Portfolio extends Component {
   constructor(props) {
     super(props);
@@ -12,14 +14,17 @@ class Portfolio extends Component {
     };
   }
   componentDidMount() {
+    // const { data } = this.state;
+
     this.setState({ isLoading: true });
 
+    // if (data === []) {
     fetch("https://benjaminjaume-api.herokuapp.com/api.json")
       .then(response => {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error("Something went wrong ...");
+          throw new Error("Something went wrong.");
         }
       })
       .then(response =>
@@ -29,6 +34,7 @@ class Portfolio extends Component {
         })
       )
       .catch(error => this.setState({ error, isLoading: false }));
+    // }
   }
   render() {
     const { data, isLoading, error } = this.state;
@@ -53,13 +59,15 @@ class Portfolio extends Component {
         <div className="card-deck my-5 mx-3">
           {/* NEW CARD */}
           {error ? (
-            <div className="mx-auto text-center">
-              <p style={{ color: "white" }}>
-                <p>Sorry for the inconvenience, but an error has occured.</p>
-                <p>
-                  Please <Link to="/contact">contact me</Link>.
-                </p>
-              </p>
+            <div className="mx-auto text-center" style={{ color: "white" }}>
+              <h3>Sorry for the inconvenience, but an error has occured.</h3>
+              <h3>
+                Please let me know about this by{" "}
+                <Link to="/contact" className="link-contact-me">
+                  contacting me
+                </Link>
+                .
+              </h3>
             </div>
           ) : (
             ""

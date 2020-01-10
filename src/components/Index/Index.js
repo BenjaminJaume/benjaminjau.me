@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ButtonMore from "../components/ButtonMore/ButtonMore";
+import ButtonMore from "../ButtonMore/ButtonMore";
+
+import "./Index.css";
 
 const Index = () => {
   return (

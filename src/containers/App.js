@@ -1,14 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import "./App.css";
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Index from "../components/Index";
-import AboutMe from "../components/AboutMe";
-import Portfolio from "../components/Portfolio";
-import Resume from "../components/Resume";
-import Contact from "../components/Contact";
+import Navbar from "../components/NavigationBar/NavigationBar";
+import Footer from "../components/Footer/Footer";
+import Index from "../components/Index/Index";
+import AboutMe from "../components/AboutMe/AboutMe";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Resume from "../components/Resume/Resume";
+import Contact from "../components/Contact/Contact";
 
 const App = () => {
   return (
