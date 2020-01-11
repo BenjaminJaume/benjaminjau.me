@@ -52,6 +52,11 @@ if (!isDev && cluster.isMaster) {
     pool.connect(function(err, client, done) {
       if (err) {
         console.log("Can not connect to the DB because of " + err);
+        console.log("config.host:", config.host);
+        console.log("config.database:", config.database);
+        console.log("config.user:", config.user);
+        console.log("config.port:", config.port);
+        res.status(400).send({});
       }
       client.query("SELECT * FROM projects", function(err, result) {
         done();
@@ -75,7 +80,7 @@ if (!isDev && cluster.isMaster) {
     console.error(
       `Node ${
         isDev ? "dev server" : "cluster worker " + process.pid
-      }: listening on http://localhost:${PORT}`
+      }: listening on ${PORT}`
     );
   });
 }
