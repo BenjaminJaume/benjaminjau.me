@@ -61,7 +61,7 @@ class Portfolio extends Component {
 
         {/* START CARD-DECK */}
         <div className="card-deck my-5 mx-3">
-          {error ? (
+          {error || data.error ? (
             <div className="mx-auto text-center" style={{ color: "white" }}>
               <h3>Sorry for the inconvenience, but an error has occured.</h3>
               <h3>
