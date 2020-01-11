@@ -44,6 +44,13 @@ Benjamin Jaume {
     FontAwesome
     Git
     Github
+
+    React
+    Express
+    Heroku
+    Deploy a production version of React
+    HTTPS
+    Postgres
 }
 
 Graphic Interface Skylys {
