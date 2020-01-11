@@ -43,7 +43,7 @@ if (!isDev && cluster.isMaster) {
         console.log("Can not connect to the DB because of " + err);
         res.status(400).send({ error: true });
       }
-      client.query("SELECT * FROM projects ORDER BY date ASC", function(
+      client.query("SELECT * FROM projects ORDER BY date DESC", function(
         err,
         result
       ) {
