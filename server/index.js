@@ -16,7 +16,7 @@ const config = {
   ssl: true,
   dialect: "postgres",
   dialectOptions: {
-    ssl: { require: false }
+    ssl: { require: true }
   }
 };
 
