@@ -23,6 +23,7 @@ class Portfolio extends Component {
     this.setState({ isLoading: true });
 
     // if (data === []) {
+    // fetch("http://localhost:5000/api.json")
     fetch("https://benjaminjaume.herokuapp.com/api.json")
       .then(response => {
         if (response.ok) {
