@@ -8,11 +8,16 @@ const pg = require("pg");
 
 //Database Config .env
 const config = {
-  user: process.env.PG_USER,
-  database: process.env.PG_DATABASE,
-  password: process.env.PG_PASS,
-  port: process.env.PG_PORT,
-  host: process.env.PG_HOST,
+  // host: process.env.PG_HOST,
+  host: "ec2-107-21-101-177.compute-1.amazonaws.com",
+  // database: process.env.PG_DATABASE,
+  database: "d3crhc05b4utv4",
+  // port: process.env.PG_PORT,
+  port: "5432",
+  // user: process.env.PG_USER,
+  user: "idhcngimhlmzdn",
+  // password: process.env.PG_PASS,
+  password: "72532c9c3a2dd7d3764e9cfc9f0a7d87fe7570ceaf1c18ebc2717f72c6382cf7",
   ssl: true,
   dialect: "postgres",
   dialectOptions: {
@@ -52,10 +57,6 @@ if (!isDev && cluster.isMaster) {
     pool.connect(function(err, client, done) {
       if (err) {
         console.log("Can not connect to the DB because of " + err);
-        console.log("config.host:", config.host);
-        console.log("config.database:", config.database);
-        console.log("config.user:", config.user);
-        console.log("config.port:", config.port);
         res.status(400).send({});
       }
       client.query("SELECT * FROM projects", function(err, result) {
