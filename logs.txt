@@ -1,0 +1,100 @@
+2020-01-11T16:41:23.842683+00:00 heroku[router]: at=info method=GET path="/stylesheets/styles.css" host=benjaminjaume.herokuapp.com request_id=a14d6665-0959-4fa2-aea1-9e09f006401f fwd="201.192.183.118" dyno=web.1 connect=1ms service=8ms status=304 bytes=269 protocol=https
+2020-01-11T16:41:23.849408+00:00 heroku[router]: at=info method=GET path="/static/css/main.567ef2cc.chunk.css" host=benjaminjaume.herokuapp.com request_id=de666b60-5465-4942-a8c3-ee3db89d2d78 fwd="201.192.183.118" dyno=web.1 connect=0ms service=4ms status=304 bytes=269 protocol=https
+2020-01-11T16:41:23.845550+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js" host=benjaminjaume.herokuapp.com request_id=41ef1f67-0ee1-4377-826d-315c6a9ae72b fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=270 protocol=https
+2020-01-11T16:41:24.069458+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js.map" host=benjaminjaume.herokuapp.com request_id=e1b7b043-20a8-44b1-986f-778af7f1032e fwd="201.192.183.118" dyno=web.1 connect=0ms service=6ms status=304 bytes=269 protocol=https
+2020-01-11T16:41:24.090150+00:00 heroku[router]: at=info method=GET path="/static/css/main.567ef2cc.chunk.css.map" host=benjaminjaume.herokuapp.com request_id=fe6dc0de-778a-474a-9107-e2a3a9a0b57f fwd="201.192.183.118" dyno=web.1 connect=1ms service=4ms status=304 bytes=270 protocol=https
+2020-01-11T16:41:24.097577+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css.map" host=benjaminjaume.herokuapp.com request_id=682cf215-df8e-4a2a-b071-7504096e13c1 fwd="201.192.183.118" dyno=web.1 connect=2ms service=6ms status=304 bytes=269 protocol=https
+2020-01-11T16:41:23.959667+00:00 heroku[router]: at=info method=GET path="/static/js/main.f8f51b1d.chunk.js" host=benjaminjaume.herokuapp.com request_id=13163620-36fc-4851-8488-d4eed22edc98 fwd="201.192.183.118" dyno=web.1 connect=1ms service=6ms status=304 bytes=270 protocol=https
+2020-01-11T16:41:24.064327+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js.map" host=benjaminjaume.herokuapp.com request_id=7cce70d8-972d-4840-91f0-a7b57bbf2191 fwd="201.192.183.118" dyno=web.1 connect=0ms service=8ms status=304 bytes=269 protocol=https
+2020-01-11T16:41:24.159541+00:00 heroku[router]: at=info method=GET path="/images/benjaminjaume-logo.png" host=benjaminjaume.herokuapp.com request_id=7f9404c8-4077-4602-bc13-fe4d32f2b95b fwd="201.192.183.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=269 protocol=https
+2020-01-11T16:41:24.209462+00:00 heroku[router]: at=info method=GET path="/fonts/great-vibes-latin.woff2" host=benjaminjaume.herokuapp.com request_id=7e456035-dcca-4976-a783-4fa575d445fa fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=270 protocol=https
+2020-01-11T16:41:24.214785+00:00 heroku[router]: at=info method=GET path="/static/js/main.f8f51b1d.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=6e4334bb-5e48-4ebb-9a4a-ab6c12648ebc fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2020-01-11T16:41:24.221002+00:00 heroku[router]: at=info method=GET path="/static/js/2.506b6e8c.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=26edda3f-e3b4-4827-abef-80f2cc4507ae fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=304 bytes=272 protocol=https
+2020-01-11T16:41:24.215935+00:00 heroku[router]: at=info method=GET path="/fonts/quicksand.woff2" host=benjaminjaume.herokuapp.com request_id=fda2e272-2b14-4d3e-a372-d0f066f1e4ff fwd="201.192.183.118" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2020-01-11T16:41:24.584674+00:00 heroku[router]: at=info method=GET path="/images/favicon/manifest.json" host=benjaminjaume.herokuapp.com request_id=7b0a1bdd-2163-48fa-bba2-bbac3476ce60 fwd="201.192.183.118" dyno=web.1 connect=0ms service=2ms status=304 bytes=269 protocol=https
+2020-01-11T16:56:50.000000+00:00 app[api]: Build started by user benjamin.jaume@gmail.com
+2020-01-11T16:58:50.493618+00:00 app[api]: Release v24 created by user benjamin.jaume@gmail.com
+2020-01-11T16:58:50.493618+00:00 app[api]: Deploy 0f4d964b by user benjamin.jaume@gmail.com
+2020-01-11T16:58:50.934718+00:00 heroku[web.1]: Restarting
+2020-01-11T16:58:50.950664+00:00 heroku[web.1]: State changed from up to starting
+2020-01-11T16:58:51.726807+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-01-11T16:58:51.826824+00:00 heroku[web.1]: Process exited with status 143
+2020-01-11T16:59:01.000000+00:00 app[api]: Build succeeded
+2020-01-11T16:59:09.295382+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-01-11T16:59:13.206500+00:00 app[web.1]: 
+2020-01-11T16:59:13.206571+00:00 app[web.1]: > benjaminjaume@1.0.0 start /app
+2020-01-11T16:59:13.206617+00:00 app[web.1]: > node server
+2020-01-11T16:59:13.206620+00:00 app[web.1]: 
+2020-01-11T16:59:13.508766+00:00 app[web.1]: Node cluster master 23 is running
+2020-01-11T16:59:14.446833+00:00 heroku[web.1]: State changed from starting to up
+2020-01-11T16:59:14.245256+00:00 app[web.1]: Node cluster worker 30: listening on http://localhost:32257
+2020-01-11T16:59:14.659597+00:00 app[web.1]: Node cluster worker 31: listening on http://localhost:32257
+2020-01-11T16:59:14.664859+00:00 app[web.1]: Node cluster worker 49: listening on http://localhost:32257
+2020-01-11T16:59:14.728436+00:00 app[web.1]: Node cluster worker 72: listening on http://localhost:32257
+2020-01-11T16:59:14.745838+00:00 app[web.1]: Node cluster worker 51: listening on http://localhost:32257
+2020-01-11T16:59:14.759504+00:00 app[web.1]: Node cluster worker 53: listening on http://localhost:32257
+2020-01-11T16:59:14.767572+00:00 app[web.1]: Node cluster worker 34: listening on http://localhost:32257
+2020-01-11T16:59:14.810830+00:00 app[web.1]: Node cluster worker 59: listening on http://localhost:32257
+2020-01-11T16:59:15.860636+00:00 heroku[router]: at=info method=GET path="/" host=benjaminjaume.herokuapp.com request_id=06215aac-7f6c-498d-bc9d-751fa4575284 fwd="201.192.183.118" dyno=web.1 connect=1ms service=32ms status=200 bytes=3256 protocol=https
+2020-01-11T16:59:16.010743+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/stylesheets/librairies/bootstrap.min.css" host=benjaminjaume.herokuapp.com request_id=ce2e143f-f151-440b-b74e-f6a7e2065e42 fwd="201.192.183.118" dyno=web.1 connect=1ms service=23ms status=499 bytes= protocol=https
+2020-01-11T16:59:16.073235+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js.map" host=benjaminjaume.herokuapp.com request_id=8ed7a56a-4d5b-4108-8057-486af8a81a07 fwd="201.192.183.118" dyno=web.1 connect=0ms service=31ms status=200 bytes=3256 protocol=https
+2020-01-11T16:59:16.073071+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js.map" host=benjaminjaume.herokuapp.com request_id=a94a12c3-4b00-42d2-b9fd-3128b94a0d20 fwd="201.192.183.118" dyno=web.1 connect=0ms service=34ms status=200 bytes=3256 protocol=https
+2020-01-11T16:59:16.199531+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/google-fonts.css" host=benjaminjaume.herokuapp.com request_id=2b8653a4-56dc-4d77-9fe4-2332bf92edd4 fwd="201.192.183.118" dyno=web.1 connect=1ms service=32ms status=200 bytes=1502 protocol=https
+2020-01-11T16:59:16.318225+00:00 heroku[router]: at=info method=GET path="/static/css/main.567ef2cc.chunk.css" host=benjaminjaume.herokuapp.com request_id=a283af6f-fe32-4bb6-9061-30e6bf61b5ea fwd="201.192.183.118" dyno=web.1 connect=0ms service=8ms status=200 bytes=2925 protocol=https
+2020-01-11T16:59:16.201907+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/animate.min.css" host=benjaminjaume.herokuapp.com request_id=90be6622-b52a-40d4-b79b-98959da90ea3 fwd="201.192.183.118" dyno=web.1 connect=0ms service=35ms status=200 bytes=58451 protocol=https
+2020-01-11T16:59:16.107800+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css" host=benjaminjaume.herokuapp.com request_id=401ea6c0-6ac1-4021-bb42-25ffea4f047c fwd="201.192.183.118" dyno=web.1 connect=0ms service=42ms status=200 bytes=156082 protocol=https
+2020-01-11T16:59:16.182827+00:00 heroku[router]: at=info method=GET path="/static/js/2.506b6e8c.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=44b0b588-013d-4956-9cc6-531acfb63397 fwd="201.192.183.118" dyno=web.1 connect=0ms service=143ms status=200 bytes=2402613 protocol=https
+2020-01-11T16:59:16.393453+00:00 heroku[router]: at=info method=GET path="/static/js/main.85ae8ec3.chunk.js" host=benjaminjaume.herokuapp.com request_id=92c55ef4-83e8-4595-aae3-400fabe5c634 fwd="201.192.183.118" dyno=web.1 connect=1ms service=13ms status=200 bytes=22334 protocol=https
+2020-01-11T16:59:16.258437+00:00 heroku[router]: at=info method=GET path="/stylesheets/styles.css" host=benjaminjaume.herokuapp.com request_id=25324c0d-ace1-45b6-9437-a9ac3f385065 fwd="201.192.183.118" dyno=web.1 connect=1ms service=4ms status=200 bytes=3666 protocol=https
+2020-01-11T16:59:16.278251+00:00 heroku[router]: at=info method=GET path="/static/js/main.f8f51b1d.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=2d7f8974-c78d-41f3-bda0-8bef5fab0bdb fwd="201.192.183.118" dyno=web.1 connect=5ms service=11ms status=200 bytes=3256 protocol=https
+2020-01-11T16:59:16.413965+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/jquery-3.4.1.js" host=benjaminjaume.herokuapp.com request_id=ea83518e-c9e6-4ab5-9bb2-f19bee96bc0f fwd="201.192.183.118" dyno=web.1 connect=2ms service=27ms status=200 bytes=280702 protocol=https
+2020-01-11T16:59:16.499554+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js" host=benjaminjaume.herokuapp.com request_id=718bfa6f-5cb4-4f04-b05d-7afd103583c6 fwd="201.192.183.118" dyno=web.1 connect=0ms service=9ms status=200 bytes=58408 protocol=https
+2020-01-11T16:59:16.415488+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js" host=benjaminjaume.herokuapp.com request_id=cbdd3275-446a-40dd-bd37-8297f2e1fd72 fwd="201.192.183.118" dyno=web.1 connect=1ms service=7ms status=200 bytes=21340 protocol=https
+2020-01-11T16:59:16.603867+00:00 heroku[router]: at=info method=GET path="/static/js/2.506b6e8c.chunk.js" host=benjaminjaume.herokuapp.com request_id=a5f81603-1ba4-41fb-9cca-9581c2c9084a fwd="201.192.183.118" dyno=web.1 connect=1ms service=21ms status=200 bytes=378882 protocol=https
+2020-01-11T16:59:16.657202+00:00 heroku[router]: at=info method=GET path="/stylesheets/librairies/bootstrap.min.css.map" host=benjaminjaume.herokuapp.com request_id=4ded5ac7-4b17-4756-ba93-9d690c2b09a1 fwd="201.192.183.118" dyno=web.1 connect=0ms service=5ms status=200 bytes=3256 protocol=https
+2020-01-11T16:59:16.583264+00:00 heroku[router]: at=info method=GET path="/scripts/custom.js" host=benjaminjaume.herokuapp.com request_id=e9c0a2c8-272c-4dd4-927b-76a959d0fffd fwd="201.192.183.118" dyno=web.1 connect=0ms service=4ms status=200 bytes=392 protocol=https
+2020-01-11T16:59:16.677902+00:00 heroku[router]: at=info method=GET path="/static/css/main.567ef2cc.chunk.css.map" host=benjaminjaume.herokuapp.com request_id=0638eb9f-c9d5-4e4d-aa4a-9d2b42c2d08e fwd="201.192.183.118" dyno=web.1 connect=0ms service=3ms status=200 bytes=9233 protocol=https
+2020-01-11T16:59:16.952946+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/bootstrap.min.js.map" host=benjaminjaume.herokuapp.com request_id=e619ab48-320f-473b-9e7e-aee3f9286877 fwd="201.192.183.118" dyno=web.1 connect=0ms service=6ms status=304 bytes=269 protocol=https
+2020-01-11T16:59:16.950822+00:00 heroku[router]: at=info method=GET path="/scripts/librairies/popper.min.js.map" host=benjaminjaume.herokuapp.com request_id=48a86f6e-bd7e-456b-95e9-d883aff1ed89 fwd="201.192.183.118" dyno=web.1 connect=1ms service=4ms status=304 bytes=269 protocol=https
+2020-01-11T16:59:17.385795+00:00 heroku[router]: at=info method=GET path="/images/benjaminjaume-logo.png" host=benjaminjaume.herokuapp.com request_id=b867f4e1-c6e9-40df-afd9-eb1536259fcc fwd="201.192.183.118" dyno=web.1 connect=1ms service=3ms status=200 bytes=981 protocol=https
+2020-01-11T16:59:17.390152+00:00 heroku[router]: at=info method=GET path="/static/js/2.506b6e8c.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=bc662618-a1ed-4a1f-bffb-1a16bc078f74 fwd="201.192.183.118" dyno=web.1 connect=0ms service=4ms status=304 bytes=272 protocol=https
+2020-01-11T16:59:17.411447+00:00 heroku[router]: at=info method=GET path="/fonts/quicksand.woff2" host=benjaminjaume.herokuapp.com request_id=5ada7a4d-1a31-4b07-8140-dc963343c488 fwd="201.192.183.118" dyno=web.1 connect=1ms service=6ms status=200 bytes=14041 protocol=https
+2020-01-11T16:59:17.387327+00:00 heroku[router]: at=info method=GET path="/static/js/main.85ae8ec3.chunk.js.map" host=benjaminjaume.herokuapp.com request_id=714af233-37c0-4e16-b74c-4b55880d9f05 fwd="201.192.183.118" dyno=web.1 connect=0ms service=5ms status=200 bytes=48766 protocol=https
+2020-01-11T16:59:17.410550+00:00 heroku[router]: at=info method=GET path="/fonts/great-vibes-latin.woff2" host=benjaminjaume.herokuapp.com request_id=bbe58155-21f1-4a8b-bf85-9623223fd377 fwd="201.192.183.118" dyno=web.1 connect=0ms service=5ms status=200 bytes=19833 protocol=https
+2020-01-11T16:59:17.634006+00:00 heroku[router]: at=info method=GET path="/images/favicon/favicon-32x32.png" host=benjaminjaume.herokuapp.com request_id=3d9d03bf-f3f2-4bfb-ba30-169f58b75381 fwd="201.192.183.118" dyno=web.1 connect=0ms service=4ms status=200 bytes=2776 protocol=https
+2020-01-11T16:59:17.897385+00:00 heroku[router]: at=info method=GET path="/images/favicon/manifest.json" host=benjaminjaume.herokuapp.com request_id=12a0b785-c09b-4bd8-a725-51cb4941d87b fwd="201.192.183.118" dyno=web.1 connect=0ms service=5ms status=200 bytes=689 protocol=https
+2020-01-11T16:59:19.645777+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/api.json" host=benjaminjaume.herokuapp.com request_id=29e8baa3-6ae9-4c74-b270-0f2905037b0d fwd="201.192.183.118" dyno=web.1 connect=0ms service=25ms status=503 bytes=0 protocol=https
+2020-01-11T16:59:19.639581+00:00 app[web.1]: Can not connect to the DB because of Error: connect ECONNREFUSED 127.0.0.1:5432
+2020-01-11T16:59:19.640676+00:00 app[web.1]: /app/server/index.js:56
+2020-01-11T16:59:19.640679+00:00 app[web.1]: client.query("SELECT * FROM projects", function(err, result) {
+2020-01-11T16:59:19.640681+00:00 app[web.1]: ^
+2020-01-11T16:59:19.640683+00:00 app[web.1]: 
+2020-01-11T16:59:19.640686+00:00 app[web.1]: TypeError: Cannot read property 'query' of undefined
+2020-01-11T16:59:19.640687+00:00 app[web.1]: at PendingItem.callback (/app/server/index.js:56:14)
+2020-01-11T16:59:19.640689+00:00 app[web.1]: at client.connect (/app/node_modules/pg-pool/index.js:225:23)
+2020-01-11T16:59:19.640692+00:00 app[web.1]: at Connection.connectingErrorHandler (/app/node_modules/pg/lib/client.js:194:14)
+2020-01-11T16:59:19.640694+00:00 app[web.1]: at Connection.emit (events.js:198:13)
+2020-01-11T16:59:19.640696+00:00 app[web.1]: at Socket.reportStreamError (/app/node_modules/pg/lib/connection.js:71:10)
+2020-01-11T16:59:19.640698+00:00 app[web.1]: at Socket.emit (events.js:198:13)
+2020-01-11T16:59:19.640702+00:00 app[web.1]: at emitErrorNT (internal/streams/destroy.js:91:8)
+2020-01-11T16:59:19.640704+00:00 app[web.1]: at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+2020-01-11T16:59:19.640706+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-01-11T16:59:19.649820+00:00 app[web.1]: Node cluster worker 51 exited: code 1, signal null
+2020-01-11T16:59:27.329157+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/api.json" host=benjaminjaume.herokuapp.com request_id=a49acc3a-ae7c-469d-ad37-c077725b44ec fwd="201.192.183.118" dyno=web.1 connect=0ms service=18ms status=503 bytes=0 protocol=https
+2020-01-11T16:59:27.323452+00:00 app[web.1]: Can not connect to the DB because of Error: connect ECONNREFUSED 127.0.0.1:5432
+2020-01-11T16:59:27.324239+00:00 app[web.1]: /app/server/index.js:56
+2020-01-11T16:59:27.324243+00:00 app[web.1]: client.query("SELECT * FROM projects", function(err, result) {
+2020-01-11T16:59:27.324245+00:00 app[web.1]: ^
+2020-01-11T16:59:27.324247+00:00 app[web.1]: 
+2020-01-11T16:59:27.324250+00:00 app[web.1]: TypeError: Cannot read property 'query' of undefined
+2020-01-11T16:59:27.324252+00:00 app[web.1]: at PendingItem.callback (/app/server/index.js:56:14)
+2020-01-11T16:59:27.324254+00:00 app[web.1]: at client.connect (/app/node_modules/pg-pool/index.js:225:23)
+2020-01-11T16:59:27.324257+00:00 app[web.1]: at Connection.connectingErrorHandler (/app/node_modules/pg/lib/client.js:194:14)
+2020-01-11T16:59:27.324259+00:00 app[web.1]: at Connection.emit (events.js:198:13)
+2020-01-11T16:59:27.324262+00:00 app[web.1]: at Socket.reportStreamError (/app/node_modules/pg/lib/connection.js:71:10)
+2020-01-11T16:59:27.324264+00:00 app[web.1]: at Socket.emit (events.js:198:13)
+2020-01-11T16:59:27.324266+00:00 app[web.1]: at emitErrorNT (internal/streams/destroy.js:91:8)
+2020-01-11T16:59:27.324268+00:00 app[web.1]: at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+2020-01-11T16:59:27.324270+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-01-11T16:59:27.329496+00:00 app[web.1]: Node cluster worker 53 exited: code 1, signal null
+2020-01-11T16:59:28.116059+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=benjaminjaume.herokuapp.com request_id=f0776e13-d3d4-4f22-8a00-85d5746d00cb fwd="201.192.183.118" dyno=web.1 connect=0ms service=7ms status=200 bytes=3256 protocol=https

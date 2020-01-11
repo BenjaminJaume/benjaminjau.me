@@ -16,7 +16,7 @@ const config = {
   ssl: true,
   dialect: "postgres",
   dialectOptions: {
-    ssl: { require: true }
+    ssl: { require: false }
   }
 };
 
@@ -24,7 +24,7 @@ const config = {
 const pool = new pg.Pool(config);
 
 const isDev = process.env.NODE_ENV !== "production";
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Multi-process to utilize all CPU cores.
 if (!isDev && cluster.isMaster) {
