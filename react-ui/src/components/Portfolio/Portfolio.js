@@ -55,7 +55,6 @@ class Portfolio extends Component {
               You can find in this section all the projects I have been doing in
               Computer Science since I started programming
             </p>
-            <p>It all started in 2010.</p>
           </div>
         </div>
 
