@@ -1,0 +1,40 @@
+CREATE TABLE projects (
+    id serial PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(255),
+    languages VARCHAR(255)[],
+	github VARCHAR(255),
+	link VARCHAR(255),
+    date DATE
+);
+
+INSERT INTO projects(
+    name,
+    description,
+    languages,
+    github,
+    link,
+    date)
+VALUES (
+    'BenjaminJaume',
+    'Lorem Ipsum',
+    '{HTML,CSS,Javascript}',
+    'https://github.com/BenjaminJaume/benjaminjaume',
+    'https://benjaminjaume.herokuapp.com/',
+    '01/01/2020');
+
+    
+INSERT INTO projects(
+    name,
+    description,
+    languages,
+    github,
+    link,
+    date)
+VALUES (
+    '',
+    '',
+    '',
+    '',
+    '',
+    '');

@@ -22,7 +22,7 @@ const NavigationBar = () => {
     >
       <Navbar.Brand as={NavLink} to="/" href="/">
         <img
-          src="./images/benjaminjaume-logo.png"
+          src="./images/favicon/benjaminjaume-logo.png"
           alt="Benjamin Jaume"
           className="d-inline-block align-top mr-2"
           width="30"

@@ -1,42 +1,11 @@
-Face Recognition App {
-    React
-    JS
-}
 
-Taxi App {
-    C++
-    Visual Studio
-}
+Categories:
+Main projects
+Unfinished business
+Playground
 
-OpenModbus {
-    VB
-    Visual Studio
-}
 
-Daft Punk Table {
-    Arduino
-    C/C++
-}
-
-Self-driving car {
-    Arduino
-    C/C++
-}
-
-Ticketing machine {
-    VBA
-    Office
-}
-
-Download Machinge {
-    PHP
-    MySQL
-    Notepad++
-    Wamp
-}
-
-Benjamin Jaume {
-    Bootstrap
+Bootstrap
     VS Code
     Prettier
     HTML5
@@ -51,46 +20,6 @@ Benjamin Jaume {
     Deploy a production version of React
     HTTPS
     Postgres
-}
-
-Graphic Interface Skylys {
-    GTK+
-    Python
-    Raspberry
-    Raspbian
-    Glade
-}
-
-File Manager {
-    Batch
-    Windows 7
-}
-
-Learning MAN commande Linux {
-    Bash
-    Linux
-}
-
-C programs {
-    Eclipse
-    C
-}
-
-Bluetooth Robotic Arm {
-    Eclipse
-    Android
-}
-
-Drawings Optic Fibre {
-    Autocad
-}
-
-Categories:
-Main projects
-Unfinished business
-Playground
-
-
 
 PhpMyAdmin
 Apache Wamp
@@ -114,6 +43,14 @@ Express
 Redux
 Google Maps API
 IntelXDK
+Raspbian
+Debian
+Autocad
+VS Code
+Github Desktop
+Filezilla
+
+
 
 Tools:
 Coffee

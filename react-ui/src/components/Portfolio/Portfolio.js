@@ -60,7 +60,7 @@ class Portfolio extends Component {
 
         {/* START CARD-DECK */}
         <div className="card-deck my-5 mx-3">
-          {error || data.error ? (
+          {error ? (
             <div className="mx-auto text-center" style={{ color: "white" }}>
               <h3>Sorry for the inconvenience, but an error has occured.</h3>
               <h3>
@@ -85,7 +85,7 @@ class Portfolio extends Component {
                 <div key={i} className="card">
                   {/* NEW CARD */}
                   <div className="card-body text-white bg-dark">
-                    <h5 className="card-title text-center text-white font-weight-bold">
+                    <h5 className="text-center text-white font-weight-bold">
                       {item.name}
                     </h5>
                     <p className="card-text text-center">{item.description}</p>

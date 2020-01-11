@@ -8,21 +8,6 @@ const { Pool } = require("pg");
 const connectionString =
   process.env.DATABASE_URL || process.env.DATABASE_URL_DEV_LOCALHOST;
 
-//Database Config .env
-// const config = {
-//   host: process.env.PG_HOST,
-//   database: process.env.PG_DATABASE,
-//   port: process.env.PG_PORT,
-//   user: process.env.PG_USER,
-//   password: process.env.PG_PASS,
-//   ssl: true,
-//   dialect: "postgres",
-//   dialectOptions: {
-//     ssl: { require: true }
-//   }
-// };
-
-//Documentation for node-postgres: https://node-postgres.com/
 const pool = new Pool({
   connectionString
 });

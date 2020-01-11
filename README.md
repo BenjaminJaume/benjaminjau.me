@@ -18,3 +18,7 @@ Heroku
 Deploy a production version of React
 HTTPS
 Postgres
+
+https://node-postgres.com/
+https://cssgradient.io/
+https://flatuicolors.com/
