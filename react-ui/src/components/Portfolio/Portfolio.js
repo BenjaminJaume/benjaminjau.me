@@ -90,18 +90,16 @@ class Portfolio extends Component {
                     </h5>
                     <p className="card-text text-center">{item.description}</p>
                     <div className="d-flex justify-content-around align-items-center flex-wrap">
-                      {item.languages.map((language, i) => {
+                      {item.tools.map((tool, i) => {
                         return (
                           <div key={i} className="icon-portfolio">
                             <img
-                              src={`./images/languages/${language
+                              src={`./images/tools/${tool
                                 .replace(" ", "-")
                                 .toLowerCase()}.png`}
-                              alt={`Logo ${language}`}
+                              alt={`Logo ${tool}`}
                             />
-                            <span className="align-text-top pl-1">
-                              {language}
-                            </span>
+                            <span className="align-text-top pl-1">{tool}</span>
                           </div>
                         );
                       })}
