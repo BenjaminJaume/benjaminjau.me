@@ -1,12 +1,5 @@
-.top-index {
-  color: white;
-}
-
 .title-index {
-  font-family: "Great Vibes", "Quicksand", Calibri, "Trebuchet MS", sans-serif,
-    cursive;
   font-size: 5rem;
-  color: white;
 }
 
 .title-description {
@@ -26,10 +19,6 @@
   color: var(--emerald);
   font-weight: 1000;
   font-size: 1.75rem;
-}
-
-#discover {
-  color: white;
 }
 
 #discover-divider {

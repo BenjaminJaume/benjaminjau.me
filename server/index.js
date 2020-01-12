@@ -37,7 +37,7 @@ if (!isDev && cluster.isMaster) {
   app.use(express.static(path.resolve(__dirname, "../react-ui/build")));
 
   // Answer API requests.
-  app.get("/api.json", function(req, res) {
+  app.get("/projects.json", function(req, res) {
     pool.connect(function(err, client, done) {
       if (err) {
         console.log("Can not connect to the DB because of " + err);
@@ -56,6 +56,30 @@ if (!isDev && cluster.isMaster) {
       });
     });
   });
+
+  // Answer API requests.
+  app.get(
+    "/important-projects.json/:project1/:project/:project3/:project4",
+    function(req, res) {
+      pool.connect(function(err, client, done) {
+        if (err) {
+          console.log("Can not connect to the DB because of " + err);
+          res.status(400).send({ error: true });
+        }
+        client.query(
+          `SELECT * FROM projects WHERE name = ${req.params.project1} OR name = ${req.params.project2} OR name = ${req.params.project3} OR name = ${req.params.project4}`,
+          function(err, result) {
+            done();
+            if (err) {
+              console.log(err);
+              res.status(400).send(err);
+            }
+            res.status(200).send(result.rows);
+          }
+        );
+      });
+    }
+  );
 
   // All remaining requests return the React app, so it can handle routing.
   app.get("*", function(request, response) {

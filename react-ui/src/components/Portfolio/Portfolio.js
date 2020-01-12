@@ -12,19 +12,19 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
+      projects: [],
       isLoading: false,
       error: null
     };
   }
   componentDidMount() {
-    // const { data } = this.state;
+    // const { projects } = this.state;
 
     this.setState({ isLoading: true });
 
-    // if (data === []) {
-    // fetch("http://localhost:5000/api.json")
-    fetch("https://benjaminjaume.herokuapp.com/api.json")
+    // if (projects === []) {
+    // fetch("http://localhost:5000/projects.json")
+    fetch("https://benjaminjaume.herokuapp.com/projects.json")
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -34,7 +34,7 @@ class Portfolio extends Component {
       })
       .then(response =>
         this.setState({
-          data: response,
+          projects: response,
           isLoading: false
         })
       )
@@ -42,7 +42,7 @@ class Portfolio extends Component {
     // }
   }
   render() {
-    const { data, isLoading, error } = this.state;
+    const { projects, isLoading, error } = this.state;
 
     return (
       <>
@@ -81,17 +81,19 @@ class Portfolio extends Component {
               <BreedingRhombusSpinner size={200} color="white" />
             </div>
           ) : (
-            data.map((item, i) => {
+            projects.map((project, i) => {
               return (
                 <div key={i} className="card">
                   {/* NEW CARD */}
                   <div className="card-body text-white bg-dark">
                     <h5 className="text-center text-white font-weight-bold">
-                      {item.name}
+                      {project.name}
                     </h5>
-                    <p className="card-text text-center">{item.description}</p>
+                    <p className="card-text text-center">
+                      {project.description}
+                    </p>
                     <div className="d-flex justify-content-around align-items-center flex-wrap">
-                      {item.tools.map((tool, i) => {
+                      {project.tools.map((tool, i) => {
                         return (
                           <div key={i} className="icon-portfolio">
                             <img
@@ -109,9 +111,9 @@ class Portfolio extends Component {
                   <div className="card-footer bg-light">
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
-                        {item.github !== "" ? (
+                        {project.github !== "" ? (
                           <a
-                            href={`${item.github}/blob/master/README.md`}
+                            href={`${project.github}/blob/master/README.md`}
                             className="btn btn-sm btn-outline-success"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -126,9 +128,9 @@ class Portfolio extends Component {
                           /* eslint-enable */
                         )}
 
-                        {item.github !== "" ? (
+                        {project.github !== "" ? (
                           <a
-                            href={item.github}
+                            href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-sm btn-outline-success"
@@ -142,10 +144,10 @@ class Portfolio extends Component {
                           </a>
                           /* eslint-enable */
                         )}
-                        {item.link !== "" ? (
+                        {project.link !== "" ? (
                           <a
                             className="btn btn-sm btn-outline-success"
-                            href={item.link}
+                            href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -162,7 +164,7 @@ class Portfolio extends Component {
 
                       <small className="text-muted">
                         <FontAwesomeIcon icon={faClock} className="mr-1" />
-                        {item.date.substring(0, 4)}
+                        {project.date.substring(0, 4)}
                       </small>
                     </div>
                   </div>
