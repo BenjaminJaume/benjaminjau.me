@@ -36,16 +36,7 @@ class Home extends Component {
     // if (importantProjects === []) {
     // fetch("http://localhost:5000/important-projects.json")
     fetch(
-      `https://benjaminjaume.herokuapp.com/important-projects.json/${importantProjectsList[0].replace(
-        " ",
-        "%20"
-      )}/${importantProjectsList[1].replace(
-        " ",
-        "%20"
-      )}/${importantProjectsList[2].replace(
-        " ",
-        "%20"
-      )}/${importantProjectsList[3].replace(" ", "%20")}`
+      `https://benjaminjaume.herokuapp.com/important-projects.json/${importantProjectsList[0]}/${importantProjectsList[1]}/${importantProjectsList[2]}/${importantProjectsList[3]}`
     )
       .then(response => {
         if (response.ok) {
