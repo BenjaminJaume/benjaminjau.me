@@ -11,12 +11,14 @@ import {
 import Typing from "react-typing-animation";
 import "./Home.css";
 
-const importantProjectsList = [
+const importantProjects = [
   "Benjamin Jaume",
   "Face Recognition App",
   "Star Wars API",
   "RoboFriend"
 ];
+
+const query = `SELECT * FROM projects WHERE name = ${importantProjects[0]} OR name = ${importantProjects[1]} OR name = ${importantProjects[2]} OR name = ${importantProjects[3]}`;
 
 class Home extends Component {
   constructor(props) {
@@ -36,7 +38,7 @@ class Home extends Component {
     // if (importantProjects === []) {
     // fetch("http://localhost:5000/important-projects.json")
     fetch(
-      `https://benjaminjaume.herokuapp.com/important-projects.json/${importantProjectsList[0]}/${importantProjectsList[1]}/${importantProjectsList[2]}/${importantProjectsList[3]}`
+      `https://benjaminjaume.herokuapp.com/important-projects.json/${query}`
     )
       .then(response => {
         if (response.ok) {
@@ -71,10 +73,8 @@ class Home extends Component {
                 <div className="pb-3">
                   <h1 className="text-monospace">
                     <Typing cursorClassName="text-white">
-                      <Typing.Speed ms={75} />
-                      <Typing.Delay ms={500} />
-                      <span className="chevron">{`<`}</span>I am Benjamin Jaume
-                      <span className="chevron">{` />`}</span>
+                      <span className="chevron">{"< "}</span>I am Benjamin Jaume
+                      <span className="chevron">{" />"}</span>
                     </Typing>
                   </h1>
                 </div>
@@ -133,7 +133,7 @@ class Home extends Component {
                       size="2x"
                     />
                   </span>
-                  <p className="lead pb-3">
+                  <p className="lead text-white pb-3">
                     This is where you can find information about me and what I
                     do. I write about the things I like and the tools I use at
                     work or in my day-to-day basis.
@@ -152,7 +152,7 @@ class Home extends Component {
                       size="2x"
                     />
                   </span>
-                  <p className="lead pb-3">
+                  <p className="lead text-white pb-3">
                     Since I have wrote my first line of code, I have created
                     lots of different websites, applications, projects and so
                     forth. You can find a list of all of them over there.
@@ -171,7 +171,7 @@ class Home extends Component {
                       size="2x"
                     />
                   </span>
-                  <p className="lead pb-3">
+                  <p className="lead text-white pb-3">
                     You can have a look at the live version of my resume.
                     Although it is possible to download a PDF version of it,
                     whatever suits you!
@@ -190,7 +190,7 @@ class Home extends Component {
                       size="2x"
                     />
                   </span>
-                  <p className="lead pb-3">
+                  <p className="lead text-white pb-3">
                     If you want to hire me, tell me about a mispelling mistake I
                     have made, giving me your feedback, or just say &quot;
                     <i>G&apos;day! </i>&quot;, please feel free to send me a
