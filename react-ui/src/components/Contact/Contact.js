@@ -10,9 +10,9 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="container container-contact">
       <div className="row">
-        <div className="column-contact col-lg-6 p-5 text-center border">
+        <div className="col-lg-6 text-white text-center p-5">
           <h1 className="contact-message">Get in touch with me</h1>
 
           <h3>I am currently available for hire.</h3>
@@ -68,9 +68,7 @@ const Contact = () => {
 
         <div className="col-lg-6">
           <div className="container py-5">
-            <h1 className="contact-form-title text-center pb-4">
-              Contact Form
-            </h1>
+            <h1 className="text-emerald text-center pb-4">Contact Form</h1>
             <div className="row mx-auto">
               <div className="col-lg-12">
                 <form id="contact-form" method="post" action="contact.php">

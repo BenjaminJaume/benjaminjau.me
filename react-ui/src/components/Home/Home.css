@@ -4,14 +4,10 @@
 
 .title-description {
   color: var(--sun-flower);
-  margin-bottom: 0;
 }
 
-.chevron {
-  color: var(--red-pigment);
-}
-
-.button-hire-me {
+.button-hire-me,
+.button-portfolio {
   font-size: 1.5rem;
 }
 

@@ -1,5 +1,8 @@
+.container-contact {
+  max-width: initial;
+}
+
 .column-contact {
-  /* background-color: var(--clouds); */
   background-color: #eee;
 }
 
@@ -10,15 +13,11 @@
 .brand-icons-contact a {
   font-size: 3em;
   text-decoration: none;
-  color: var(--good-night);
+  color: var(--peter-river);
 }
 
 .brand-icons-contact a:hover {
   text-decoration: none;
-}
-
-.contact-form-title {
-  color: var(--emerald);
 }
 
 .textarea-contact {

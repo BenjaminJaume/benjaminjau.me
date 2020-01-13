@@ -63,7 +63,7 @@ body {
 }
 .btn-outline-success.disabled,
 .btn-outline-success:disabled {
-  color: var(--emerald);
+  /* color: var(--emerald); */
 }
 .btn-outline-success:not(:disabled):not(.disabled).active,
 .btn-outline-success:not(:disabled):not(.disabled):active,
@@ -126,6 +126,31 @@ the WhatsApp number, so I am making a general rule */
 .popover {
   color: var(--good-night);
   text-align: center;
+}
+
+.card-deck {
+  justify-content: space-evenly;
+}
+
+.card-deck .card {
+  margin: 0 0 1rem;
+}
+
+.card-body {
+  padding: 1rem 0.5rem;
+  background-color: var(--not-black);
+}
+
+.text-red-pigment {
+  color: var(--red-pigment);
+}
+
+.text-emerald {
+  color: var(--emerald);
+}
+
+.text-sun-flower {
+  color: var(--sun-flower);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

@@ -6,37 +6,34 @@ import "./AboutMe.css";
 const AboutMe = () => {
   return (
     <>
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container">
-          <h1 className="display-4 text-center">About me</h1>
+      <div className="container text-white text-center my-5">
+        <h1 className="display-4">About me</h1>
 
-          <p>
-            Hi, I am Benjamin Jaume, I am a 24 year-old Frenchman living in
-            Sydney for almost 2 years. In early 2018, I was eager to discover
-            the world!
-          </p>
-          <p>
-            was curious about being imersed in a new country, a new culture, a
-            new way to think, new landscape, and also new language!
-          </p>
-          <p>
-            Now I am taking courses, attempting events, connecting with people
-            and much more to start my career in the field that has always been
-            made for me! On my spare time, I like to go for hikes, eat some
-            sushis, travel somewhere or even go for a long run.
-            Self-consciousness, self-development food and sport
-          </p>
+        <p>
+          Hi, I am Benjamin Jaume, I am a 24 year-old Frenchman living in Sydney
+          for almost 2 years. In early 2018, I was eager to discover the world!
+        </p>
+        <p>
+          was curious about being imersed in a new country, a new culture, a new
+          way to think, new landscape, and also new language!
+        </p>
+        <p>
+          Now I am taking courses, attempting events, connecting with people and
+          much more to start my career in the field that has always been made
+          for me! On my spare time, I like to go for hikes, eat some sushis,
+          travel somewhere or even go for a long run. Self-consciousness,
+          self-development food and sport
+        </p>
 
-          <a href="#first-event" className="btn btn-warning btn-lg mt-4">
-            Show me the beginning
-            <span className="ml-1" role="img" aria-label="Below">
-              👇
-            </span>
-          </a>
-        </div>
+        <a href="#first-event" className="btn btn-warning btn-lg mt-4">
+          Show me the beginning
+          <span className="ml-1" role="img" aria-label="Below">
+            👇
+          </span>
+        </a>
       </div>
 
-      <div className="container py-5">
+      <div className="container mb-5">
         <div className="row">
           <div className="col-lg-7 mx-auto">
             {/* Timeline */}

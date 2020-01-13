@@ -46,23 +46,19 @@ class Portfolio extends Component {
 
     return (
       <>
-        <div className="jumbotron jumbotron-fluid mb-0">
-          <div className="container">
-            <h1 className="display-4 text-center">Portfolio</h1>
-            <p className="lead text-center">
-              All my projects since the beggining
-            </p>
-            <p>
-              You can find in this section all the projects I have been doing in
-              Computer Science since I started programming
-            </p>
-          </div>
+        <div className="container text-white text-center my-5">
+          <h1 className="display-4">Portfolio</h1>
+          <p className="lead">All my projects since the beggining</p>
+          <p>
+            You can find in this section all the projects I have been doing in
+            Computer Science since I started programming
+          </p>
         </div>
 
         {/* START CARD-DECK */}
-        <div className="card-deck my-5 mx-3">
+        <div className="card-deck mb-5 mx-3">
           {error ? (
-            <div className="mx-auto text-center" style={{ color: "white" }}>
+            <div className="mx-auto text-white text-center">
               <h3>Sorry for the inconvenience, but an error has occured.</h3>
               <h3>
                 Please let me know about this by{" "}
@@ -76,8 +72,8 @@ class Portfolio extends Component {
             ""
           )}
           {isLoading ? (
-            <div className="mx-auto mb-5">
-              <h2 className="loading-text text-center pb-5">Loading ...</h2>
+            <div className="text-white mx-auto mb-5">
+              <h2 className="loading-text text-center mb-5">Loading ...</h2>
               <BreedingRhombusSpinner size={200} color="white" />
             </div>
           ) : (
@@ -100,7 +96,7 @@ class Portfolio extends Component {
                               src={`./images/tools/${tool
                                 .replace(" ", "-")
                                 .toLowerCase()}.png`}
-                              alt={`Logo ${tool}`}
+                              alt={"Logo "}
                             />
                             <span className="align-text-top pl-1">{tool}</span>
                           </div>

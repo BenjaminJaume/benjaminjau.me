@@ -38,7 +38,6 @@ I used different tools, technologies and websites throughout the creation of thi
 ### Librairies
 
 - React-route-dom
-- React-typing-animation
 - React-epic-spinners
 - Bootstrap
 - FontAwesome

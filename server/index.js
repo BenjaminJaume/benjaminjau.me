@@ -57,24 +57,6 @@ if (!isDev && cluster.isMaster) {
     });
   });
 
-  // Answer API requests.
-  app.get("/important-projects.json:query", function(req, res) {
-    pool.connect(function(err, client, done) {
-      if (err) {
-        console.log("Can not connect to the DB because of " + err);
-        res.status(400).send({ error: true });
-      }
-      client.query(req.params.query, function(err, result) {
-        done();
-        if (err) {
-          console.log(err);
-          res.status(400).send(err);
-        }
-        res.status(200).send(result.rows);
-      });
-    });
-  });
-
   // All remaining requests return the React app, so it can handle routing.
   app.get("*", function(request, response) {
     response.sendFile(
