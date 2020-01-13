@@ -3,17 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithubSquare,
-  faFacebookSquare,
-  faWhatsappSquare
+  faFacebookSquare
 } from "@fortawesome/free-brands-svg-icons";
+import PopoverContactPhone from "../PopoverContactPhone/PopoverContactPhone";
+
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({ popoverContactPhone }) => {
   return (
     <div className="container container-reset-width">
       <div className="row">
         <div className="col-lg-6 text-white text-center p-5">
-          <h1 className="contact-message">Get in touch with me</h1>
+          <h1 className="text-peter-river">Get in touch with me</h1>
 
           <h3>I am currently available for hire.</h3>
           <p>
@@ -48,21 +49,9 @@ const Contact = () => {
               <FontAwesomeIcon icon={faFacebookSquare} />
             </a>
 
-            {/* eslint-disable */}
-            <a
-              tabIndex="0"
-              className="whatsapp-icon px-1"
-              role="button"
-              data-trigger="focus"
-              data-toggle="popover"
-              data-placement="top"
-              title="✉ Message me"
-              data-content="<a href='https://api.whatsapp.com/send?phone=61432586316' target='_blank'>+61 4 32 586 316</a>"
-              data-html="true"
-            >
-              <FontAwesomeIcon icon={faWhatsappSquare} />
-            </a>
-            {/* eslint-enable */}
+            <span className="popover-contact px-1">
+              <PopoverContactPhone />
+            </span>
           </div>
         </div>
 

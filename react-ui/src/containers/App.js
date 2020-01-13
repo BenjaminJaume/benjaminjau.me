@@ -10,6 +10,8 @@ import Resume from "../components/Resume/Resume";
 import Contact from "../components/Contact/Contact";
 import page404 from "../components/Page404/Page404";
 
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 class App extends Component {
   constructor(props) {
     super(props);

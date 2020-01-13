@@ -49,7 +49,7 @@ class Portfolio extends Component {
         <div className="container container-reset-width">
           <div className="row">
             <div className="col-12">
-              <section className="text-white text-center">
+              <section className="text-white text-center pt-5">
                 <h1 className="display-4">Portfolio</h1>
                 <p className="lead">All my projects since the beggining</p>
                 <p>
@@ -59,7 +59,7 @@ class Portfolio extends Component {
               </section>
 
               {/* START CARD-DECK */}
-              <div className="card-deck mb-5">
+              <div className="card-deck my-5">
                 {error ? (
                   <div className="mx-auto text-white text-center">
                     <h3>

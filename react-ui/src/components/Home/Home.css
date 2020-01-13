@@ -1,3 +1,7 @@
+.main-section {
+  height: calc(100vh - 56px);
+}
+
 .title-index {
   font-size: 5rem;
 }

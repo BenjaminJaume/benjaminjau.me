@@ -61,10 +61,6 @@ body {
   background-color: var(--emerald);
   border-color: var(--emerald);
 }
-.btn-outline-success.disabled,
-.btn-outline-success:disabled {
-  /* color: var(--emerald); */
-}
 .btn-outline-success:not(:disabled):not(.disabled).active,
 .btn-outline-success:not(:disabled):not(.disabled):active,
 .show > .btn-outline-success.dropdown-toggle {
@@ -107,25 +103,8 @@ a.btn {
   color: var(--facebook-color);
 }
 
-.whatsapp-icon:hover {
-  color: var(--whatsapp-color);
-  cursor: pointer;
-}
-
-.whatsapp-icon:focus {
-  /* border-color: #ccc; */
-  outline: 0;
-}
-
 .br-50 {
   border-radius: 50%;
-}
-
-/* I can't select the body of the popover for
-the WhatsApp number, so I am making a general rule */
-.popover {
-  color: var(--good-night);
-  text-align: center;
 }
 
 .card-deck {
@@ -151,6 +130,14 @@ the WhatsApp number, so I am making a general rule */
 
 .text-sun-flower {
   color: var(--sun-flower);
+}
+
+.text-peter-river {
+  color: var(--peter-river);
+}
+
+.text-good-night {
+  color: var(--good-night);
 }
 
 .container-reset-width {

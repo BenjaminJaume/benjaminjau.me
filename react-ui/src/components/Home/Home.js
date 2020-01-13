@@ -21,11 +21,11 @@ import importantProjects from "./importantProjects.json";
 const Home = () => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container">
         <div className="row">
           <div className="col-12 text-white text-center">
             <section>
-              <div className="mb-3">
+              <div className="pt-5 mb-3">
                 <h1 className="display-4 text-monospace animated slideInRight">
                   Hi! I am
                   <br />

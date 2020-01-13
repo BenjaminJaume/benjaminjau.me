@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 mx-auto">
-            <section className="text-white text-center mb-3">
+            <section className="text-white text-center pt-5">
               <h1 className="display-4">About me</h1>
 
               <p>
@@ -38,10 +38,12 @@ const AboutMe = () => {
                 <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2" />
               </a>
             </section>
+          </div>
 
-            <section className="text-white">
-              <div className="bg-dark rounded mb-2 p-3">
-                <h5>Australia</h5>
+          <div className="col-8 mx-auto">
+            <section className="text-white my-5">
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">Australia</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
                   2018-2019
@@ -50,8 +52,8 @@ const AboutMe = () => {
                   Let&apos;s discover the world!
                 </p>
               </div>
-              <div className="bg-dark rounded mb-2 p-3">
-                <h5>Let&apos;s travel</h5>
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">Let&apos;s travel</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
                   2017
@@ -59,8 +61,8 @@ const AboutMe = () => {
                 <p className="text-small mt-2 font-weight-light">
                   The project came to an end so I had to find something else to
                   do. This is why I thought that I copd start discovering what
-                  is around in Europe. I travelled to UK with a friend of mine
-                  and to Netherlands with my brother.
+                  is around in Europe. I travelled to the UK with a friend of
+                  mine and to Netherlands with my brother.
                 </p>
                 <p>
                   Because of all these travels, I took the decision travel to
@@ -68,8 +70,8 @@ const AboutMe = () => {
                   for the biggest trip of my life!
                 </p>
               </div>
-              <div className="bg-dark rounded mb-2 p-3">
-                <h5>My first job</h5>
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">My first job</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
                   2016
@@ -84,8 +86,8 @@ const AboutMe = () => {
                   in the fiels of electrical installation and work night-shifts.
                 </p>
               </div>
-              <div className="bg-dark rounded mb-2 p-3">
-                <h5>
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">
                   Technical Bachelor Degree in both Computer Science &
                   Industrial Network
                 </h5>
@@ -109,8 +111,8 @@ const AboutMe = () => {
                   by developing a 800-lines MS Excel Macro.
                 </p>
               </div>
-              <div className="bg-dark rounded mb-2 p-3">
-                <h5>
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">
                   Advanced Technician Degree in Computer Science & Networks
                 </h5>
                 <span>
@@ -133,8 +135,10 @@ const AboutMe = () => {
                 </p>
               </div>
 
-              <div className="bg-dark rounded mb-2 p-3">
-                <h5>Bachelor Degree in Digital & Information Systems</h5>
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">
+                  Bachelor Degree in Digital & Information Systems
+                </h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
                   2011 - 2013
@@ -148,14 +152,16 @@ const AboutMe = () => {
                 <p>
                   The teachers (which I was getting along well) had a big
                   knowledge with, and I was confortable with computer science so
-                  I created with a friend a few projects (check my
-                  <Link to="/portfolio">portfolio</Link>). The main projects we
-                  had were based on C/C++ micro-controllers, Arduino and
-                  Labview.
+                  I created with a friend a few projects (check my{" "}
+                  <Link to="/portfolio" className="text-emerald">
+                    <u>portfolio</u>
+                  </Link>
+                  ). The main projects we had were based on C/C++
+                  micro-controllers, Arduino and Labview.
                 </p>
               </div>
-              <div id="first-event" className="bg-dark rounded mb-2 p-3">
-                <h5>Where everything started</h5>
+              <div id="first-event" className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">Where everything started</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
                   2010

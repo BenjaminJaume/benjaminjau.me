@@ -39,8 +39,8 @@ I used different tools, technologies and websites throughout the creation of thi
 
 - React-route-dom
 - React-epic-spinners
-- Bootstrap
-- FontAwesome
+- React-Bootstrap
+- React-FontAwesome
 - Google Fonts
 - Material Design
 - Animate.css
@@ -68,3 +68,4 @@ I used different tools, technologies and websites throughout the creation of thi
 - [CSS Tricks](https://css-tricks.com/)
 - [W3 Schools](https://www.w3schools.com/)
 - [StackOverFlow](https://stackoverflow.com/)
+- [React Bootstrap](https://react-bootstrap.github.io/)

@@ -13,17 +13,20 @@ footer a:hover {
   text-decoration: none;
 }
 
-/* Reset the default font for the message at the bottom */
-#message-bottom {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.popover-footer {
+  font-size: 3em;
+  text-decoration: none;
 }
 
-#message-bottom:hover {
-  -webkit-animation: heartBeat 1s;
-  animation: heartBeat 1s;
-  cursor: default;
+.popover-footer:hover {
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--whatsapp-color);
+  cursor: pointer;
+}
+
+.popover-footer:focus {
+  outline: 0;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
