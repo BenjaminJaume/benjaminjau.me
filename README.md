@@ -69,3 +69,4 @@ I used different tools, technologies and websites throughout the creation of thi
 - [W3 Schools](https://www.w3schools.com/)
 - [StackOverFlow](https://stackoverflow.com/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
+- [Overlay with React Bootstrap](https://codesandbox.io/s/react-bootstrap-popover-dismiss-byizk)

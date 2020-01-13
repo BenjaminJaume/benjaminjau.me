@@ -1,8 +1,6 @@
 .popover-contact {
   font-size: 3em;
   text-decoration: none;
-  /* Do not replace it with text-white */
-  color: white;
 }
 
 .popover-contact:hover {

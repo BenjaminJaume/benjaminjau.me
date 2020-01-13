@@ -46,7 +46,7 @@ class Portfolio extends Component {
 
     return (
       <>
-        <div className="container container-reset-width">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-12">
               <section className="text-white text-center pt-5">

@@ -54,8 +54,11 @@ const NavigationBar = () => {
             Contact
           </Nav.Link>
         </Nav>
-        <div className="download-button d-flex justify-content-center">
-          <Button variant="success">
+        <div className="d-flex justify-content-center">
+          <Button
+            variant="success"
+            className="resume-button font-weight-bold px-3 m-2"
+          >
             <SaveAlt className="align-bottom mr-1" />
             Resume
           </Button>

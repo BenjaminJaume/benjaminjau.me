@@ -9,8 +9,11 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Resume from "../components/Resume/Resume";
 import Contact from "../components/Contact/Contact";
 import page404 from "../components/Page404/Page404";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
+
+const phoneNumber = "+61 4 32 586 316";
 
 class App extends Component {
   constructor(props) {
@@ -55,16 +58,20 @@ class App extends Component {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about-me" exact component={AboutMe}>
+            <ScrollToTop />
             <AboutMe />
           </Route>
           <Route path="/portfolio" exact component={Portfolio}>
+            <ScrollToTop />
             <Portfolio />
           </Route>
           <Route path="/resume" exact component={Resume}>
-            <Resume />
+            <ScrollToTop />
+            <Resume phoneNumber={phoneNumber} />
           </Route>
           <Route path="/contact" exact component={Contact}>
-            <Contact />
+            <ScrollToTop />
+            <Contact phoneNumber={phoneNumber} />
           </Route>
           <Route path="/" exact component={Home}>
             <Home />
@@ -72,7 +79,7 @@ class App extends Component {
           <Route component={page404} />
         </Switch>
 
-        <Footer />
+        <Footer phoneNumber={phoneNumber} />
       </Router>
     );
   }

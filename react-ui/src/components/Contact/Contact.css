@@ -2,19 +2,6 @@
   background-color: #eee;
 }
 
-.brand-icons-contact a {
-  font-size: 3em;
-  text-decoration: none;
-  /* Do not replace it with text-white */
-  color: white;
-}
-
-.brand-icons-contact a:hover {
-  text-decoration: none;
-  background-color: white;
-  border-radius: 5px;
-}
-
 .textarea-contact {
   resize: none;
 }

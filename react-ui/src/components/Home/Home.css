@@ -21,12 +21,6 @@
   font-size: 1.75rem;
 }
 
-#discover-divider {
-  margin: 3rem 0;
-  background-color: white;
-  width: 50vw;
-}
-
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
 }

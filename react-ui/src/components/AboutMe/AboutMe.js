@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 const AboutMe = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-12 mx-auto">
+          <div className="col-md-8 col-12 mx-auto">
             <section className="text-white text-center pt-5">
               <h1 className="display-4">About me</h1>
 
@@ -40,7 +40,7 @@ const AboutMe = () => {
             </section>
           </div>
 
-          <div className="col-8 mx-auto">
+          <div className="col-md-8 col-12 mx-auto">
             <section className="text-white my-5">
               <div className="event-about-me rounded mb-2 p-3">
                 <h5 className="text-emerald">Australia</h5>

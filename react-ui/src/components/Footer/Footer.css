@@ -13,6 +13,12 @@ footer a:hover {
   text-decoration: none;
 }
 
+#message-bottom:hover {
+  -webkit-animation: heartBeat 1s;
+  animation: heartBeat 1s;
+  cursor: default;
+}
+
 .popover-footer {
   font-size: 3em;
   text-decoration: none;
@@ -20,7 +26,6 @@ footer a:hover {
 
 .popover-footer:hover {
   text-decoration: none;
-  border-radius: 5px;
   color: var(--whatsapp-color);
   cursor: pointer;
 }

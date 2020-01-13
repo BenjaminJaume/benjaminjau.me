@@ -18,6 +18,7 @@
   --red-pigment: #ea2027;
   --carrot: #e67e22;
   --sun-flower: #f1c40f;
+  --sun-flower-link: rgba(241, 196, 15, 0.7);
   --amethyst: #9b59b6;
   --indigo: #3f00ff;
 
@@ -79,15 +80,8 @@ body {
   border-color: var(--emerald);
 }
 
-a.btn {
-  border-radius: 40px;
-}
-
-.download-button {
-  margin: 1rem;
-}
-
-.download-button button {
+a.btn,
+.resume-button {
   border-radius: 40px;
 }
 
@@ -120,6 +114,7 @@ a.btn {
   background-color: var(--not-black);
 }
 
+/* Text color classes */
 .text-red-pigment {
   color: var(--red-pigment);
 }
@@ -140,8 +135,41 @@ a.btn {
   color: var(--good-night);
 }
 
-.container-reset-width {
-  max-width: initial;
+.text-belize-hole {
+  color: var(--belize-hole);
+}
+
+.text-electron-blue {
+  color: var(--electron-blue);
+}
+
+/* Link color classes */
+.link-sun-flower {
+  color: var(--sun-flower);
+  text-decoration: underline;
+}
+
+.link-sun-flower:hover {
+  color: var(--sun-flower-link);
+}
+
+.divider {
+  margin: 3rem 0;
+  background-color: white;
+  width: 50vw;
+}
+
+.brand-icons-contact a {
+  font-size: 3em;
+  text-decoration: none;
+  /* Do not replace it with text-white */
+  color: white;
+}
+
+.brand-icons-contact a:hover {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
