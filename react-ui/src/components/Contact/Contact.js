@@ -10,7 +10,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="container container-contact">
+    <div className="container container-reset-width">
       <div className="row">
         <div className="col-lg-6 text-white text-center p-5">
           <h1 className="contact-message">Get in touch with me</h1>

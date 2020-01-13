@@ -153,6 +153,10 @@ the WhatsApp number, so I am making a general rule */
   color: var(--sun-flower);
 }
 
+.container-reset-width {
+  max-width: initial;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* @media (max-width: 575px) {
 } */

@@ -1,45 +1,46 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-regular-svg-icons";
+import {
+  faClock,
+  faArrowAltCircleDown
+} from "@fortawesome/free-regular-svg-icons";
 import "./AboutMe.css";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
     <>
-      <div className="container text-white text-center my-5">
-        <h1 className="display-4">About me</h1>
-
-        <p>
-          Hi, I am Benjamin Jaume, I am a 24 year-old Frenchman living in Sydney
-          for almost 2 years. In early 2018, I was eager to discover the world!
-        </p>
-        <p>
-          was curious about being imersed in a new country, a new culture, a new
-          way to think, new landscape, and also new language!
-        </p>
-        <p>
-          Now I am taking courses, attempting events, connecting with people and
-          much more to start my career in the field that has always been made
-          for me! On my spare time, I like to go for hikes, eat some sushis,
-          travel somewhere or even go for a long run. Self-consciousness,
-          self-development food and sport
-        </p>
-
-        <a href="#first-event" className="btn btn-warning btn-lg mt-4">
-          Show me the beginning
-          <span className="ml-1" role="img" aria-label="Below">
-            👇
-          </span>
-        </a>
-      </div>
-
-      <div className="container mb-5">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-7 mx-auto">
-            {/* Timeline */}
-            <ul className="timeline">
-              <li className="timeline-item bg-light rounded ml-3 p-4 shadow">
-                <div className="timeline-arrow"></div>
+          <div className="col-12 mx-auto">
+            <section className="text-white text-center mb-3">
+              <h1 className="display-4">About me</h1>
+
+              <p>
+                Hi, I am Benjamin Jaume, I am a 24 year-old Frenchman living in
+                Sydney for almost 2 years. In early 2018, I was eager to
+                discover the world!
+              </p>
+              <p>
+                was curious about being imersed in a new country, a new culture,
+                a new way to think, new landscape, and also new language!
+              </p>
+              <p>
+                Now I am taking courses, attempting events, connecting with
+                people and much more to start my career in the field that has
+                always been made for me! On my spare time, I like to go for
+                hikes, eat some sushis, travel somewhere or even go for a long
+                run. Self-consciousness, self-development food and sport
+              </p>
+
+              <a href="#first-event" className="btn btn-warning btn-lg mt-4">
+                Show me the beginning
+                <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2" />
+              </a>
+            </section>
+
+            <section className="text-white">
+              <div className="bg-dark rounded mb-2 p-3">
                 <h5>Australia</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
@@ -48,9 +49,8 @@ const AboutMe = () => {
                 <p className="text-small mt-2 font-weight-light">
                   Let&apos;s discover the world!
                 </p>
-              </li>
-              <li className="timeline-item bg-light rounded ml-3 p-4 shadow">
-                <div className="timeline-arrow"></div>
+              </div>
+              <div className="bg-dark rounded mb-2 p-3">
                 <h5>Let&apos;s travel</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
@@ -58,7 +58,7 @@ const AboutMe = () => {
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   The project came to an end so I had to find something else to
-                  do. This is why I thought that I could start discovering what
+                  do. This is why I thought that I copd start discovering what
                   is around in Europe. I travelled to UK with a friend of mine
                   and to Netherlands with my brother.
                 </p>
@@ -67,9 +67,8 @@ const AboutMe = () => {
                   Australia so I had to save up a bit of money and be prepared
                   for the biggest trip of my life!
                 </p>
-              </li>
-              <li className="timeline-item bg-light rounded ml-3 p-4 shadow">
-                <div className="timeline-arrow"></div>
+              </div>
+              <div className="bg-dark rounded mb-2 p-3">
                 <h5>My first job</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
@@ -84,9 +83,8 @@ const AboutMe = () => {
                   Because it was also interesting for me, I decided to continue
                   in the fiels of electrical installation and work night-shifts.
                 </p>
-              </li>
-              <li className="timeline-item bg-light rounded ml-3 p-4 shadow">
-                <div className="timeline-arrow"></div>
+              </div>
+              <div className="bg-dark rounded mb-2 p-3">
                 <h5>
                   Technical Bachelor Degree in both Computer Science &
                   Industrial Network
@@ -110,9 +108,8 @@ const AboutMe = () => {
                   provided a solution for a better management of the deployment
                   by developing a 800-lines MS Excel Macro.
                 </p>
-              </li>
-              <li className="timeline-item bg-light rounded ml-3 p-4 shadow">
-                <div className="timeline-arrow"></div>
+              </div>
+              <div className="bg-dark rounded mb-2 p-3">
                 <h5>
                   Advanced Technician Degree in Computer Science & Networks
                 </h5>
@@ -134,10 +131,9 @@ const AboutMe = () => {
                   of different application and project assessed thouhought the 2
                   years.
                 </p>
-              </li>
+              </div>
 
-              <li className="timeline-item bg-white rounded ml-3 p-4 shadow">
-                <div className="timeline-arrow"></div>
+              <div className="bg-dark rounded mb-2 p-3">
                 <h5>Bachelor Degree in Digital & Information Systems</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
@@ -153,16 +149,12 @@ const AboutMe = () => {
                   The teachers (which I was getting along well) had a big
                   knowledge with, and I was confortable with computer science so
                   I created with a friend a few projects (check my
-                  <a href="portfolio.html">portfolio</a>). The main projects we
+                  <Link to="/portfolio">portfolio</Link>). The main projects we
                   had were based on C/C++ micro-controllers, Arduino and
                   Labview.
                 </p>
-              </li>
-              <li
-                id="first-event"
-                className="timeline-item bg-light rounded ml-3 p-4 shadow"
-              >
-                <div className="timeline-arrow"></div>
+              </div>
+              <div id="first-event" className="bg-dark rounded mb-2 p-3">
                 <h5>Where everything started</h5>
                 <span>
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
@@ -175,8 +167,8 @@ const AboutMe = () => {
                   discovered that I was passionate about algorithmic, problem
                   solving and programming.
                 </p>
-              </li>
-            </ul>
+              </div>
+            </section>
             {/* End */}
           </div>
         </div>

@@ -21,10 +21,10 @@ import importantProjects from "./importantProjects.json";
 const Home = () => {
   return (
     <>
-      <div className="container pt-5">
+      <div className="container mt-5">
         <div className="row">
-          <div className="text-center mx-auto">
-            <section className="text-white">
+          <div className="col-12 text-white text-center">
+            <section>
               <div className="mb-3">
                 <h1 className="display-4 text-monospace animated slideInRight">
                   Hi! I am
@@ -73,10 +73,10 @@ const Home = () => {
 
               <div>
                 {/* START CARD-DECK */}
-                <h3 className="text-emerald mb-4">
+                <h3 className="text-emerald text-center mb-4">
                   # A few websites I worked on #
                 </h3>
-                <div className="card-deck mx-3">
+                <div className="card-deck">
                   {importantProjects.map((project, i) => {
                     return (
                       <div key={i} className="card">
@@ -175,79 +175,67 @@ const Home = () => {
                   })}
                 </div>
               </div>
-            </section>
-
-            <hr id="discover-divider" className="mx-auto" />
-
-            <section className="mb-5">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-6 text-white text-center pb-4">
-                    <FontAwesomeIcon
-                      icon={faSearch}
-                      className="mr-3"
-                      size="2x"
-                    />
-                    <span className="discover-heading">
-                      Want to know more about me?{" "}
-                    </span>
-                    <p className="lead text-white pb-3">
-                      This is where you can find information about me and what I
-                      do. I write about the things I like and the tools I use at
-                      work or in my day-to-day basis.
-                    </p>
-                    <ButtonMore page="about-me" />
-                  </div>
-                  <div className="col-lg-6 text-white text-center pb-4">
-                    <FontAwesomeIcon icon={faList} className="mr-3" size="2x" />
-                    <span className="discover-heading">
-                      Discover my Portfolio{" "}
-                    </span>
-                    <p className="lead text-white pb-3">
-                      Since I have wrote my first line of code, I have created
-                      lots of different websites, applications, projects and so
-                      forth. You can find a list of all of them over there.
-                    </p>
-                    <ButtonMore page="portfolio" />
-                  </div>
-                </div>
-              </div>
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-6 text-white text-center pb-4">
-                    <FontAwesomeIcon icon={faFile} className="mr-3" size="2x" />
-                    <span className="discover-heading">Access my resume </span>
-                    <p className="lead text-white pb-3">
-                      You can have a look at the live version of my resume.
-                      Although it is possible to download a PDF version of it,
-                      whatever suits you!
-                    </p>
-                    <ButtonMore page="resume" />
-                  </div>
-                  <div className="col-lg-6 text-white text-center pb-4">
-                    <FontAwesomeIcon
-                      icon={faThumbsUp}
-                      className="mr-3"
-                      size="2x"
-                    />
-                    <span className="discover-heading">
-                      Let&apos;s keep in touch{" "}
-                    </span>
-                    <p className="lead text-white pb-3">
-                      If you want to hire me, tell me about a mispelling mistake
-                      I have made, giving me your feedback, or just say &quot;
-                      <i>G&apos;day! </i>&quot;, please feel free to send me a
-                      message! There is a form, but I am also active on social
-                      medias
-                    </p>
-                    <ButtonMore page="contact" />
-                  </div>
-                </div>
-              </div>
+              <hr id="discover-divider" className="mx-auto" />
             </section>
           </div>
         </div>
       </div>
+
+      <section className="mb-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 text-white text-center pb-4">
+              <FontAwesomeIcon icon={faSearch} className="mr-3" size="2x" />
+              <span className="discover-heading">
+                Want to know more about me?{" "}
+              </span>
+              <p className="lead text-white pb-3">
+                This is where you can find information about me and what I do. I
+                write about the things I like and the tools I use at work or in
+                my day-to-day basis.
+              </p>
+              <ButtonMore page="about-me" />
+            </div>
+            <div className="col-lg-6 text-white text-center pb-4">
+              <FontAwesomeIcon icon={faList} className="mr-3" size="2x" />
+              <span className="discover-heading">Discover my Portfolio </span>
+              <p className="lead text-white pb-3">
+                Since I have wrote my first line of code, I have created lots of
+                different websites, applications, projects and so forth. You can
+                find a list of all of them over there.
+              </p>
+              <ButtonMore page="portfolio" />
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 text-white text-center pb-4">
+              <FontAwesomeIcon icon={faFile} className="mr-3" size="2x" />
+              <span className="discover-heading">Access my resume </span>
+              <p className="lead text-white pb-3">
+                You can have a look at the live version of my resume. Although
+                it is possible to download a PDF version of it, whatever suits
+                you!
+              </p>
+              <ButtonMore page="resume" />
+            </div>
+            <div className="col-lg-6 text-white text-center pb-4">
+              <FontAwesomeIcon icon={faThumbsUp} className="mr-3" size="2x" />
+              <span className="discover-heading">
+                Let&apos;s keep in touch{" "}
+              </span>
+              <p className="lead text-white pb-3">
+                If you want to hire me, tell me about a mispelling mistake I
+                have made, giving me your feedback, or just say &quot;
+                <i>G&apos;day! </i>&quot;, please feel free to send me a
+                message! There is a form, but I am also active on social medias
+              </p>
+              <ButtonMore page="contact" />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

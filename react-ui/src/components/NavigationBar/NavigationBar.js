@@ -37,10 +37,6 @@ const NavigationBar = () => {
             <Home className="align-bottom mr-1" />
             Home
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/about-me" href="/about-me">
-            <Info className="align-bottom mr-1" />
-            About me
-          </Nav.Link>
           <Nav.Link as={NavLink} to="/portfolio" href="/portfolio">
             <Folder className="align-bottom mr-1" />
             Portfolio
@@ -48,6 +44,10 @@ const NavigationBar = () => {
           <Nav.Link as={NavLink} to="/resume" href="/resume">
             <ListAlt className="align-bottom mr-1" />
             Resume
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/about-me" href="/about-me">
+            <Info className="align-bottom mr-1" />
+            About me
           </Nav.Link>
           <Nav.Link as={NavLink} to="/contact" href="/contact">
             <Person className="align-bottom mr-1" />
