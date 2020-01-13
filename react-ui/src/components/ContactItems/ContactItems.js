@@ -9,7 +9,10 @@ import {
   faWhatsappSquare
 } from "@fortawesome/free-brands-svg-icons";
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
-import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhoneAlt,
+  faEnvelopeSquare
+} from "@fortawesome/free-solid-svg-icons";
 // @ts-ignore
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -54,7 +57,7 @@ class ContactItems extends Component {
           <FontAwesomeIcon icon={faFacebookSquare} />
         </a>
 
-        <span className="popover-contact px-1">
+        <span className="whatsapp-icon px-1">
           <OverlayTrigger
             trigger="click"
             placement="top"
@@ -103,6 +106,15 @@ class ContactItems extends Component {
             <FontAwesomeIcon icon={faWhatsappSquare} />
           </OverlayTrigger>
         </span>
+
+        <a
+          href="mailto:benjamin.jaume@gmail.com"
+          className="mail-icon px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faEnvelopeSquare} />
+        </a>
       </>
     );
   }

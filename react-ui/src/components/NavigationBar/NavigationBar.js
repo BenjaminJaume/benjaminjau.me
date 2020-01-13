@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button } from "react-bootstrap";
+import { IndexLinkContainer } from "react-router-bootstrap";
 import {
   Home,
   Info,
@@ -33,26 +34,36 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link as={NavLink} to="/" href="/">
-            <Home className="align-bottom mr-1" />
-            Home
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/portfolio" href="/portfolio">
-            <Folder className="align-bottom mr-1" />
-            Portfolio
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/resume" href="/resume">
-            <ListAlt className="align-bottom mr-1" />
-            Resume
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/about-me" href="/about-me">
-            <Info className="align-bottom mr-1" />
-            About me
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/contact" href="/contact">
-            <Person className="align-bottom mr-1" />
-            Contact
-          </Nav.Link>
+          <IndexLinkContainer to="/">
+            <Nav.Link as={NavLink} to="/" href="/" exact>
+              <Home className="align-bottom mr-1" />
+              Home
+            </Nav.Link>
+          </IndexLinkContainer>
+          <IndexLinkContainer to="/portfolio">
+            <Nav.Link as={NavLink} to="/portfolio" href="/portfolio">
+              <Folder className="align-bottom mr-1" />
+              Portfolio
+            </Nav.Link>
+          </IndexLinkContainer>
+          <IndexLinkContainer to="/resume">
+            <Nav.Link as={NavLink} to="/resume" href="/resume">
+              <ListAlt className="align-bottom mr-1" />
+              Resume
+            </Nav.Link>
+          </IndexLinkContainer>
+          <IndexLinkContainer to="/about-me">
+            <Nav.Link as={NavLink} to="/about-me" href="/about-me">
+              <Info className="align-bottom mr-1" />
+              About me
+            </Nav.Link>
+          </IndexLinkContainer>
+          <IndexLinkContainer to="/contact">
+            <Nav.Link as={NavLink} to="/contact" href="/contact">
+              <Person className="align-bottom mr-1" />
+              Contact
+            </Nav.Link>
+          </IndexLinkContainer>
         </Nav>
         <div className="d-flex justify-content-center">
           <Button

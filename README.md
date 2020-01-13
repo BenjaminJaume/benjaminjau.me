@@ -41,6 +41,7 @@ I used different tools, technologies and websites throughout the creation of thi
 - React-epic-spinners
 - React-Bootstrap
 - React-FontAwesome
+- React-router-bootstrap
 - Google Fonts
 - Material Design
 - Animate.css
@@ -70,3 +71,4 @@ I used different tools, technologies and websites throughout the creation of thi
 - [StackOverFlow](https://stackoverflow.com/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Overlay with React Bootstrap](https://codesandbox.io/s/react-bootstrap-popover-dismiss-byizk)
+- [EmailJS Tutorial](https://blog.mailtrap.io/react-send-email/)

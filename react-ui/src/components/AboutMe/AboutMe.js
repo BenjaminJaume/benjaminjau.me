@@ -7,41 +7,90 @@ import {
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
 
+function calculateAge(dateOfBirth) {
+  var today = new Date(),
+    birthDate = new Date(dateOfBirth),
+    age = today.getFullYear() - birthDate.getFullYear(),
+    m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age = age - 1;
+  }
+
+  return age;
+}
+
 const AboutMe = () => {
   return (
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-8 col-12 mx-auto">
+          <div className="col-xl-6 col-lg-8 col-sm-10 col-12 mx-auto">
             <section className="text-white text-center pt-5">
               <h1 className="display-4">About me</h1>
 
-              <p>
-                Hi, I am Benjamin Jaume, I am a 24 year-old Frenchman living in
-                Sydney for almost 2 years. In early 2018, I was eager to
-                discover the world!
-              </p>
-              <p>
-                was curious about being imersed in a new country, a new culture,
-                a new way to think, new landscape, and also new language!
-              </p>
-              <p>
-                Now I am taking courses, attempting events, connecting with
-                people and much more to start my career in the field that has
-                always been made for me! On my spare time, I like to go for
-                hikes, eat some sushis, travel somewhere or even go for a long
-                run. Self-consciousness, self-development food and sport
-              </p>
+              <div className="mb-3">
+                <h4>
+                  Hi, I am Benjamin Jaume, I am a {calculateAge("06/27/1995")}{" "}
+                  year-old developer living in Samara (Costa Rica).
+                </h4>
+              </div>
+              <div className="mb-3">
+                <p className="h5">
+                  <span className="title-description">Front-End Developer</span>
+                  : Specialised in React with NodeJS and Express
+                </p>
+                <p className="h5">
+                  <span className="title-description">Traveller</span>:
+                  Fascinated by visiting amazing places in the world
+                </p>
+                <p className="h5">
+                  <span className="title-description">Investigator</span>:
+                  Interested in mindfulness and self-development
+                </p>
+              </div>
+              <div>
+                <p>
+                  When I was 22, I was curious about being imersed in a new
+                  country, a new culture, a new way to think, new landscape, and
+                  also new language!
+                </p>
+                <p>
+                  Now I am taking courses, attempting events, connecting with
+                  people and much more to start my career in the field that has
+                  always been made for me! On my spare time, I like to go for
+                  hikes, eat sushis, travel somewhere or even go for a long run.
+                  Self-consciousness, self-development food and sport
+                </p>
+              </div>
 
-              <a href="#first-event" className="btn btn-warning btn-lg mt-4">
-                Show me the beginning
-                <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2" />
-              </a>
+              <div>
+                <a href="#first-event" className="btn btn-warning btn-lg mt-4">
+                  Show me the beginning
+                  <FontAwesomeIcon
+                    icon={faArrowAltCircleDown}
+                    className="ml-2"
+                  />
+                </a>
+              </div>
             </section>
           </div>
+        </div>
 
-          <div className="col-md-8 col-12 mx-auto">
+        <div className="row">
+          <div className="col-xl-6 col-lg-8 col-sm-8 col-12 mx-auto">
             <section className="text-white my-5">
+              <div className="event-about-me rounded mb-2 p-3">
+                <h5 className="text-emerald">Costa Rica</h5>
+                <span>
+                  <FontAwesomeIcon icon={faClock} className="mr-1" />
+                  2019-2020
+                </span>
+                <p className="text-small mt-2 font-weight-light">
+                  Here I am, with my 2 big luggages and my backpack, ready for
+                  my next adventure. I arrived in Costa Rica at the end of
+                  November 2019, and still leave in Sarama since then.
+                </p>
+              </div>
               <div className="event-about-me rounded mb-2 p-3">
                 <h5 className="text-emerald">Australia</h5>
                 <span>
@@ -49,7 +98,23 @@ const AboutMe = () => {
                   2018-2019
                 </span>
                 <p className="text-small mt-2 font-weight-light">
-                  Let&apos;s discover the world!
+                  So I was ready to leave France to start traveling and discover
+                  the world. I landed in Sydney mid-January 2018, I was on my
+                  own, starting in a backpacker. I had the occasion to discover
+                  the Opera House, the Harbour Bridge and pet a kangaroos and
+                  koalas.
+                </p>
+                <p>
+                  My trip brought me pretty much everywhere around central &
+                  eastern Australia! I visited the capital (Canberra), did a
+                  road trip along the east coast (from Sydney to Brisbane), I
+                  also went to Uluru and Alice Springs (central Australia),
+                  scuba-dived at the Great Barrier Reef from Cairns
+                </p>
+                <p>
+                  I really had a good time in Oceania, and this adventure
+                  changed my life. Around the end of 2019, I had the occasion to
+                  move to another country and join my best friend in Costa Rica
                 </p>
               </div>
               <div className="event-about-me rounded mb-2 p-3">
@@ -60,9 +125,9 @@ const AboutMe = () => {
                 </span>
                 <p className="text-small mt-2 font-weight-light">
                   The project came to an end so I had to find something else to
-                  do. This is why I thought that I copd start discovering what
+                  do. This is why I thought that I could start discovering what
                   is around in Europe. I travelled to the UK with a friend of
-                  mine and to Netherlands with my brother.
+                  mine and to the Netherlands with my brother.
                 </p>
                 <p>
                   Because of all these travels, I took the decision travel to
@@ -153,7 +218,7 @@ const AboutMe = () => {
                   The teachers (which I was getting along well) had a big
                   knowledge with, and I was confortable with computer science so
                   I created with a friend a few projects (check my{" "}
-                  <Link to="/portfolio" className="text-emerald">
+                  <Link to="/portfolio" className="link-emerald">
                     <u>portfolio</u>
                   </Link>
                   ). The main projects we had were based on C/C++

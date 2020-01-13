@@ -36,18 +36,6 @@ const Home = () => {
               </div>
 
               <div className="mb-4">
-                {/* <div>
-                  <h3 className="title-description">Front-End Developer</h3>
-                  <p>Specialised in React with NodeJS and Express</p>
-                </div>
-                <div>
-                  <h4 className="title-description">Traveller</h4>
-                  <p>Fascinated by visiting amazing places in the world</p>
-                </div>
-                <div>
-                  <h4 className="title-description">Investigator</h4>
-                  Interested in mindfulness and self-development
-                </div> */}
                 <h1 className="text-sun-flower"># Web Developer #</h1>
                 <h4>
                   I build websites with NodeJS, React and Express hosted on

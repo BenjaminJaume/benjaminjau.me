@@ -14,6 +14,7 @@
   --electron-blue: #0984e3;
   --merchant-marine-blue: #0652dd;
   --emerald: #2ecc71;
+  --emerald-link: rgba(46, 204, 113, 0.7);
   --alizarin: #e74c3c;
   --red-pigment: #ea2027;
   --carrot: #e67e22;
@@ -80,25 +81,8 @@ body {
   border-color: var(--emerald);
 }
 
-a.btn,
-.resume-button {
+.btn {
   border-radius: 40px;
-}
-
-.linkedin-icon:hover {
-  color: var(--linkedin-color);
-}
-
-.github-icon:hover {
-  color: var(--github-color);
-}
-
-.facebook-icon:hover {
-  color: var(--facebook-color);
-}
-
-.br-50 {
-  border-radius: 50%;
 }
 
 .card-deck {
@@ -153,6 +137,15 @@ a.btn,
   color: var(--sun-flower-link);
 }
 
+.link-emerald {
+  color: var(--emerald);
+  text-decoration: underline;
+}
+
+.link-emerald:hover {
+  color: var(--emerald-link);
+}
+
 .divider {
   margin: 3rem 0;
   background-color: white;
@@ -164,6 +157,10 @@ a.btn,
   text-decoration: none;
   /* Do not replace it with text-white */
   color: white;
+}
+
+.brand-icons-contact .whatsapp-icon:hover {
+  background-color: white;
 }
 
 .brand-icons-contact a:hover {

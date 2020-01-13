@@ -37,7 +37,7 @@ const Resume = ({ phoneNumber }) => {
               </p>
               <Button
                 variant="success"
-                className="resume-button font-weight-bold px-3 m-2"
+                className="resume-button font-weight-bold px-3 mt-2"
               >
                 <SaveAlt className="align-bottom mr-1" />
                 Give me the PDF
@@ -52,42 +52,38 @@ const Resume = ({ phoneNumber }) => {
               <div className="col-md-8 col-12 mx-auto">
                 <div className="text-white">
                   <div className="item-resume rounded text-center mb-2 p-3">
-                    <h1>Benjamin Jaume</h1>
-                    <h4>
-                      Rancho Angela, Samara
-                      <br /> Nicoya, Guanacaste
-                      <br />
-                      Costa Rica
-                    </h4>
-                    <h4>
-                      <a
-                        href="mailto:benjamin.jaume@gmail.com"
-                        className="link-sun-flower"
-                      >
-                        benjamin.jaume@gmail.com
-                      </a>
-                    </h4>
+                    <div className="mb-3">
+                      <h1>Benjamin Jaume</h1>
+                      <h4>
+                        Rancho Angela, Samara
+                        <br /> Nicoya, Guanacaste
+                        <br />
+                        Costa Rica
+                      </h4>
+                    </div>
 
-                    <h4>
-                      <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
-                      <a href="tel:+50687907001" className="link-sun-flower">
-                        +506 8790 7001
-                      </a>
-                    </h4>
-                    <h4>
-                      <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
-                      <a
-                        href={`https://api.whatsapp.com/send?phone=${phoneNumber
-                          .replace("+", "")
-                          .replace(/ /g, "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Open link with WhatsApp"
-                        className="link-sun-flower"
-                      >
-                        {phoneNumber}
-                      </a>
-                    </h4>
+                    <div className="mb-2">
+                      <h4>
+                        <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
+                        <a href="tel:+50687907001" className="link-sun-flower">
+                          +506 8790 7001
+                        </a>
+                      </h4>
+                      <h4>
+                        <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+                        <a
+                          href={`https://api.whatsapp.com/send?phone=${phoneNumber
+                            .replace("+", "")
+                            .replace(/ /g, "")}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Open link with WhatsApp"
+                          className="link-sun-flower"
+                        >
+                          {phoneNumber}
+                        </a>
+                      </h4>
+                    </div>
                     <div className="brand-icons-contact">
                       <ContactItems phoneNumber={phoneNumber} />
                     </div>

@@ -29,9 +29,11 @@
     "cluster": "^0.7.7",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
     "https": "^1.0.0",
     "path": "^0.12.7",
-    "pg": "^7.17.0"
+    "pg": "^7.17.0",
+    "react-router-bootstrap": "^0.25.0"
   }
 }

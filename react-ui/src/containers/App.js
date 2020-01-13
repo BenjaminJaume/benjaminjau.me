@@ -57,19 +57,19 @@ class App extends Component {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about-me" exact component={AboutMe}>
+          <Route path="/about-me" component={AboutMe}>
             <ScrollToTop />
             <AboutMe />
           </Route>
-          <Route path="/portfolio" exact component={Portfolio}>
+          <Route path="/portfolio" component={Portfolio}>
             <ScrollToTop />
             <Portfolio />
           </Route>
-          <Route path="/resume" exact component={Resume}>
+          <Route path="/resume" component={Resume}>
             <ScrollToTop />
             <Resume phoneNumber={phoneNumber} />
           </Route>
-          <Route path="/contact" exact component={Contact}>
+          <Route path="/contact" component={Contact}>
             <ScrollToTop />
             <Contact phoneNumber={phoneNumber} />
           </Route>
