@@ -45,6 +45,7 @@ I used different tools, technologies and websites throughout the creation of thi
 - Google Fonts
 - Material Design
 - Animate.css
+- EmailJS
 
 ### Languages
 

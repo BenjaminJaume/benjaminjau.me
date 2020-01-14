@@ -44,13 +44,8 @@ body {
 }
 
 /* Extending the orginal class from Bootstrap */
-.navbar {
-  background-color: var(--black-pearl);
-}
-
-/* Extending the orginal class from Bootstrap */
-.navbar-nav .nav-link {
-  text-align: center;
+.btn:hover {
+  cursor: pointer;
 }
 
 /* Extending the orginal classes from Bootstrap */
@@ -135,6 +130,7 @@ body {
 
 .link-sun-flower:hover {
   color: var(--sun-flower-link);
+  cursor: pointer;
 }
 
 .link-emerald {
@@ -144,6 +140,7 @@ body {
 
 .link-emerald:hover {
   color: var(--emerald-link);
+  cursor: pointer;
 }
 
 .divider {

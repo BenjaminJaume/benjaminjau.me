@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { SaveAlt } from "@material-ui/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -19,6 +17,7 @@ import {
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 
 import ContactItems from "../ContactItems/ContactItems";
+import ButtonResume from "../ButtonResume/ButtonResume";
 
 import "./Resume.css";
 
@@ -30,18 +29,12 @@ const Resume = ({ phoneNumber }) => {
           <div className="col-md-8 col-12 mx-auto">
             <div className="text-center text-white">
               <h1 className="display-4">Resume</h1>
-              <p>
-                Welcome to the resume section.
-                <br />
-                Read it here or download it!
+              <p className="lead mb-0">Oh, you are here! Interested?</p>
+              <p className="lead">
+                Then download the PDF or have a quicker look below
               </p>
-              <Button
-                variant="success"
-                className="resume-button font-weight-bold px-3 mt-2"
-              >
-                <SaveAlt className="align-bottom mr-1" />
-                Give me the PDF
-              </Button>
+
+              <ButtonResume displayMessage="Download PDF" />
             </div>
           </div>
 

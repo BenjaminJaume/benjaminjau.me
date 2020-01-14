@@ -1,6 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// Custom components import
 import ButtonMore from "../ButtonMore/ButtonMore";
+
+// JSON File
+// @ts-ignore
+import importantProjects from "./importantProjects.json";
+
+// CSS import
+import "./Home.css";
+
+// Modules import
+import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -14,10 +25,6 @@ import {
   faClock
 } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-// @ts-ignore
-import importantProjects from "./importantProjects.json";
-
-import "./Home.css";
 
 const Home = () => {
   return (
@@ -43,17 +50,16 @@ const Home = () => {
                 </h4>
               </div>
 
-              <div className="mb-3">
-                <Link
-                  to="/contact"
-                  className="btn btn-warning button-hire-me px-4"
-                >
-                  <FontAwesomeIcon
-                    icon={faHandshake}
-                    className="align-middle mr-2"
-                  />
-                  Hire me
-                </Link>
+              <div className="btn btn-warning mb-3">
+                <LinkContainer to="/contact" className="px-2">
+                  <span className="h4 mb-0">
+                    <FontAwesomeIcon
+                      icon={faHandshake}
+                      className="align-middle mr-2"
+                    />
+                    Hire me
+                  </span>
+                </LinkContainer>
               </div>
             </section>
 

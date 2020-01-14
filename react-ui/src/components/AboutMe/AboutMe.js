@@ -4,8 +4,9 @@ import {
   faClock,
   faArrowAltCircleDown
 } from "@fortawesome/free-regular-svg-icons";
+import { LinkContainer } from "react-router-bootstrap";
+
 import "./AboutMe.css";
-import { Link } from "react-router-dom";
 
 function calculateAge(dateOfBirth) {
   var today = new Date(),
@@ -218,9 +219,9 @@ const AboutMe = () => {
                   The teachers (which I was getting along well) had a big
                   knowledge with, and I was confortable with computer science so
                   I created with a friend a few projects (check my{" "}
-                  <Link to="/portfolio" className="link-emerald">
-                    <u>portfolio</u>
-                  </Link>
+                  <LinkContainer to="/portfolio">
+                    <span className="link-emerald">portfolio</span>
+                  </LinkContainer>
                   ). The main projects we had were based on C/C++
                   micro-controllers, Arduino and Labview.
                 </p>

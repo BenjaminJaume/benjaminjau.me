@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "../components/NavigationBar/NavigationBar";
@@ -15,74 +15,36 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const phoneNumber = "+61 4 32 586 316";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projects: [],
-      isLoading: false,
-      error: null
-    };
-  }
+const App = () => {
+  return (
+    <Router>
+      <ScrollToTop />
+      <Navbar />
 
-  componentDidMount() {
-    // const { projects } = this.state;
-
-    this.setState({ isLoading: true });
-
-    // if (projects === []) {
-    // fetch("http://localhost:5000/projects.json")
-    fetch("https://benjaminjaume.herokuapp.com/projects.json")
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error("Something went wrong.");
-        }
-      })
-      .then(response =>
-        this.setState({
-          projects: response,
-          isLoading: false
-        })
-      )
-      .catch(error => this.setState({ error, isLoading: false }));
-    // }
-  }
-  render() {
-    return (
-      <Router>
-        <Navbar />
-
-        {/* A <Switch> looks through its children <Route>s and
+      {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about-me" component={AboutMe}>
-            <ScrollToTop />
-            <AboutMe />
-          </Route>
-          <Route path="/portfolio" component={Portfolio}>
-            <ScrollToTop />
-            <Portfolio />
-          </Route>
-          <Route path="/resume" component={Resume}>
-            <ScrollToTop />
-            <Resume phoneNumber={phoneNumber} />
-          </Route>
-          <Route path="/contact" component={Contact}>
-            <ScrollToTop />
-            <Contact phoneNumber={phoneNumber} />
-          </Route>
-          <Route path="/" exact component={Home}>
-            <Home />
-          </Route>
-          <Route component={page404} />
-        </Switch>
+      <Switch>
+        <Route path="/about-me" component={AboutMe}>
+          <AboutMe />
+        </Route>
+        <Route path="/portfolio" component={Portfolio}>
+          <Portfolio />
+        </Route>
+        <Route path="/resume" component={Resume}>
+          <Resume phoneNumber={phoneNumber} />
+        </Route>
+        <Route path="/contact" component={Contact}>
+          <Contact phoneNumber={phoneNumber} />
+        </Route>
+        <Route path="/" component={Home} exact>
+          <Home />
+        </Route>
+        <Route component={page404} />
+      </Switch>
 
-        <Footer phoneNumber={phoneNumber} />
-      </Router>
-    );
-  }
-}
+      <Footer phoneNumber={phoneNumber} />
+    </Router>
+  );
+};
 
 export default App;

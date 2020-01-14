@@ -1,3 +1,10 @@
+/* Extending the orginal class from Bootstrap */
 .navbar {
   border-bottom: 1px solid var(--emerald);
+  background-color: var(--black-pearl);
+}
+
+/* Extending the orginal class from Bootstrap */
+.navbar-nav .nav-link {
+  text-align: center;
 }

@@ -26,6 +26,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "browserify-fs": "^1.0.0",
     "cluster": "^0.7.7",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

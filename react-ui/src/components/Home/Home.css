@@ -10,11 +10,6 @@
   color: var(--sun-flower);
 }
 
-.button-hire-me,
-.button-portfolio {
-  font-size: 1.5rem;
-}
-
 .discover-heading {
   color: var(--emerald);
   font-weight: 1000;

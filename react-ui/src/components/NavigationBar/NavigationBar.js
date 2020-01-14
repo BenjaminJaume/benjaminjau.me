@@ -1,16 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { IndexLinkContainer } from "react-router-bootstrap";
-import {
-  Home,
-  Info,
-  Folder,
-  ListAlt,
-  Person,
-  SaveAlt
-} from "@material-ui/icons";
+import { Home, Info, Folder, ListAlt, Person } from "@material-ui/icons";
 import "./NavigationBar.css";
+import ButtonResume from "../ButtonResume/ButtonResume";
 
 const NavigationBar = () => {
   return (
@@ -35,44 +29,48 @@ const NavigationBar = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">
           <IndexLinkContainer to="/">
-            <Nav.Link as={NavLink} to="/" href="/" exact>
+            <Nav.Link as={NavLink} to="/" href="/" active={false}>
               <Home className="align-bottom mr-1" />
               Home
             </Nav.Link>
           </IndexLinkContainer>
           <IndexLinkContainer to="/portfolio">
-            <Nav.Link as={NavLink} to="/portfolio" href="/portfolio">
+            <Nav.Link
+              as={NavLink}
+              to="/portfolio"
+              href="/portfolio"
+              active={false}
+            >
               <Folder className="align-bottom mr-1" />
               Portfolio
             </Nav.Link>
           </IndexLinkContainer>
           <IndexLinkContainer to="/resume">
-            <Nav.Link as={NavLink} to="/resume" href="/resume">
+            <Nav.Link as={NavLink} to="/resume" href="/resume" active={false}>
               <ListAlt className="align-bottom mr-1" />
               Resume
             </Nav.Link>
           </IndexLinkContainer>
           <IndexLinkContainer to="/about-me">
-            <Nav.Link as={NavLink} to="/about-me" href="/about-me">
+            <Nav.Link
+              as={NavLink}
+              to="/about-me"
+              href="/about-me"
+              active={false}
+            >
               <Info className="align-bottom mr-1" />
               About me
             </Nav.Link>
           </IndexLinkContainer>
           <IndexLinkContainer to="/contact">
-            <Nav.Link as={NavLink} to="/contact" href="/contact">
+            <Nav.Link as={NavLink} to="/contact" href="/contact" active={false}>
               <Person className="align-bottom mr-1" />
               Contact
             </Nav.Link>
           </IndexLinkContainer>
         </Nav>
-        <div className="d-flex justify-content-center">
-          <Button
-            variant="success"
-            className="resume-button font-weight-bold px-3 m-2"
-          >
-            <SaveAlt className="align-bottom mr-1" />
-            Resume
-          </Button>
+        <div className="d-flex justify-content-center m-2">
+          <ButtonResume displayMessage="Resume" />
         </div>
       </Navbar.Collapse>
     </Navbar>

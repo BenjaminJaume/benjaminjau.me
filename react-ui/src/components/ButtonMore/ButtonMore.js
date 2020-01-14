@@ -1,12 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// Modules import
+import { LinkContainer } from "react-router-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 
 const ButtonMore = ({ page }) => {
   return (
-    <Link to={`/${page}#`} className="btn btn-success">
-      Learn more
-      <i className="fas fa-arrow-right ml-1"></i>
-    </Link>
+    <LinkContainer to={`/${page}#`} className="btn btn-success" exact>
+      <span className="h4 mb-0">
+        Learn more
+        <FontAwesomeIcon
+          icon={faArrowAltCircleRight}
+          className="align-middle ml-2"
+        />
+      </span>
+    </LinkContainer>
   );
 };
 
