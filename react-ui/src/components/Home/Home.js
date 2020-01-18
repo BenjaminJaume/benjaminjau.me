@@ -46,7 +46,6 @@ const Home = () => {
                 <h1 className="text-sun-flower"># Web Developer #</h1>
                 <h4>
                   I build websites with NodeJS, React and Express hosted on
-                  Heroku
                 </h4>
               </div>
 
