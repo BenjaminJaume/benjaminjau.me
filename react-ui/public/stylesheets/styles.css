@@ -28,6 +28,9 @@
   --facebook-color: #4267b2;
   --whatsapp-color: #00e676;
   --not-black: #121212;
+
+  /* Numbers */
+  --navbar-height: 71px;
 }
 
 html {
@@ -37,7 +40,7 @@ html {
 body {
   background-color: var(--black-pearl);
   font-family: "Quicksand", Calibri, "Trebuchet MS", sans-serif, cursive;
-  padding-top: 56px;
+  padding-top: var(--navbar-height);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

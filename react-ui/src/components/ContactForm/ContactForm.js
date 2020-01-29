@@ -27,7 +27,7 @@ class ContactForm extends Component {
         {isSent && status === "success" ? (
           <div className="text-center">
             <span className="text-emerald h6">
-              <FontAwesomeIcon icon={faCheckCircle} className="mr-2" /> by
+              <FontAwesomeIcon icon={faCheckCircle} className="mr-2" />
               Successfully sent, thank you!
               <br />I will reply shortly
             </span>

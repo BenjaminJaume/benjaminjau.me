@@ -8,3 +8,9 @@
 .navbar-nav .nav-link {
   text-align: center;
 }
+
+.nav-link:hover,
+.navbar-nav .active {
+  /* color: var(--emerald) !important; */
+  cursor: pointer;
+}

@@ -1,8 +1,17 @@
 [
   {
+    "id": 27,
+    "name": "stadium8.com",
+    "description": "Building a website from scratch using React for the Front End and Wordress for the Back End",
+    "tools": ["Wordpress", "React", "Javascript", "Bootstrap", "Siteground"],
+    "github": "https://github.com/BenjaminJaume/stadium8",
+    "link": "stadium8.com/",
+    "date": "2020-01-22T00:00:00.000Z"
+  },
+  {
     "id": 2,
-    "name": "Benjamin Jaume",
-    "description": "My personnal website, which is also my playground",
+    "name": "benjaminjau.me",
+    "description": "My personnal website entirely built with React ",
     "tools": ["React", "Javascript", "Express", "NodeJS"],
     "github": "https://github.com/BenjaminJaume/benjaminjaume",
     "link": "https://benjaminjaume.herokuapp.com/",
@@ -25,14 +34,5 @@
     "github": "https://github.com/BenjaminJaume/starwarsapi",
     "link": "",
     "date": "2019-11-06T00:00:00.000Z"
-  },
-  {
-    "id": 22,
-    "name": "RoboFriend\n",
-    "description": "RESTful API that fecth fake people's name and robot faces from an API\n",
-    "tools": ["React", "Javascript", "JSX", "Bootstrap"],
-    "github": "https://github.com/BenjaminJaume/robofriends\n",
-    "link": "",
-    "date": "2019-05-06T00:00:00.000Z"
   }
 ]

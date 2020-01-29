@@ -1,5 +1,5 @@
-.column-contact {
-  background-color: #eee;
+.container-contact {
+  height: calc(100vh - var(--navbar-height));
 }
 
 .textarea-contact {

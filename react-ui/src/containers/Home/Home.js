@@ -1,7 +1,7 @@
 import React from "react";
 
 // Custom components import
-import ButtonMore from "../ButtonMore/ButtonMore";
+import ButtonMore from "../../components/ButtonMore/ButtonMore";
 
 // JSON File
 // @ts-ignore
@@ -45,7 +45,7 @@ const Home = () => {
               <div className="mb-4">
                 <h1 className="text-sun-flower"># Web Developer #</h1>
                 <h4>
-                  I build websites with NodeJS, React and Express hosted on
+                  I build fast and responsive websites with Wordpress and React
                 </h4>
               </div>
 
@@ -68,7 +68,7 @@ const Home = () => {
               <div>
                 {/* START CARD-DECK */}
                 <h3 className="text-emerald text-center mb-4">
-                  # Extract of my portfolio #
+                  # Some of my projects #
                 </h3>
                 <div className="card-deck">
                   {importantProjects.map((project, i) => {

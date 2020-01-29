@@ -16,8 +16,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 
-import ContactItems from "../ContactItems/ContactItems";
-import ButtonResume from "../ButtonResume/ButtonResume";
+import ContactItems from "../../components/ContactItems/ContactItems";
+import ButtonResume from "../../components/ButtonResume/ButtonResume";
 
 import "./Resume.css";
 
