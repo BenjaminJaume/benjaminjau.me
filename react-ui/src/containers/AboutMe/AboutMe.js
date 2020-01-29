@@ -67,16 +67,6 @@ const AboutMe = () => {
                   Self-consciousness, self-development food and sport
                 </p>
               </div>
-
-              <div className="mb-5">
-                <a href="#first-event" className="btn btn-warning btn-lg mt-4">
-                  Show me the beginning
-                  <FontAwesomeIcon
-                    icon={faArrowAltCircleDown}
-                    className="ml-2"
-                  />
-                </a>
-              </div>
             </section>
           </div>
         </div>
@@ -651,7 +641,19 @@ const AboutMe = () => {
               </TabPanel>
 
               <TabPanel>
-                <section className="text-white mb-5">
+                <section className="text-white text-center mb-5">
+                  <div className="mb-5">
+                    <a
+                      href="#first-event"
+                      className="btn btn-warning btn-lg mt-4"
+                    >
+                      Show me the beginning
+                      <FontAwesomeIcon
+                        icon={faArrowAltCircleDown}
+                        className="ml-2"
+                      />
+                    </a>
+                  </div>
                   <div className="event-about-me rounded mb-2 p-3">
                     <h5 className="text-emerald">Costa Rica</h5>
                     <span>

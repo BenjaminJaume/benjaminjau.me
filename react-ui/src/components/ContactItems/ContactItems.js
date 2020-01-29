@@ -6,8 +6,10 @@ import {
   faLinkedin,
   faGithubSquare,
   faFacebookSquare,
-  faWhatsappSquare
+  faWhatsappSquare,
+  faYoutubeSquare
 } from "@fortawesome/free-brands-svg-icons";
+import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import {
   faPhoneAlt,
@@ -31,8 +33,8 @@ class ContactItems extends Component {
     return (
       <>
         <a
-          href="https://www.linkedin.com/in/benjamin-jaume/"
-          className="linkedin-icon px-1"
+          href="https://urlgeni.us/linkedin/GTEH"
+          className="linkedin-brand-icon px-1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,7 +43,7 @@ class ContactItems extends Component {
 
         <a
           href="https://github.com/BenjaminJaume"
-          className="github-icon px-1"
+          className="github-brand-icon px-1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -49,15 +51,15 @@ class ContactItems extends Component {
         </a>
 
         <a
-          href="https://www.facebook.com/ben.jaume"
-          className="facebook-icon px-1"
+          href="https://urlgeni.us/facebook/EPhx"
+          className="facebook-brand-icon px-1"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </a>
 
-        <span className="whatsapp-icon px-1">
+        <span className="whatsapp-brand-icon px-1">
           <OverlayTrigger
             trigger="click"
             placement="top"
@@ -109,11 +111,29 @@ class ContactItems extends Component {
 
         <a
           href="mailto:benjamin.jaume@gmail.com"
-          className="mail-icon px-1"
+          className="mail-brand-icon px-1"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faEnvelopeSquare} />
+        </a>
+
+        <a
+          href="https://urlgeni.us/youtube/channel/bPwj"
+          className="youtube-brand-icon px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faYoutubeSquare} />
+        </a>
+
+        <a
+          href="https://www.dailymotion.com/dm_fe8eec2a259fade493b8a23b2a7abc72"
+          className="dailymotion-brand-icon px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faPlusSquare} />
         </a>
       </>
     );

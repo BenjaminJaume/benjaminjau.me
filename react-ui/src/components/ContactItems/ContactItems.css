@@ -1,17 +1,16 @@
-.whatsapp-icon {
+[class*="-brand-icon"] {
   font-size: 3em;
   text-decoration: none;
 }
 
-.whatsapp-icon:hover {
-  text-decoration: none;
+.whatsapp-brand-icon:hover {
+  background-color: white;
   border-radius: 5px;
   color: var(--whatsapp-color);
   cursor: pointer;
 }
 
-.whatsapp-icon:focus {
-  /* border-color: #ccc; */
+.whatsapp-brand-icon:focus {
   outline: 0;
 }
 
@@ -20,18 +19,26 @@
   color: var(--silver);
 }
 
-.linkedin-icon:hover {
+.linkedin-brand-icon:hover {
   color: var(--linkedin-color);
 }
 
-.github-icon:hover {
+.github-brand-icon:hover {
   color: var(--github-color);
 }
 
-.facebook-icon:hover {
+.facebook-brand-icon:hover {
   color: var(--facebook-color);
 }
 
-.mail-icon:hover {
+.mail-brand-icon:hover {
   color: var(--sun-flower);
+}
+
+.youtube-brand-icon:hover {
+  color: var(--youtube-color);
+}
+
+.dailymotion-brand-icon:hover {
+  color: var(--dailymotion-color);
 }
