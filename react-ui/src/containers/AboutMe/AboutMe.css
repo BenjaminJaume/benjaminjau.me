@@ -2,6 +2,14 @@
   background-color: var(--midnight-blue);
 }
 
+.link-peter-river-about-me {
+  color: var(--peter-river);
+}
+
+.link-peter-river-about-me:hover {
+  color: var(--peter-river-link);
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
 }
