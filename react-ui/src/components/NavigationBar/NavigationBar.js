@@ -1,6 +1,5 @@
 import React from "react";
 import { IndexLinkContainer } from "react-router-bootstrap";
-import { Home, Info, Folder, ListAlt, Person } from "@material-ui/icons";
 import "./NavigationBar.css";
 import ButtonResume from "../ButtonResume/ButtonResume";
 
@@ -47,10 +46,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>
-                <Home className="align-bottom mr-1" />
-                Home
-              </span>
+              <span>Home</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -61,10 +57,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>
-                <Folder className="align-bottom mr-1" />
-                Portfolio
-              </span>
+              <span>Portfolio</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -75,10 +68,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>
-                <ListAlt className="align-bottom mr-1" />
-                Resume
-              </span>
+              <span>Resume</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -89,10 +79,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>
-                <Info className="align-bottom mr-1" />
-                About me
-              </span>
+              <span>About me</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -103,10 +90,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>
-                <Person className="align-bottom mr-1" />
-                Contact
-              </span>
+              <span>Contact</span>
             </IndexLinkContainer>
           </li>
         </ul>

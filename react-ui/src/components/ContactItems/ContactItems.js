@@ -5,11 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithubSquare,
-  faFacebookSquare,
   faWhatsappSquare,
   faYoutubeSquare
 } from "@fortawesome/free-brands-svg-icons";
-import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import {
   faPhoneAlt,
@@ -48,15 +46,6 @@ class ContactItems extends Component {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faGithubSquare} />
-        </a>
-
-        <a
-          href="https://urlgeni.us/facebook/EPhx"
-          className="facebook-brand-icon px-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faFacebookSquare} />
         </a>
 
         <span className="whatsapp-brand-icon px-1">
@@ -125,15 +114,6 @@ class ContactItems extends Component {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faYoutubeSquare} />
-        </a>
-
-        <a
-          href="https://www.dailymotion.com/dm_fe8eec2a259fade493b8a23b2a7abc72"
-          className="dailymotion-brand-icon px-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faPlusSquare} />
         </a>
       </>
     );
