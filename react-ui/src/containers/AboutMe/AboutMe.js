@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faClock,
   faArrowAltCircleDown,
-  faThumbsUp
+  faHeart
 } from "@fortawesome/free-regular-svg-icons";
 import { faList } from "@fortawesome/free-solid-svg-icons";
 import { LinkContainer } from "react-router-bootstrap";
@@ -76,16 +76,16 @@ const AboutMe = () => {
             <Tabs>
               <TabList>
                 <Tab>
-                  <h5 className="font-weight-bold text-peter-river">
-                    <FontAwesomeIcon icon={faThumbsUp} className="mr-2" />
+                  <span className="h5 font-weight-bold text-peter-river mb-0 pb-0">
+                    <FontAwesomeIcon icon={faHeart} className="mr-2" />
                     My interests
-                  </h5>
+                  </span>
                 </Tab>
                 <Tab>
-                  <h5 className="font-weight-bold text-peter-river">
+                  <span className="h5 font-weight-bold text-peter-river mb-0 pb-0">
                     <FontAwesomeIcon icon={faList} className="mr-2" />
                     My story
-                  </h5>
+                  </span>
                 </Tab>
               </TabList>
 
@@ -94,29 +94,69 @@ const AboutMe = () => {
                   <h1>Podcasts</h1>
 
                   <ul>
-                    <li>Sam Harris & Roland Griffiths</li>
                     <li>
                       <a
-                        href="https://tim.blog/2015/12/14/derek-sivers-on-developing-confidence-finding-happiness-and-saying-no-to-millions/"
+                        href="https://tim.blog/podcast/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        Tim Ferris Show - #125 Derek Sivers on Developing
-                        Confidence, Finding Happiness, and saying "No" to
-                        Millions
+                        Tim Ferris Show
                       </a>
+
+                      <ul>
+                        <li>
+                          <a
+                            href="https://tim.blog/2015/12/14/derek-sivers-on-developing-confidence-finding-happiness-and-saying-no-to-millions/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Tim Ferris Show - #125 Derek Sivers on Developing
+                            Confidence, Finding Happiness, and saying "No" to
+                            Millions
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://tim.blog/2018/10/29/sam-harris-waking-up/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Tim Ferris Show - #342 Sam Harris, Ph.D. — How to
+                            Master Your Mind
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <a
-                        href="https://tim.blog/2018/10/29/sam-harris-waking-up/"
+                        href="https://frontendhappyhour.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        Tim Ferris Show - #342 Sam Harris, Ph.D. — How to Master
-                        Your Mind
+                        Front End Happy Hour
                       </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://frontendhappyhour.com/episodes/beers-and-careers-career-management/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Episode 093 - Beers and Careers - Career Management
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Sam Harris
+                      <ul>
+                        <li>Sam Harris & Roland Griffiths</li>
+                      </ul>
                     </li>
                   </ul>
 
@@ -124,50 +164,48 @@ const AboutMe = () => {
 
                   <ul>
                     <li>
-                      <h2>
-                        <a
-                          href="https://www.youtube.com/user/PowerfulJRE"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          <h2>Joe Rogan Experience</h2>
-                        </a>
-                      </h2>
-                    </li>
+                      <a
+                        href="https://www.youtube.com/user/PowerfulJRE"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h3">Joe Rogan Experience</span>
+                      </a>
 
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=0pmviUS1Zac"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Joe Rogan Experience #1347 - Neil deGrasse Tyson
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=ycPr5-27vSI"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Joe Rogan Experience #1169 - Elon Musk
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=efs3QRr8LWw"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Joe Rogan Experience #1368 - Edward Snowden
-                        </a>
-                      </li>
-                    </ul>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=0pmviUS1Zac"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Joe Rogan Experience #1347 - Neil deGrasse Tyson
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=ycPr5-27vSI"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Joe Rogan Experience #1169 - Elon Musk
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=efs3QRr8LWw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Joe Rogan Experience #1368 - Edward Snowden
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
 
                     <li>
                       <a
@@ -176,77 +214,103 @@ const AboutMe = () => {
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        <h2>Ted Talks</h2>
+                        <span className="h3">Ted Talks</span>
                       </a>
-                    </li>
 
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Tim Urban - Inside the mind of a master procrastinator
-                        </a>
-                      </li>
-                    </ul>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Tim Urban - Inside the mind of a master
+                            procrastinator
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
 
                     <li>
-                      <h2>Documentaries</h2>
-                    </li>
+                      <a
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h3">Youtube</span>
+                      </a>
 
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=CcUjwt0M31I"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          The Great Pyramides K 2019 [FR]
-                        </a>
-                      </li>
-                    </ul>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            THE AGE OF A.I.
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
 
                     <li>
-                      <h2>Other</h2>
+                      <span className="h3">Documentaries</span>
+
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=CcUjwt0M31I"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Great Pyramides K 2019 [FR]
+                          </a>
+                        </li>
+                      </ul>
                     </li>
 
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=-EvvPZFdjyk"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Alain de Botton - Why you will marry the wrong person
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=JPPlicAEFec"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Wim Hof & Russell Brand - Heal Yourself
-                        </a>
-                      </li>
+                    <li>
+                      <span className="h3">Other</span>
 
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=XWMR97rQc20"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Dr. Gundry Interviews Dave Asprey | Ep34
-                        </a>
-                      </li>
-                    </ul>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=-EvvPZFdjyk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Alain de Botton - Why you will marry the wrong
+                            person
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=JPPlicAEFec"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Wim Hof & Russell Brand - Heal Yourself
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=XWMR97rQc20"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Dr. Gundry Interviews Dave Asprey | Ep34
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
 
                   <h1>Books</h1>
@@ -275,169 +339,296 @@ const AboutMe = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://www.heartsintrueharmony.com/m/email/nl/3-signs-youre-projecting.html?s=15549&e=1&cid=DRZZZ3&lid=1&sbid=wDFG"
+                        href="https://www.heartsintrueharmony.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        The Surprising Reason You Become Deeply Upset With Your
-                        Partner
+                        <span className="h5">Hearts In True Harmony</span>
                       </a>
+
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.heartsintrueharmony.com/m/email/nl/3-signs-youre-projecting.html?s=15549&e=1&cid=DRZZZ3&lid=1&sbid=wDFG"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Surprising Reason You Become Deeply Upset With
+                            Your Partner
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.heartsintrueharmony.com/m/email/nl/phrases-that-kill-intimacy.html?s=15549&e=1&cid=XZZZ30&lid=1&sbid=wDFG"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Want To Feel Closer? How You Respond To Common
+                            Conversational Cues Can Make All The Difference
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.heartsintrueharmony.com/m/email/nl/the-4-rules-of-conscious-relationships.html?s=15549&e=1&cid=ZZ35PZ&lid=1&sbid=wDFG"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            It's Never Too Late To Make These New Vows To Each
+                            Other And Watch Your Love Bloom
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.heartsintrueharmony.com/m/email/nl/when-insecurity-steals-your-happiness.html?s=15549&e=1&cid=ZZZZ35&lid=1&sbid=wDFG"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            How To Have Your Worst Relationship Fears Come True
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <a
-                        href="https://www.heartsintrueharmony.com/m/email/nl/phrases-that-kill-intimacy.html?s=15549&e=1&cid=XZZZ30&lid=1&sbid=wDFG"
+                        href="https://www.nytimes.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        Want To Feel Closer? How You Respond To Common
-                        Conversational Cues Can Make All The Difference
+                        <span className="h5">New York Times</span>
                       </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.nytimes.com/2014/07/27/sunday-review/no-time-to-think.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            No Time to Think
+                          </a>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <a
-                        href="https://www.nytimes.com/2014/07/27/sunday-review/no-time-to-think.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        No Time to Think
-                      </a>
-                    </li>
-                    <li>Bulletproof.com - What is emotional intelligence</li>
 
                     <li>
                       <a
-                        href="https://www.njlifehacks.com/self-compassion-self-criticism-procrastination/"
+                        href="https://www.bulletproof.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        To Overcome Procrastination, Try Some Self-Compassion
+                        <span className="h5">Bulletproof.com</span>
                       </a>
+
+                      <ul>
+                        <li>What is emotional intelligence</li>
+                        <li>
+                          <a
+                            href="https://blog.daveasprey.com/how-to-add-2-75-iq-points-per-hour-of-training/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            How To Add 2.75 IQ Points Per Hour of Training
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.njlifehacks.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">NJ Lifehacks</span>
+                      </a>
+
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.njlifehacks.com/self-compassion-self-criticism-procrastination/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            To Overcome Procrastination, Try Some
+                            Self-Compassion
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://waitbutwhy.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">Wait But Why</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://waitbutwhy.com/2017/03/elon-musk-post-series.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Elon Musk Post Series - Wait But Why
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Why Procrastinators Procrastinate
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://waitbutwhy.com/2015/03/procrastination-matrix.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Procrastination Matrix
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <a
-                        href="https://www.heartsintrueharmony.com/m/email/nl/the-4-rules-of-conscious-relationships.html?s=15549&e=1&cid=ZZ35PZ&lid=1&sbid=wDFG"
+                        href="https://www.entrepreneur.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        It's Never Too Late To Make These New Vows To Each Other
-                        And Watch Your Love Bloom
+                        <span className="h5">Entrepreneur.com</span>
                       </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.entrepreneur.com/article/270631"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The 8 Secrets of Great Communicators
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <a
-                        href="https://www.heartsintrueharmony.com/m/email/nl/when-insecurity-steals-your-happiness.html?s=15549&e=1&cid=ZZZZ35&lid=1&sbid=wDFG"
+                        href="https://www.huffpost.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        How To Have Your Worst Relationship Fears Come True
+                        <span className="h5">Huff Post</span>
                       </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.huffpost.com/entry/what-if-i-dont-have-a-dre_b_14682060?guccounter=1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            What If I Don’t Have A Dream?
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <a
-                        href="https://waitbutwhy.com/2017/03/elon-musk-post-series.html"
+                        href="https://markmanson.net/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        The Elon Musk Post Series - Wait But Why
+                        <span className="h5">Mark Manson</span>
                       </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://markmanson.net/self-awareness"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Three Levels of Self-Awareness
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://markmanson.net/fuck-your-feelings"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Fuck Your Feelings
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://pathwaytohappiness.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">Pathway To Happiness</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://pathwaytohappiness.com/blog/becoming-observer/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Becoming The Observer
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <a
-                        href="https://www.entrepreneur.com/article/270631"
+                        href="https://www.fastcompany.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-peter-river-about-me"
                       >
-                        The 8 Secrets of Great Communicators
+                        <span className="h5">Fast Company</span>
                       </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.huffpost.com/entry/what-if-i-dont-have-a-dre_b_14682060?guccounter=1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        What If I Don’t Have A Dream?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://markmanson.net/self-awareness"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        The Three Levels of Self-Awareness
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://blog.daveasprey.com/how-to-add-2-75-iq-points-per-hour-of-training/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        How To Add 2.75 IQ Points Per Hour of Training
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://pathwaytohappiness.com/blog/becoming-observer/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        Becoming The Observer
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.fastcompany.com/3025757/why-you-can-never-finish-anything-and-how-to-finally-change-it"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        Why You Can Never Finish Anything And How to Finally
-                        Change It
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://markmanson.net/fuck-your-feelings"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        Fuck Your Feelings
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        Why Procrastinators Procrastinate
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://waitbutwhy.com/2015/03/procrastination-matrix.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        The Procrastination Matrix
-                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.fastcompany.com/3025757/why-you-can-never-finish-anything-and-how-to-finally-change-it"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Why You Can Never Finish Anything And How to Finally
+                            Change It
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
 
@@ -461,16 +652,14 @@ const AboutMe = () => {
                   <p>Completed courses on Web Dev:</p>
                   <ul>
                     <li>
-                      <h2>
-                        <a
-                          href="https://frontendmasters.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Front End Masters
-                        </a>
-                      </h2>
+                      <a
+                        href="https://frontendmasters.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h3">Front End Masters</span>
+                      </a>
                     </li>
                     <ul>
                       <li>
@@ -557,7 +746,7 @@ const AboutMe = () => {
                             Complete Intro to React, v5
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a
                             href="https://frontendmasters.com/courses/intermediate-react-v2/"
                             target="_blank"
@@ -597,7 +786,7 @@ const AboutMe = () => {
                             Advanced State Management in React (feat. Redux and
                             MobX)
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
 
                       <li>
@@ -613,16 +802,14 @@ const AboutMe = () => {
                     </ul>
 
                     <li>
-                      <h2>
-                        <a
-                          href="https://www.udemy.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="link-peter-river-about-me"
-                        >
-                          Udemy
-                        </a>
-                      </h2>
+                      <a
+                        href="https://www.udemy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h3">Udemy</span>
+                      </a>
                     </li>
                     <ul>
                       <li>

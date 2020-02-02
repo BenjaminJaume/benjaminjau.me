@@ -1,3 +1,27 @@
+.card-deck {
+  justify-content: space-evenly;
+}
+
+.card-deck .card {
+  margin: 0 0 1rem;
+}
+
+.card-body {
+  padding: 1rem 0.5rem;
+  /* background-color: var(--not-black); */
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #343a40,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #343a40,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .icon-portfolio {
   margin: 5px;
   font-size: 0.75rem;

@@ -9,6 +9,7 @@
   text-align: center;
 }
 
+.navbar-brand:hover,
 .nav-link:hover,
 .navbar-nav .active {
   /* color: var(--emerald) !important; */

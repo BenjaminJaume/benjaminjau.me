@@ -85,7 +85,7 @@ class Portfolio extends Component {
                   return (
                     <div key={i} className="card">
                       {/* NEW CARD */}
-                      <div className="card-body text-white bg-dark">
+                      <div className="card-body text-white">
                         <h5 className="text-center text-white font-weight-bold">
                           {project.name}
                         </h5>
