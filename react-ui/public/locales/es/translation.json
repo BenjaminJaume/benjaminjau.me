@@ -1,0 +1,38 @@
+{
+  "home": {
+    "hi": "¡Hola! Soy",
+    "webDev": "Desarrollador Web",
+    "shortMsg": "Construyo sitios web rápidos y sensibles con Wordpress y React.",
+    "hireMe": "Contrátame",
+    "textProjects": "Algunos de mis proyectos",
+    "aboutMe": {
+      "title": "¿Quiere saber más sobre mí?",
+      "content": "Aquí es donde puedes encontrar información sobre mí y lo que hago. Escribo sobre las cosas que me gustan y las herramientas que uso en el trabajo o en mi día a día."
+    },
+    "portfolio": {
+      "title": "Descubra mi portafolio",
+      "content": "Desde que escribí mi primera línea de código, he creado muchos sitios web, aplicaciones, proyectos y demás. Puedes encontrar una lista de todos ellos allí."
+    },
+    "resume": {
+      "title": "Accede a mi curriculum vitae",
+      "content": "Puede ver la versión en vivo de mi currículum. Aunque es posible descargar una versión en PDF, ¡lo que le convenga!"
+    },
+    "contact": {
+      "title": "Mantengamos el contacto",
+      "content": "Si quiere contratarme, cuénteme sobre un error de ortografía que haya cometido, dándome su opinión, o simplemente diga \"¡Buenos días! \", por favor siéntase libre de enviarme un mensaje! Hay un formulario, pero también estoy activa en los medios sociales"
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "portfolio": "Portafolio",
+    "resume": "CV",
+    "aboutMe": "Sobre mí",
+    "contact": "Contacto",
+    "btnMoreText": "Saber más"
+  },
+  "footer": {
+    "msgTop-1": "Creado con",
+    "msgTop-2": "por",
+    "topButtonText": "ARRIBA"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "home": {
+    "hi": "Hi! I am",
+    "webDev": "Web Developer",
+    "shortMsg": "I build fast and responsive websites with Wordpress and React",
+    "hireMe": "Hire Me",
+    "textProjects": "Some of my projects",
+    "aboutMe": {
+      "title": "Want to know more about me?",
+      "content": "This is where you can find information about me and what I do. I write about the things I like and the tools I use at work or in my day-to-day basis."
+    },
+    "portfolio": {
+      "title": "Discover my Portfolio",
+      "content": "Since I have wrote my first line of code, I have created lots of different websites, applications, projects and so forth. You can find a list of all of them over there."
+    },
+    "resume": {
+      "title": "Access my resume",
+      "content": "You can have a look at the live version of my resume. Although it is possible to download a PDF version of it, whatever suits you!"
+    },
+    "contact": {
+      "title": "Let's keep in touch",
+      "content": "If you want to hire me, tell me about a mispelling mistake I have made, giving me your feedback, or just say \"G'day! \", please feel free to send me a message! There is a form, but I am also active on social medias"
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "resume": "Resumé",
+    "aboutMe": "About Me",
+    "contact": "Contact",
+    "btnMoreText": "Learn more"
+  },
+  "footer": {
+    "msgTopOne": "Made with",
+    "msgTopTwo": "by",
+    "topButtonText": "TOP"
+  }
+}

@@ -128,3 +128,7 @@ I used different tools, technologies and websites throughout the creation of thi
 - Windows Script
 - Linux Script
 - Android App
+
+# REMINDER
+
+- `npm install react-i18next@legacy i18next i18next-xhr-backend i18next-browser-languagedetector`

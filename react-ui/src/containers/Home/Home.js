@@ -1,16 +1,7 @@
 import React from "react";
 
-// Custom components import
-import ButtonMore from "../../components/ButtonMore/ButtonMore";
-
-// JSON File
-// @ts-ignore
-import importantProjects from "./importantProjects.json";
-
-// CSS import
-import "./Home.css";
-
 // Modules import
+import { withNamespaces } from "react-i18next";
 import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -26,7 +17,17 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Home = () => {
+// Custom components import
+import ButtonMore from "../../components/ButtonMore/ButtonMore";
+
+// JSON File
+// @ts-ignore
+import importantProjects from "./importantProjects.json";
+
+// CSS import
+import "./Home.css";
+
+const Home = ({ t }) => {
   return (
     <>
       <div className="container">
@@ -35,7 +36,7 @@ const Home = () => {
             <section className="text-center text-white ">
               <div className="pt-5 mb-3">
                 <h1 className="display-4 text-monospace animated slideInRight">
-                  Hi! I am
+                  <span>{t("home.hi")}</span>
                   <br />
                   <span className="text-red-pigment">{"<"}</span>Benjamin Jaume
                   <span className="text-red-pigment">{" />"}</span>
@@ -43,9 +44,11 @@ const Home = () => {
               </div>
 
               <div className="mb-4">
-                <h1 className="text-sun-flower"># Web Developer #</h1>
+                <h1 className="text-sun-flower">
+                  # <span>{t("home.webDev")}</span> #
+                </h1>
                 <h4>
-                  I build fast and responsive websites with Wordpress and React
+                  <span>{t("home.shortMsg")}</span>
                 </h4>
               </div>
 
@@ -56,7 +59,7 @@ const Home = () => {
                       icon={faHandshake}
                       className="align-middle mr-2"
                     />
-                    Hire me
+                    <span>{t("home.hireMe")}</span>
                   </span>
                 </LinkContainer>
               </div>
@@ -68,7 +71,7 @@ const Home = () => {
               <div>
                 {/* START CARD-DECK */}
                 <h3 className="text-emerald text-center mb-4">
-                  # Some of my projects #
+                  # <span>{t("home.textProjects")}</span> #
                 </h3>
                 <div className="card-deck">
                   {importantProjects.map((project, i) => {
@@ -180,22 +183,20 @@ const Home = () => {
           <div className="col-lg-6 text-white text-center pb-4">
             <FontAwesomeIcon icon={faSearch} className="mr-3" size="2x" />
             <span className="discover-heading">
-              Want to know more about me?{" "}
+              <span>{t("home.aboutMe.title")}</span>{" "}
             </span>
             <p className="lead text-white pb-3">
-              This is where you can find information about me and what I do. I
-              write about the things I like and the tools I use at work or in my
-              day-to-day basis.
+              <span>{t("home.aboutMe.content")}</span>
             </p>
             <ButtonMore page="about-me" />
           </div>
           <div className="col-lg-6 text-white text-center pb-4">
             <FontAwesomeIcon icon={faList} className="mr-3" size="2x" />
-            <span className="discover-heading">Discover my Portfolio </span>
+            <span className="discover-heading">
+              <span>{t("home.portfolio.title")}</span>
+            </span>
             <p className="lead text-white pb-3">
-              Since I have wrote my first line of code, I have created lots of
-              different websites, applications, projects and so forth. You can
-              find a list of all of them over there.
+              <span>{t("home.portfolio.content")}</span>
             </p>
             <ButtonMore page="portfolio" />
           </div>
@@ -203,21 +204,26 @@ const Home = () => {
         <div className="row">
           <div className="col-lg-6 text-white text-center pb-4">
             <FontAwesomeIcon icon={faFile} className="mr-3" size="2x" />
-            <span className="discover-heading">Access my resume </span>
+            <span className="discover-heading">
+              <span>{t("home.resume.title")}</span>
+            </span>
             <p className="lead text-white pb-3">
-              You can have a look at the live version of my resume. Although it
-              is possible to download a PDF version of it, whatever suits you!
+              <span>{t("home.resume.content")}</span>
             </p>
             <ButtonMore page="resume" />
           </div>
           <div className="col-lg-6 text-white text-center pb-4">
             <FontAwesomeIcon icon={faThumbsUp} className="mr-3" size="2x" />
-            <span className="discover-heading">Let&apos;s keep in touch </span>
+            <span className="discover-heading">
+              <span>{t("home.contact.title")}</span>
+            </span>
             <p className="lead text-white pb-3">
-              If you want to hire me, tell me about a mispelling mistake I have
+              <span>{t("home.contact.content")}</span>
+
+              {/* If you want to hire me, tell me about a mispelling mistake I have
               made, giving me your feedback, or just say &quot;
               <i>G&apos;day! </i>&quot;, please feel free to send me a message!
-              There is a form, but I am also active on social medias
+              There is a form, but I am also active on social medias */}
             </p>
             <ButtonMore page="contact" />
           </div>
@@ -227,4 +233,5 @@ const Home = () => {
   );
 };
 
-export default Home;
+// @ts-ignore
+export default withNamespaces()(Home);

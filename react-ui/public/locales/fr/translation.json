@@ -1,0 +1,38 @@
+{
+  "home": {
+    "hi": "Hey! Je suis",
+    "webDev": "Développeur Web",
+    "shortMsg": "Je conçois des sites web rapides et adaptatifs avec React et Wordpress",
+    "hireMe": "Embauchez Moi",
+    "textProjects": "Quelques uns de mes projets",
+    "aboutMe": {
+      "title": "Vous voulez en savoir plus sur moi?",
+      "content": "C'est là que vous pouvez des infos à propos de moi et de ce que je fais. J'y écris ce que j'aime faire et les outils que j'utilise professionnellement au quotidient."
+    },
+    "portfolio": {
+      "title": "Découvrez mes projets",
+      "content": "Depuis que j'ai écris ma 1ière ligne de code, j'ai créé pleins de sites web, d'applications, de projects et plus. Vous pouvez trouver une liste là-bas."
+    },
+    "resume": {
+      "title": "Accédez à mon CV",
+      "content": "Vous pouvez jetter un coup d'oeil a la version dynamic de mon CV. En revanche c'est possible de le télécharger au format PDF, à votre convenance!"
+    },
+    "contact": {
+      "title": "Restons en contact",
+      "content": "Si vous souhaiter m'embaucher, m'indiquer une erreur de frappe, donner un retour d'info, ou juste dire \"Bonjour!\", laissez le moi savoir en m'envoyant un message! Il y a un formulaire, mais je suis également actif sur les réseaux sociaux."
+    }
+  },
+  "navbar": {
+    "home": "Accueil",
+    "portfolio": "Projets",
+    "resume": "CV",
+    "aboutMe": "À propos",
+    "contact": "Contact",
+    "btnMoreText": "En savoir plus"
+  },
+  "footer": {
+    "msgTop-1": "Créé avec",
+    "msgTop-2": "par",
+    "topButtonText": "HAUT"
+  }
+}

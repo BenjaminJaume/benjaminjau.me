@@ -1,9 +1,11 @@
 import React from "react";
+import { withNamespaces } from "react-i18next";
 import { IndexLinkContainer } from "react-router-bootstrap";
 import "./NavigationBar.css";
 import ButtonResume from "../ButtonResume/ButtonResume";
+import DropdownLanguage from "../DropdownLanguage/DropdownLanguage";
 
-const NavigationBar = () => {
+const NavigationBar = ({ onClick, lg, t }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <IndexLinkContainer
@@ -46,7 +48,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>Home</span>
+              <span>{t("navbar.home")}</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -57,7 +59,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>Portfolio</span>
+              <span>{t("navbar.portfolio")}</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -68,7 +70,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>Resume</span>
+              <span>{t("navbar.resume")}</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -79,7 +81,7 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>About me</span>
+              <span>{t("navbar.aboutMe")}</span>
             </IndexLinkContainer>
           </li>
           <li className="nav-item">
@@ -90,16 +92,19 @@ const NavigationBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <span>Contact</span>
+              <span>{t("navbar.contact")}</span>
             </IndexLinkContainer>
           </li>
+
+          <DropdownLanguage onClick={onClick} lg={lg} />
         </ul>
         <div className="d-flex justify-content-center m-2">
-          <ButtonResume displayMessage="Resume" />
+          <ButtonResume displayMessage={t("navbar.resume")} />
         </div>
       </div>
     </nav>
   );
 };
 
-export default NavigationBar;
+// @ts-ignore
+export default withNamespaces()(NavigationBar);

@@ -1,4 +1,5 @@
 import React from "react";
+import { withNamespaces } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -9,14 +10,14 @@ import ContactItems from "../ContactItems/ContactItems";
 
 import "./Footer.css";
 
-const Footer = ({ phoneNumber }) => {
+const Footer = ({ phoneNumber, t }) => {
   return (
     <>
       <footer id="footer" className="bg-light pt-5 pb-1">
         <p id="message-bottom">
-          Created with{" "}
-          <FontAwesomeIcon icon={faHeart} className="text-red-pigment" /> by
-          Benjamin Jaume
+          <span>{t("footer.msgTopOne")}</span>{" "}
+          <FontAwesomeIcon icon={faHeart} className="text-red-pigment" />{" "}
+          <span>{t("footer.msgTopTwo")}</span> Benjamin Jaume
         </p>
 
         <div className="mb-3">
@@ -31,7 +32,7 @@ const Footer = ({ phoneNumber }) => {
             href="#"
             role="button"
           >
-            TOP
+            <span>{t("footer.topButtonText")}</span>
             <FontAwesomeIcon icon={faArrowAltCircleUp} className="ml-2" />
           </a>
           {/* eslint-enable */}
@@ -46,4 +47,5 @@ const Footer = ({ phoneNumber }) => {
   );
 };
 
-export default Footer;
+// @ts-ignore
+export default withNamespaces()(Footer);

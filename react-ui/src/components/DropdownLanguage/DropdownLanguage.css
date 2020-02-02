@@ -1,0 +1,8 @@
+.navbar-dropdown-item:hover {
+  color: var(--emerald) !important;
+  background-color: var(--black-pearl);
+}
+
+.navbar-dropdown-menu {
+  background-color: var(--black-pearl);
+}
