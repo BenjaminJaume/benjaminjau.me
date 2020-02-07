@@ -2,10 +2,10 @@
   {
     "id": 27,
     "name": "stadium8.com",
-    "description": "Building a website from scratch using React for the Front End and Wordress for the Back End",
+    "description": "Building a website for a client using React for the Front End and Wordress for the Back End",
     "tools": ["Wordpress", "React", "Javascript", "Bootstrap", "Siteground"],
-    "github": "https://github.com/BenjaminJaume/stadium8",
-    "link": "stadium8.com/",
+    "github": "https://github.com/BenjaminJaume/stadium8.com",
+    "link": "https://stadium8.com/",
     "date": "2020-01-22T00:00:00.000Z"
   },
   {
@@ -13,8 +13,8 @@
     "name": "benjaminjau.me",
     "description": "My personnal website entirely built with React ",
     "tools": ["React", "Javascript", "Express", "NodeJS"],
-    "github": "https://github.com/BenjaminJaume/benjaminjaume",
-    "link": "https://benjaminjaume.herokuapp.com/",
+    "github": "https://github.com/BenjaminJaume/benjaminjau.me",
+    "link": "http://benjaminjau.me",
     "date": "2020-01-01T00:00:00.000Z"
   },
   {
@@ -24,15 +24,6 @@
     "tools": ["React", "Javascript", "Express", "NodeJS"],
     "github": "https://github.com/BenjaminJaume/facerecognitionapp",
     "link": "https://serene-coast-32584.herokuapp.com/",
-    "date": "2019-11-06T00:00:00.000Z"
-  },
-  {
-    "id": 4,
-    "name": "Star Wars API",
-    "description": "RESTful API that fecth Star Wars caracters from an API",
-    "tools": ["React", "Javascript", "JSX", "Bootstrap"],
-    "github": "https://github.com/BenjaminJaume/starwarsapi",
-    "link": "",
     "date": "2019-11-06T00:00:00.000Z"
   }
 ]

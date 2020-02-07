@@ -31,23 +31,6 @@ const DropdownLanguage = ({ onClick, lg }) => {
               href="#"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              className="navbar-dropdown-item dropdown-item nav-link text-center text-white"
-              onClick={onClick.bind(this, "es")}
-            >
-              <span>
-                <img
-                  src={`./images/country-flags/costa-rica.png`}
-                  alt="ES"
-                  className="d-inline-block mr-2"
-                  height="15"
-                />
-                Español
-              </span>
-            </a>
-            <a
-              href="#"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
               className="dropdown-item navbar-dropdown-item text-center text-white"
               onClick={onClick.bind(this, "fr")}
             >
@@ -92,23 +75,6 @@ const DropdownLanguage = ({ onClick, lg }) => {
               href="#"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              className="navbar-dropdown-item dropdown-item text-center text-white"
-              onClick={onClick.bind(this, "es")}
-            >
-              <span>
-                <img
-                  src={`./images/country-flags/costa-rica.png`}
-                  alt="ES"
-                  className="d-inline-block mr-2"
-                  height="15"
-                />
-                Español
-              </span>
-            </a>
-            <a
-              href="#"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
               className="dropdown-item navbar-dropdown-item text-center text-white"
               onClick={onClick.bind(this, "en")}
             >
@@ -125,7 +91,7 @@ const DropdownLanguage = ({ onClick, lg }) => {
           </div>
         </li>
       );
-    case "es":
+    default:
       return (
         <li className="nav-item dropdown">
           <a
@@ -137,12 +103,12 @@ const DropdownLanguage = ({ onClick, lg }) => {
             aria-expanded="false"
           >
             <img
-              src={`./images/country-flags/costa-rica.png`}
-              alt="es"
+              src={`./images/country-flags/australia.png`}
+              alt="en"
               className="d-inline-block mr-2"
               height="15"
             />
-            Español
+            English
           </a>
 
           <div
@@ -153,17 +119,17 @@ const DropdownLanguage = ({ onClick, lg }) => {
               href="#"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              className="navbar-dropdown-item dropdown-item text-center text-white"
-              onClick={onClick.bind(this, "en")}
+              className="navbar-dropdown-item dropdown-item nav-link text-center text-white"
+              onClick={onClick.bind(this, "es")}
             >
               <span>
                 <img
-                  src={`./images/country-flags/australia.png`}
-                  alt="us"
+                  src={`./images/country-flags/costa-rica.png`}
+                  alt="ES"
                   className="d-inline-block mr-2"
                   height="15"
                 />
-                English
+                Español
               </span>
             </a>
             <a
@@ -186,8 +152,6 @@ const DropdownLanguage = ({ onClick, lg }) => {
           </div>
         </li>
       );
-    default:
-      console.log("no lang");
   }
 };
 

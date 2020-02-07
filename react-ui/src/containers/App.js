@@ -20,7 +20,10 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lg: "en"
+      lg: "en",
+      projects: [],
+      isLoading: false,
+      error: null
     };
   }
 
@@ -31,18 +34,43 @@ export default class App extends Component {
     });
   };
 
+  componentDidMount() {
+    this.setState({ isLoading: true });
+
+    fetch("http://www.benjaminjau.me/projects.json")
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Something went wrong.");
+        }
+      })
+      .then(response =>
+        this.setState({
+          projects: response,
+          isLoading: false
+        })
+      )
+      .catch(error => this.setState({ error, isLoading: false }));
+  }
+
   render() {
+    const { lg, projects, isLoading, error } = this.state;
     return (
       <Router>
         <ScrollToTop />
-        <Navbar onClick={this.changeLanguage} lg={this.state.lg} />
+        <Navbar onClick={this.changeLanguage} lg={lg} />
 
         <Switch>
           <Route path="/about-me" component={AboutMe}>
             <AboutMe />
           </Route>
           <Route path="/portfolio" component={Portfolio}>
-            <Portfolio />
+            <Portfolio
+              projects={projects}
+              isLoading={isLoading}
+              error={error}
+            />
           </Route>
           <Route path="/resume" component={Resume}>
             <Resume phoneNumber={phoneNumber} />

@@ -21,6 +21,7 @@ I used different tools, technologies and websites throughout the creation of thi
 - VS Code
 - Google Chrome
 - Google Chrome Dev Tools
+- Photofiltre
 
 ### Extension
 
@@ -54,6 +55,7 @@ I used different tools, technologies and websites throughout the creation of thi
 - Normalize CSS
 - Google Fonts
 - EmailJS
+- i18next
 
 ## Packages
 

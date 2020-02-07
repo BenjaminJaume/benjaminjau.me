@@ -31,8 +31,8 @@
     "btnMoreText": "En savoir plus"
   },
   "footer": {
-    "msgTop-1": "Créé avec",
-    "msgTop-2": "par",
+    "msgTopOne": "Créé avec",
+    "msgTopTwo": "par",
     "topButtonText": "HAUT"
   }
 }

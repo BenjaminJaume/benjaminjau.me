@@ -38,8 +38,8 @@ class ContactForm extends Component {
         {isSent && status !== "success" ? (
           <div className="">
             <span className="text-danger text-center h6">
-              <FontAwesomeIcon icon={faTimes} className="mr-2" /> by Sorry, an
-              error occured
+              <FontAwesomeIcon icon={faTimes} className="mr-2" />
+              Sorry, an error occured
             </span>
             <br />
             Please send me an{" "}
@@ -58,8 +58,8 @@ class ContactForm extends Component {
                 type="text"
                 name="name"
                 className="form-control"
-                placeholder="Name *"
-                data-error="Name is required."
+                placeholder="Name*"
+                data-error="A name is required"
                 onChange={this.handleNameChange}
                 value={name}
                 required
@@ -71,8 +71,8 @@ class ContactForm extends Component {
                 type="email"
                 name="email"
                 className="form-control"
-                placeholder="Email *"
-                data-error="Valid email is required."
+                placeholder="Email*"
+                data-error="Valid email is required"
                 onChange={this.handleEmailChange}
                 value={email}
                 required
@@ -84,8 +84,8 @@ class ContactForm extends Component {
                 id="form_message"
                 name="message"
                 className="form-control textarea-contact"
-                placeholder="Message *"
-                data-error="Please, leave a message."
+                placeholder="Message*"
+                data-error="Please, leave a message"
                 onChange={this.handleMessageChange}
                 value={message}
                 required

@@ -339,6 +339,72 @@ const AboutMe = () => {
                   <ul>
                     <li>
                       <a
+                        href="https://hackernoon.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">Hacker Noon</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://hackernoon.com/are-we-ever-going-to-solve-cyber-security-1lag36th"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Are We Ever Going to Solve Cyber Security?
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://waitbutwhy.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">Wait But Why</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://waitbutwhy.com/2017/03/elon-musk-post-series.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Elon Musk Post Series - Wait But Why
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Why Procrastinators Procrastinate
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://waitbutwhy.com/2015/03/procrastination-matrix.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            The Procrastination Matrix
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
                         href="https://www.heartsintrueharmony.com/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -466,48 +532,6 @@ const AboutMe = () => {
                       </ul>
                     </li>
 
-                    <li>
-                      <a
-                        href="https://waitbutwhy.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-peter-river-about-me"
-                      >
-                        <span className="h5">Wait But Why</span>
-                      </a>
-                      <ul>
-                        <li>
-                          <a
-                            href="https://waitbutwhy.com/2017/03/elon-musk-post-series.html"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="link-peter-river-about-me"
-                          >
-                            The Elon Musk Post Series - Wait But Why
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="link-peter-river-about-me"
-                          >
-                            Why Procrastinators Procrastinate
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://waitbutwhy.com/2015/03/procrastination-matrix.html"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="link-peter-river-about-me"
-                          >
-                            The Procrastination Matrix
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
                     <li>
                       <a
                         href="https://www.entrepreneur.com/"
