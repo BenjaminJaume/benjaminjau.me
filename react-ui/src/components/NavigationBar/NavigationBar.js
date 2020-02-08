@@ -96,7 +96,7 @@ const NavigationBar = ({ onClick, lg, t }) => {
             </IndexLinkContainer>
           </li>
 
-          <DropdownLanguage onClick={onClick} lg={lg} />
+          {/* <DropdownLanguage onClick={onClick} lg={lg} /> */}
         </ul>
         <div className="d-flex justify-content-center m-2">
           <ButtonResume displayMessage={t("navbar.resume")} />

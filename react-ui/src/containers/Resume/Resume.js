@@ -2,13 +2,18 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import {
+  faMapMarkerAlt,
+  faHome,
+  faSchool,
+  faLongArrowAltRight,
+  faGlobe,
   faPhoneAlt,
   faCogs,
-  faList,
+  faFolderOpen,
   faGraduationCap,
   faBriefcase,
   // faMedal,
-  faPlusSquare,
+  faPlus,
   faPlaneDeparture,
   faTools,
   faMusic,
@@ -47,35 +52,40 @@ const Resume = ({ phoneNumber }) => {
                   <div className="item-resume rounded text-center mb-2 p-3">
                     <div className="mb-3">
                       <h1>Benjamin Jaume</h1>
-                      <h4>
-                        Rancho Angela, Samara
-                        <br /> Nicoya, Guanacaste
-                        <br />
-                        Costa Rica
-                      </h4>
-                    </div>
+                      <h3 className="font-courrierNew"># Web Developer #</h3>
+                      <div className="mb-2">
+                        <h4>
+                          <FontAwesomeIcon
+                            icon={faMapMarkerAlt}
+                            className="mr-2"
+                          />
+                          Playa Sámara, Costa Rica
+                        </h4>
 
-                    <div className="mb-2">
-                      <h4>
-                        <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
-                        <a href="tel:+50687907001" className="link-sun-flower">
-                          +506 8790 7001
-                        </a>
-                      </h4>
-                      <h4>
-                        <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
-                        <a
-                          href={`https://api.whatsapp.com/send?phone=${phoneNumber
-                            .replace("+", "")
-                            .replace(/ /g, "")}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title="Open link with WhatsApp"
-                          className="link-sun-flower"
-                        >
-                          {phoneNumber}
-                        </a>
-                      </h4>
+                        <h4>
+                          <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
+                          <a
+                            href="tel:+50687907001"
+                            className="link-sun-flower"
+                          >
+                            +506 8790 7001
+                          </a>
+                        </h4>
+                        <h4>
+                          <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+                          <a
+                            href={`https://api.whatsapp.com/send?phone=${phoneNumber
+                              .replace("+", "")
+                              .replace(/ /g, "")}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Open link with WhatsApp"
+                            className="link-sun-flower"
+                          >
+                            {phoneNumber}
+                          </a>
+                        </h4>
+                      </div>
                     </div>
                     <div className="brand-icons-contact">
                       <ContactItems phoneNumber={phoneNumber} />
@@ -83,10 +93,10 @@ const Resume = ({ phoneNumber }) => {
                   </div>
                   <div className="item-resume rounded text-center mb-2 p-3">
                     <blockquote className="text-center blockquote font-italic mb-0 ">
-                      &laquo; Front End Developer experienced with lots of
-                      different tools (languages, framework, software, hardware,
-                      OS, etc.) and a deep understanding of computer science and
-                      networks &raquo;
+                      <b className="h3">&ldquo;</b> Full Stack Developer
+                      specialised in React. Along with a deep understanding of
+                      computer science and networks and experienced with a broad
+                      range of tools & software. <b className="h3">&bdquo;</b>
                     </blockquote>
                   </div>
 
@@ -106,7 +116,7 @@ const Resume = ({ phoneNumber }) => {
                         </div>
                         <div className="col-sm-6">
                           <ul>
-                            <li>Problem solver: very a daptable</li>
+                            <li>Problem solver: very adaptable</li>
                             <li>Highly intuitive & practical</li>
                             <li>Curious & fast learner</li>
                           </ul>
@@ -117,101 +127,163 @@ const Resume = ({ phoneNumber }) => {
 
                   <div className="item-resume rounded py-3 px-4 mb-2">
                     <h1 className="title-resume text-center">
-                      <FontAwesomeIcon icon={faList} className="mr-2" />
+                      <FontAwesomeIcon icon={faFolderOpen} className="mr-2" />
                       Projects
                     </h1>
+                    <div className="text-center">
+                      <div className="d-inline-flex">
+                        <p className="mr-2">
+                          <FontAwesomeIcon
+                            icon={faBriefcase}
+                            className="mr-2"
+                          />
+                          Work project
+                        </p>
+                        <p className="mr-2">
+                          <FontAwesomeIcon icon={faHome} className="mr-2" />
+                          Home project
+                        </p>
+                        <p className="mr-2">
+                          <FontAwesomeIcon icon={faSchool} className="mr-2" />
+                          School project
+                        </p>
+                      </div>
+                    </div>
+
                     <div>
                       <h5 className="text-emerald">
-                        HTML 5 - CSS 3 - Javascript - Bootstrap 4
+                        Websites: RESTful API, PWA, WordPress, Static
                       </h5>
-                      <ul>
-                        <li>Many different websites</li>
-                        <li>
-                          “Recycle Station Finder”: app created with Intel XDK.
-                          It displays the nearest recycle stations around
-                          University of Bordeaux.
-                        </li>
-                      </ul>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                        <a
+                          href="https://stadium8.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="stadium8.com"
+                          className="link-white"
+                        >
+                          stadium8.com
+                        </a>
+                        : website for a client using React (Front End) and
+                        WordPress (Back End)
+                      </p>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                        [anonymous client]: fixing broken code, improving UI/UX
+                        and adding features on the website for a tech company
+                      </p>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                        <a
+                          href="http://www.mystickers.com.au/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="stadium8.com"
+                          className="link-white"
+                        >
+                          mystickers.com.au
+                        </a>
+                        : WordPress project. Fixing, improving and adding
+                        several features for a stickers printing company
+                      </p>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                        <a
+                          href="http://www.benjaminjau.me/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="stadium8.com"
+                          className="link-white"
+                        >
+                          benjaminjau.me
+                        </a>
+                        : my personal website entirely built with React, NodeJS
+                        and Express
+                      </p>
+
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faHome} className="mr-2" />
+                        <a
+                          href="https://faceapp-benjaume.herokuapp.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="stadium8.com"
+                          className="link-white"
+                        >
+                          Face Recognition App
+                        </a>
+                        : online RESTful API that detect faces from a picture
+                        using Clarifai API
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faHome} className="mr-2" />
+                        Media Centre: website hosted on my personal server at
+                        home to share medias
+                      </p>
+                    </div>
+                    <div>
+                      <h5 className="text-emerald">Back End</h5>
+                      <p>
+                        <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                        Optic Fibre Infrastructure: managing the database of the
+                        deployment of optic fibre cables in Bordeaux area
+                      </p>
+                    </div>
+                    <div>
+                      <h5 className="text-emerald">Scripts</h5>
+                      <p>
+                        <FontAwesomeIcon icon={faHome} className="mr-2" />
+                        JavaScript challenges and exercises
+                      </p>
                     </div>
                     <div>
                       <h5 className="text-emerald">
-                        PHP - PhpMyAdmin - SQL - WampServer
+                        Hardware & Microcontroller
                       </h5>
-                      <ul>
-                        <li>
-                          Media centre at home. Hosted on my private physical
-                          server, accessible from everywhere
-                        </li>
-                      </ul>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                        GUI in Python: Interface built with Python to work on
+                        Raspberry simulating a flight controller
+                      </p>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faSchool} className="mr-2" />
+                        Meteofox: Weather Station sending data through an IoT
+                        network which allow to consult data on a website
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faHome} className="mr-2" />
+                        Self-Driving Car: Small RC car turned into a
+                        self-driving car with Arduino
+                      </p>
                     </div>
                     <div>
-                      <h5 className="text-emerald">Python 3</h5>
-                      <ul>
-                        <li>
-                          GUI for Raspberry Pi (Raspbian OS, based on Debian)
-                          for a company in Costa Rica GTK+ & Glade.
-                        </li>
-                      </ul>
+                      <h5 className="text-emerald">
+                        Windows Application & Scripts
+                      </h5>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faSchool} className="mr-2" />
+                        Open Modbus: Windows application built with VB that
+                        handle the Modbus connection protocol
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faSchool} className="mr-2" />
+                        Call Centre Software: Windows application that manage
+                        calls for a taxi company
+                      </p>
                     </div>
                     <div>
-                      <h5 className="text-emerald">C</h5>
-                      <ul>
-                        <li>
-                          Weather station with sensors, using Telecom Design
-                          chip and Sygfox network (IoT)
-                        </li>
-                        <li>
-                          Coffee table with a LED grid (Arduino project at
-                          home). Inspired by Daft Punk Coffee Table.
-                        </li>
-                        <li>
-                          Autonomous and self driving RC Car (Arduino project at
-                          home)GUI for Raspberry Pi (Raspbian OS, based on
-                          Debian) for a company in Costa Rica GTK+ & Glade.
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="text-emerald">VBA</h5>
-                      <ul>
-                        <li>
-                          MS Excel sheet for the public transport of Bordeaux,
-                          to manage the installation of the embedded ticketing
-                          machines.
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="text-emerald">C++</h5>
-                      <ul>
-                        <li>
-                          “Parcel Delivers”: software that manage parcel
-                          deliveries created with MS Visual Studio.
-                        </li>
-                        <li>
-                          Weather station with sensors and a GUI, using Arduino
-                          and LabVIEW
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="text-emerald">Java</h5>
-                      <ul>
-                        <li>
-                          “Robot Arm Control”: Android application controlling
-                          the orientation of a robotic arm with an Android phone
-                          via Bluetooth. Created with Eclipse IDE
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="text-emerald">Bash/Shell - Batch :</h5>
-                      <ul>
-                        <li>
-                          Running command lines on Windows and UNIX
-                          BenjaminJaume
-                        </li>
-                      </ul>
+                      <h5 className="text-emerald">Android application</h5>
+                      <p className="mb-1">
+                        <FontAwesomeIcon icon={faSchool} className="mr-2" />
+                        Recycle Station Finder: Android app that display the
+                        nearest recycle stations around you
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faSchool} className="mr-2" />
+                        Bluetooth robotic arm: Android app that allow you to
+                        control a camera on an arm with several servo motors
+                      </p>
                     </div>
                   </div>
 
@@ -223,6 +295,22 @@ const Resume = ({ phoneNumber }) => {
                       />
                       Education
                     </h1>
+
+                    <div>
+                      <h5 className="text-sun-flower">
+                        Technical Bachelor Degree in Automated Systems and
+                        Industrial Networks
+                      </h5>
+                      <span>
+                        <FontAwesomeIcon icon={faClock} className="mr-2" />
+                        2015 - 2016
+                      </span>
+                      <p className="font-italic mt-2">
+                        Apprenticeship - University of Bordeaux & ENGIE INEO
+                        Infracom (Bordeaux, FR)
+                      </p>
+                    </div>
+
                     <div>
                       <h5 className="text-sun-flower">
                         Advanced Technician Diploma in Computer Science &
@@ -249,21 +337,6 @@ const Resume = ({ phoneNumber }) => {
                         Les Iris High School - Bordeaux, France
                       </p>
                     </div>
-
-                    <div>
-                      <h5 className="text-sun-flower">
-                        Technical Bachelor Degree in Automated Systems and
-                        Industrial Networks
-                      </h5>
-                      <span>
-                        <FontAwesomeIcon icon={faClock} className="mr-2" />
-                        2015 - 2016
-                      </span>
-                      <p className="font-italic mt-2">
-                        Apprenticeship - University of Bordeaux & ENGIE INEO
-                        Infracom (Bordeaux, FR)
-                      </p>
-                    </div>
                   </div>
 
                   <div className="item-resume rounded py-3 px-4 mb-2">
@@ -275,19 +348,110 @@ const Resume = ({ phoneNumber }) => {
                     <div>
                       <h5>
                         <span className="text-electron-blue">
+                          Full Stack Developer
+                        </span>{" "}
+                        @ <i>Freelancing</i> - Sámara, Costa Rica
+                      </h5>
+                      <p>
+                        <FontAwesomeIcon icon={faClock} className="mr-2" />
+                        01/2020
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faGlobe} className="mr-2" />
+                        <a
+                          href="https://stadium8.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="stadium8.com"
+                          className="link-white"
+                        >
+                          stadium8.com
+                        </a>
+                      </p>
+                      <p>
+                        Website of a sports facility. It is built with React for
+                        the Front End (as a theme) into a WordPress application,
+                        then using the WordPress API for the Back End.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5>
+                        <span className="text-electron-blue">
+                          Full Stack Developer
+                        </span>{" "}
+                        @ <i>[anonymous company</i> - Remote Work
+                      </h5>
+                      <p>
+                        <FontAwesomeIcon icon={faClock} className="mr-2" />
+                        12/2020 - Present
+                      </p>
+                      <p>
+                        <FontAwesomeIcon
+                          icon={faLongArrowAltRight}
+                          className="mr-2"
+                        />
+                        Maintainance of the website
+                      </p>
+                      <p>
+                        I am the new web developer and I am in charge of any
+                        code edits, users’ rights, fix the website and change
+                        the branding. The website is managed by ExpressionEngine
+                        as the CMS, and uses Bootstrap as the CSS framework.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5>
+                        <span className="text-electron-blue">
+                          Front End Developer
+                        </span>{" "}
+                        @ <i>Freelancing</i> - Sydney, Australia
+                      </h5>
+                      <p>
+                        <FontAwesomeIcon icon={faClock} className="mr-2" />
+                        09/2019
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faGlobe} className="mr-2" />
+                        <a
+                          href="http://www.mystickers.com.au"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="stadium8.com"
+                          className="link-white"
+                        >
+                          mystickers.com.au
+                        </a>
+                      </p>
+                      <p>
+                        Existing website hosted on WordPress using a custom
+                        plugin from a third-party company. I had to dive in the
+                        code and edit the broken parts to correctly connect to
+                        the database and fetch prices, along with adding a new
+                        complex quote form.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5>
+                        <span className="text-electron-blue">
                           Project manager
                         </span>{" "}
-                        @ <i>ERT Technologies</i> - Bordeaux, FR
+                        @ <i>ERT Technologies</i> - Bordeaux, France
                       </h5>
                       <p>
                         <FontAwesomeIcon icon={faClock} className="mr-2" />
                         03/2017 - 07/2017
                       </p>
                       <p>
-                        <u>Project:</u> deploying the “SFR Business” optic fibre
-                        in Bordeaux and surrounds
+                        <FontAwesomeIcon
+                          icon={faLongArrowAltRight}
+                          className="mr-2"
+                        />
+                        Deployment of the optic fibre in Bordeaux and surrounds
                       </p>
-                      <div className="mt-2">
+                      <p>
                         I deployed the “SFR Business” (French provider) optic
                         fibre for professionals. Responsibilities included:
                         <ul>
@@ -300,7 +464,7 @@ const Resume = ({ phoneNumber }) => {
                             creating progress reports
                           </li>
                         </ul>
-                      </div>
+                      </p>
                     </div>
 
                     <div>
@@ -308,42 +472,30 @@ const Resume = ({ phoneNumber }) => {
                         <span className="text-electron-blue">
                           Network technician
                         </span>{" "}
-                        @ <i>ENGIE INEO Infracom</i> - Bordeaux, FR
+                        @ <i>ENGIE INEO Infracom</i> - Bordeaux, France
                       </h5>
                       <p>
                         <FontAwesomeIcon icon={faClock} className="mr-2" />
-                        [...] - 07/2017
+                        09/2015 - 01/2017
                       </p>
                       <p>
-                        <u>Project:</u> creating the new ticketing network for
-                        Bordeaux public transport
+                        <FontAwesomeIcon
+                          icon={faLongArrowAltRight}
+                          className="mr-2"
+                        />
+                        Creation of the new ticketing network for the public
+                        transport of Bordeaux
                       </p>
-                      <p className="mt-2">
+                      <p>
                         For more than a year, I had an interesting & important
-                        role in this extensive project.  Coding an MS Excel
-                        Macro in VBA. The purpose was to organiser the
-                        installation of the ticketing machine in each vehicles.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h5>
-                        <span className="text-electron-blue">
-                          AutoCAD draftsman
-                        </span>{" "}
-                        @ <i>ENGIE INEO Infracom</i> - Bordeaux, FR
-                      </h5>
-                      <p>
-                        <FontAwesomeIcon icon={faClock} className="mr-2" />
-                        09/2015 - [...]
-                      </p>
-                      <p>
-                        <u>Project:</u> drawing the optic fiber infrastructure
-                      </p>
-                      <p className="mt-2">
-                        I was in charge to make request to the organisation that
-                        handle the burried infrastructure in France, and learn
-                        regulation rules.
+                        role in this extensive project.
+                        <ul>
+                          <li>
+                            Coding an MS Excel Macro in VBA (~800 lines). The
+                            purpose was to organiser the installation of the
+                            ticketing machine in each vehicle
+                          </li>
+                        </ul>
                       </p>
                     </div>
                   </div>
@@ -359,7 +511,7 @@ const Resume = ({ phoneNumber }) => {
 
                   <div className="item-resume rounded py-3 px-4 mb-2">
                     <h1 className="title-resume text-center">
-                      <FontAwesomeIcon icon={faPlusSquare} className="mr-2" />
+                      <FontAwesomeIcon icon={faPlus} className="mr-2" />
                       Hobbies and interests
                     </h1>
 
@@ -381,6 +533,19 @@ const Resume = ({ phoneNumber }) => {
                             </dt>
                             <dt className="font-weight-normal p-1">
                               <FontAwesomeIcon
+                                icon={faMusic}
+                                className="mr-2"
+                              />
+                              Practice
+                              <span className="text-emerald"> salsa </span>
+                              dancing
+                            </dt>
+                          </dl>
+                        </div>
+                        <div className="col-sm-6">
+                          <dl>
+                            <dt className="font-weight-normal p-1">
+                              <FontAwesomeIcon
                                 icon={faPlaneDeparture}
                                 className="mr-2"
                               />
@@ -393,19 +558,6 @@ const Resume = ({ phoneNumber }) => {
                               (Australia),{" "}
                               <span className="text-emerald">America</span>{" "}
                               (USA, Costa Rica)
-                            </dt>
-                          </dl>
-                        </div>
-                        <div className="col-sm-6">
-                          <dl>
-                            <dt className="font-weight-normal p-1">
-                              <FontAwesomeIcon
-                                icon={faMusic}
-                                className="mr-2"
-                              />
-                              Practice
-                              <span className="text-emerald"> salsa </span>
-                              dancing
                             </dt>
                             <dt className="font-weight-normal p-1">
                               <FontAwesomeIcon

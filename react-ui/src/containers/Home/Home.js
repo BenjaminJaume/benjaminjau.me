@@ -35,8 +35,8 @@ const Home = ({ t }) => {
           <div className="col-12">
             <section className="text-center text-white ">
               <div className="pt-5 mb-3">
-                <h1 className="display-4 text-monospace animated slideInRight">
-                  <span>{t("home.hi")}</span>
+                <h1 className="display-4 font-courrierNew animated slideInRight">
+                  <span className="">{t("home.hi")}</span>
                   <br />
                   <span className="text-red-pigment">{"<"}</span>Benjamin Jaume
                   <span className="text-red-pigment">{" />"}</span>
@@ -45,7 +45,7 @@ const Home = ({ t }) => {
 
               <div className="mb-4">
                 <h1 className="text-sun-flower">
-                  # <span>{t("home.webDev")}</span> #
+                  # <span className="">{t("home.webDev")}</span> #
                 </h1>
                 <h4>
                   <span>{t("home.shortMsg")}</span>

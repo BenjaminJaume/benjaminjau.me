@@ -18,12 +18,12 @@
     "date": "2020-01-01T00:00:00.000Z"
   },
   {
-    "id": 3,
-    "name": "Face Recognition App",
-    "description": "Online RESTful API that detect faces from a picture using Clarifai API",
-    "tools": ["React", "Javascript", "Express", "NodeJS"],
-    "github": "https://github.com/BenjaminJaume/facerecognitionapp",
-    "link": "https://serene-coast-32584.herokuapp.com/",
-    "date": "2019-11-06T00:00:00.000Z"
+    "id": 25,
+    "name": "mystickers.com.au",
+    "description": "Wordpress project. Fixing, improving and adding several features for a stickers printing company",
+    "tools": ["Wordpress", "PHP"],
+    "github": "",
+    "link": "http://www.mystickers.com.au/",
+    "date": "2019-09-21T00:00:00.000Z"
   }
 ]

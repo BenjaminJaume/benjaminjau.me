@@ -14,10 +14,12 @@ const Footer = ({ phoneNumber, t }) => {
   return (
     <>
       <footer id="footer" className="bg-light pt-5 pb-1">
-        <p id="message-bottom">
-          <span>{t("footer.msgTopOne")}</span>{" "}
-          <FontAwesomeIcon icon={faHeart} className="text-red-pigment" />{" "}
-          <span>{t("footer.msgTopTwo")}</span> Benjamin Jaume
+        <p className="d-inline-flex">
+          {t("footer.msgTopOne")}
+          <span className="heartBeatEffect mx-2">
+            <FontAwesomeIcon icon={faHeart} className="text-red-pigment" />{" "}
+          </span>
+          {t("footer.msgTopTwo")} Benjamin Jaume
         </p>
 
         <div className="mb-3">

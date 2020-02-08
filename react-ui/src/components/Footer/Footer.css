@@ -13,9 +13,9 @@ footer a:hover {
   text-decoration: none;
 }
 
-#message-bottom:hover {
-  -webkit-animation: heartBeat 1s;
-  animation: heartBeat 1s;
+.heartBeatEffect {
+  -webkit-animation: heartBeat 1.5s infinite;
+  animation: heartBeat 1.5s infinite;
   cursor: default;
 }
 
