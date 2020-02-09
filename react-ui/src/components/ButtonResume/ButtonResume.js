@@ -6,7 +6,7 @@ const ButtonResume = ({ displayMessage }) => {
   return (
     <div>
       <a
-        href="./documents/Benjamin Jaume - Resume.pdf"
+        href="./documents/Benjamin Jaume - Résumé.pdf"
         className="btn btn-success font-weight-bold px-3"
         download
       >
