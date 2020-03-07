@@ -66,7 +66,6 @@ const DropdownLanguage = ({ onClick, lg }) => {
             />
             Français
           </a>
-
           <div
             className="dropdown-menu navbar-dropdown-menu w-25 dropdown-menu-right mx-auto"
             aria-labelledby="navbarDropdownMenuLink"
