@@ -134,7 +134,7 @@ const AboutMe = () => {
                             rel="noopener noreferrer"
                             className="link-peter-river-about-me"
                           >
-                            CSS Grids and Flexbox for Responsive Web Design]()
+                            CSS Grids and Flexbox for Responsive Web Design
                           </a>
                         </li>
                         <li>
@@ -431,6 +431,20 @@ const AboutMe = () => {
                             THE AGE OF A.I.
                           </a>
                         </li>
+
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=Nzl1BOUjyqE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            Everything Is F*cked: A Book About Hope | Mark
+                            Manson | Talks at Google
+                          </a>
+                        </li>
+
+                        <li>Cosmos - Season 2 (By Neil deGrasse Tyson)</li>
                       </ul>
                     </li>
 
@@ -493,6 +507,10 @@ const AboutMe = () => {
 
                   <ul>
                     <li>
+                      "<i>Harry Potter and the Philosopher's Stone</i>" - J.K
+                      Rowling
+                    </li>
+                    <li>
                       "<i>As a Man Tinketh</i>" - James Allen
                     </li>
                     <li>
@@ -507,6 +525,13 @@ const AboutMe = () => {
                     </li>
                     <li>
                       "<i>The Four Agreements</i>" - don Miguel Ruiz
+                    </li>
+                    <li>
+                      "<i>The Subtle Art of Not Giving a Fuck</i>" - Mark Manson
+                    </li>
+                    <li>
+                      "<i>Everything is Fucked - A Book About Hope</i>" - Mark
+                      Manson
                     </li>
                   </ul>
 
@@ -531,6 +556,29 @@ const AboutMe = () => {
                             className="link-peter-river-about-me"
                           >
                             Are We Ever Going to Solve Cyber Security?
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://medium.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">Medium</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://medium.com/@prestonwallace/3-ways-improve-react-seo-without-isomorphic-app-a6354595e400"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            3 Essential Tools to Boost your React App’s SEO
                           </a>
                         </li>
                       </ul>
@@ -697,6 +745,29 @@ const AboutMe = () => {
                             className="link-peter-river-about-me"
                           >
                             Becoming The Observer
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://codeburst.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">CodeBurst.io</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            ES6 Destructuring: The Complete Guide
                           </a>
                         </li>
                       </ul>

@@ -5,6 +5,7 @@ const DropdownLanguage = ({ onClick, lg }) => {
   switch (lg) {
     case "en":
       return (
+        /* eslint jsx-a11y/anchor-is-valid: 0 */
         <li className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle"

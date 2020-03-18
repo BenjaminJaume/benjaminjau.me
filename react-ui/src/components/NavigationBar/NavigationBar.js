@@ -18,7 +18,7 @@ const NavigationBar = ({ onClick, lg, t }) => {
         <span>
           <img
             src="./images/favicon/benjaminjaume-logo.png"
-            alt="Benjamin Jaume"
+            alt=""
             className="d-inline-block align-top mr-2"
             width="30"
             height="30"
