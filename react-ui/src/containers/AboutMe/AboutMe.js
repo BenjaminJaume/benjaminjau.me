@@ -772,6 +772,29 @@ const AboutMe = () => {
                         </li>
                       </ul>
                     </li>
+
+                    <li>
+                      <a
+                        href="https://itnext.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">iNext.io</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://itnext.io/how-to-unit-test-in-react-72e911e2b8d"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            How to Unit Test in React
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
 
                   <h1>Newsletters</h1>

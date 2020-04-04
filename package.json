@@ -24,7 +24,9 @@
     "react"
   ],
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^25.2.7"
+  },
   "dependencies": {
     "browserify-fs": "^1.0.0",
     "cluster": "^0.7.7",

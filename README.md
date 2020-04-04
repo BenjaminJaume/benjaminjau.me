@@ -122,3 +122,4 @@ I used different tools, technologies and websites throughout the creation of thi
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Overlay with React Bootstrap](https://codesandbox.io/s/react-bootstrap-popover-dismiss-byizk)
 - [EmailJS Tutorial](https://blog.mailtrap.io/react-send-email/)
+- [How to Unit Test in React](https://itnext.io/how-to-unit-test-in-react-72e911e2b8d)
