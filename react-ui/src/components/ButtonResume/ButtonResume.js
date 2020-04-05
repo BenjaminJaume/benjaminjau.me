@@ -15,6 +15,7 @@ const ButtonResume = ({ displayMessage, lg }) => {
       break;
 
     default:
+      file = "Benjamin Jaume - Résumé.pdf";
       break;
   }
 
