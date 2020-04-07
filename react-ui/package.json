@@ -12,7 +12,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
-    "babel-jest": "^24.9.0",
     "bootstrap": "^4.4.1",
     "i18next": "^19.1.0",
     "i18next-browser-languagedetector": "^4.0.1",
@@ -37,8 +36,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier \"src/**/*.{js,html}\" --write",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "jest": "jest --watchAll"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -70,7 +68,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "jest": "^25.2.7",
     "prettier": "^1.19.1"
   }
 }
