@@ -170,7 +170,16 @@ const Resume = ({ phoneNumber }) => {
                       </p>
                       <p className="mb-1">
                         <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
-                        [anonymous client]: fixing broken code, improving UI/UX
+                        <a
+                          href="https://www.skylysaircraft.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="skylysaircraft.com"
+                          className="link-white"
+                        >
+                          skylysaircraft.com
+                        </a>
+                        : fixing broken code, improving UI/UX
                         and adding features on the website for a tech company
                       </p>
                       <p className="mb-1">
@@ -380,7 +389,7 @@ const Resume = ({ phoneNumber }) => {
                         <span className="text-electron-blue">
                           Full Stack Developer
                         </span>{" "}
-                        @ <i>[anonymous company</i> - Remote Work
+                        @ <i>Skylys Aircraft</i> - Remote Work
                       </h5>
                       <p>
                         <FontAwesomeIcon icon={faClock} className="mr-2" />
@@ -388,10 +397,18 @@ const Resume = ({ phoneNumber }) => {
                       </p>
                       <p>
                         <FontAwesomeIcon
-                          icon={faLongArrowAltRight}
+                          icon={faGlobe}
                           className="mr-2"
                         />
-                        Maintainance of the website
+                        <a
+                          href="https://www.skylysaircraft.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="skylysaircraft.com"
+                          className="link-white"
+                        >
+                          skylysaircraft.com
+                        </a>
                       </p>
                       <p>
                         I am the new web developer and I am in charge of any

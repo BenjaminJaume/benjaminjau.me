@@ -586,6 +586,29 @@ const AboutMe = () => {
 
                     <li>
                       <a
+                        href="https://alligator.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-peter-river-about-me"
+                      >
+                        <span className="h5">Alligator.io</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://alligator.io/react/server-side-rendering/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link-peter-river-about-me"
+                          >
+                            React Server Side Rendering
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
                         href="https://waitbutwhy.com/"
                         target="_blank"
                         rel="noopener noreferrer"
