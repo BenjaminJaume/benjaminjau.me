@@ -14,7 +14,7 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-const phoneNumber = "+61 4 32 586 316";
+const phoneNumber = "+506 8790 7001";
 
 export default class App extends Component {
   constructor(props) {
@@ -23,14 +23,14 @@ export default class App extends Component {
       lg: "en",
       projects: [],
       isLoading: false,
-      error: null
+      error: null,
     };
   }
 
-  changeLanguage = lg => {
+  changeLanguage = (lg) => {
     i18n.changeLanguage(lg);
     this.setState({
-      lg
+      lg,
     });
   };
 
@@ -38,20 +38,20 @@ export default class App extends Component {
     this.setState({ isLoading: true });
 
     fetch("http://www.benjaminjau.me/projects.json")
-      .then(response => {
+      .then((response) => {
         if (response.ok) {
           return response.json();
         } else {
           throw new Error("Something went wrong.");
         }
       })
-      .then(response =>
+      .then((response) =>
         this.setState({
           projects: response,
-          isLoading: false
+          isLoading: false,
         })
       )
-      .catch(error => this.setState({ error, isLoading: false }));
+      .catch((error) => this.setState({ error, isLoading: false }));
   }
 
   render() {
